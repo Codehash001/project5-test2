@@ -14,7 +14,7 @@ export default function Main() {
           <div className='text-[64px]  text-white leading-relaxed font-semibold font-Kanit  tracking-widest uppercase' >
             make your <br/>own Story in <br/>DEXBATTALE
           </div>
-          <div className='mt-6 flex flex-row items-center'>
+          <div className='mt-10 flex flex-row items-center'>
           <div className=''>
           <a href='/'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1200px-Google_Play_Store_badge_EN.svg.png' alt= "Google Play Store badge EN.svg"
             className=' h-[50px] w-auto'/></a>
@@ -25,7 +25,7 @@ export default function Main() {
             className=' h-[50px] w-auto'/> </a>
           </div>
           </div>
-          <button className='mt-8 text-[16px] mx-8 py-4 px-10 bg-transparent border border-blue-400 text-blue-400 uppercase hover:border-white rounded-lg'>Learn More</button>
+          
 
         </div>
        
