@@ -5,7 +5,7 @@ import Main from '../components/Main';
 import Nfts from '../components/NFTs';
 import Coins from '../components/Coin';
 import Roadmap from '../components/Roadmap';
-// import Team from '../components/Team';
+import Team from '../components/Team';
 import Footer from '../components/Footer';
 
 
@@ -23,9 +23,8 @@ export default function Home() {
       <Coins/>
       <Roadmap/>
       <Footer/>
-      {/* 
       <Team/>
-        */}
+       
     
     
     </div>
