@@ -21,13 +21,13 @@ function Navbar () {
           />
         </li>
           <div className='bg-gray-700/30 py-2 px-4 backdrop-blur-md flex flex-row font-Kanit text-white rounded-md text-[20px]'>
-            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='home' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> Home</h1></Link>
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='home' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Home</h1></Link>
             <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='nfts' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> NFTs</h1></Link>
-            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='dexcoin' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> Dex Coin</h1></Link>
-            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='roadmap' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> Roadmap</h1></Link>
-            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='team' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> Team</h1></Link>
-            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='/' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> About</h1></Link>
-
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='dexcoin' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Dex Coin</h1></Link>
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='roadmap' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Roadmap</h1></Link>
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='team' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Team</h1></Link>
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='/' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>About</h1></Link>
+            <a className="cursor-pointer hover:text-blue-400" href='/DexBattleWhitepaper.pdf' download='DexBattleWhitepaper.pdf'><h1 className='mx-4'>Whitepaper</h1></a>
           </div>
 
         <li>
