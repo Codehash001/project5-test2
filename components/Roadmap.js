@@ -6,7 +6,8 @@ function Roadmap () {
     return (
     < div id="roadmap"className='mx-16 my-8'>
     <h1 className=" font-Kanit tracking-wide uppercase text-white text-3xl my-8 ">Roadmap</h1>
-
+  <div className='flex flex-row w-full h-full'>
+  <div className='flex flex-col w-full h-full'>
     <div className='flex flex-col '>
       <h1 className=" font-Kanit tracking-wide uppercase text-white text-2xl"> Phase 01</h1>
       <div className='flex flex-row '>
@@ -72,8 +73,15 @@ function Roadmap () {
          </ol>
          
       </div>
-    
-    </div> 
+      </div>
+      </div>
+
+      <div className='flex flex-col items-center w-full h-full'>
+          <img src ='/DexBattle PNG/DexBattle-nostore.jpg'
+          className='w-full h-[75%]'/>
+      </div>
+
+    </div>
  
 
  
