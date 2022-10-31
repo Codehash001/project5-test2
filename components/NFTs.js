@@ -5,7 +5,7 @@ import React from 'react'
 function Nfts () {
     return (
         <div id="nfts"className='overflow-hidden flex flex-col'>
-    <div className='flex flex-col my-10 mx-16 justify-between '>
+    <div className='flex flex-col my-10 mx-16 justify-between items-center'>
        <img
        src='/DexBattle PNG/DexBattle-Characters.jpg'
        className='object-cover'/>
