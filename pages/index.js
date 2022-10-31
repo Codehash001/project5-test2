@@ -22,8 +22,9 @@ export default function Home() {
       <Nfts/>
       <Coins/>
       <Roadmap/>
-      <Footer/>
       <Team/>
+      <Footer/>
+      
        
     
     
