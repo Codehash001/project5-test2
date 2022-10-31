@@ -64,8 +64,8 @@ buy with crypto payment from the game.
                     1 NFT = 100 DEX <br/>1000 DEX = 1 BNB
                 </p>
              
-             <a href='/'><button className='mt-8 text-[20px] py-4 px-10 bg-transparent border border-blue-400 text-blue-400 uppercase hover:border-white hover:text-white '>Buy Dex coin tokens</button></a>
-             <a href='/mint'><button className='mt-4 text-[20px] py-4 px-10 bg-blue-400 text-black  uppercase hover:font-semibold hover:bg-white'>Go to minting portal</button></a>
+             <a href='/ ' className='w-full h-auto'><button className='mt-8 text-[20px] py-4 px-10 bg-transparent border border-blue-400 text-blue-400 uppercase hover:border-white hover:text-white '>Buy Dex coin tokens</button></a>
+             <a href='/mint'className='w-full h-auto'><button className='mt-4 text-[20px] py-4 px-10 bg-blue-400 text-black  uppercase hover:font-semibold hover:bg-white'>Go to minting portal</button></a>
         </div>
 
        </div>

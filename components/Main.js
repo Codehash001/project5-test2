@@ -25,7 +25,7 @@ export default function Main() {
             className=' h-[50px] w-auto'/> </a>
           </div>
           </div>
-          <button className='mt-8 text-[20px] py-4 px-10 bg-transparent border border-blue-400 text-blue-400 uppercase'>Learn More</button>
+          <button className='mt-8 text-[20px] mx-8 py-4 px-10 bg-transparent border border-blue-400 text-blue-400 uppercase'>Learn More</button>
 
         </div>
        
