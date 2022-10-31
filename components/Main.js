@@ -9,14 +9,14 @@ export default function Main() {
           src="/banner2.jpg"
           className="w-screen h-auto brightness-75 object-fill blur-[1px]"
         />
-        <div className='mt-4 top-[100px] left-10 absolute flex flex-col'>
+        <div className='mt-6 top-[100px] left-10 absolute flex flex-col items-center'>
 
           <div className='text-[64px]  text-white leading-relaxed font-semibold font-Kanit  tracking-widest uppercase' >
             make your <br/>own Story in <br/>DEXBATTALE
           </div>
-          <div className='flex flex-row items-center'>
+          <div className='mt-6 flex flex-row items-center'>
           <div className=''>
-          <a href='/'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1200px-Google_Play_Store_badge_EN.svg.png" alt="Google Play Store badge EN.svg'
+          <a href='/'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1200px-Google_Play_Store_badge_EN.svg.png' alt= "Google Play Store badge EN.svg"
             className=' h-[50px] w-auto'/></a>
           </div>
 
@@ -25,6 +25,7 @@ export default function Main() {
             className=' h-[50px] w-auto'/> </a>
           </div>
           </div>
+          
 
         </div>
        
@@ -33,7 +34,7 @@ export default function Main() {
         <div className='flex flex-row mx-16 justify-between  bg-gray-700/40 backdrop-blur-sm rounded-lg items-center'>
           <div className='flex flex-col my-4 w-[70%] mx-10'>
             <h1 className='text-5xl font-Kanit text-white tracking-wide'>What is DexBattale?</h1>
-            <h1 className='text-[16px] font-Kanit text-gray-400 text-justify mt-6'>
+            <h1 className='text-[18px] font-Kanit text-gray-400 text-justify mt-6'>
             Welcome to the ever-evolving Dex battle universe! Hone your shooting skills, compete in tournaments, and complete missions with your
 Clan to earn NFTs and coveted rewards. Collect weapons, and so much more items. But most importantly, have fun and work together
 Dex battle is a community-owned skill-based shooter with different PvP and PvE game modes for every type of player. The core shooter
