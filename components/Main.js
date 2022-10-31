@@ -16,13 +16,15 @@ export default function Main() {
           </div>
           <div className='flex flex-row items-center'>
           <div className=''>
-            <img src='/icons/apple.svg'
-            className=' h-[180px] w-auto'/>
+          <p><a href="https://commons.wikimedia.org/wiki/File:Google_Play_Store_badge_EN.svg#/media/File:Google_Play_Store_badge_EN.svg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1200px-Google_Play_Store_badge_EN.svg.png" alt="Google Play Store badge EN.svg"/></a>
+            </p>
           </div>
 
           <div className=' ml-10'>
-            <img src='/icons/google.svg'
-            className=' h-[50px] w-auto'/>
+          <p><a href="https://commons.wikimedia.org/wiki/File:Download_on_the_App_Store_Badge.svg#/media/File:Download_on_the_App_Store_Badge.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1200px-Download_on_the_App_Store_Badge.svg.png" alt="Download on the App Store Badge.svg"/></a>
+          
+          </p>
           </div>
           </div>
 
