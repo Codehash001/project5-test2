@@ -9,7 +9,7 @@ export default function Main() {
           src="/banner2.jpg"
           className="w-screen h-auto brightness-75 object-fill blur-[1px]"
         />
-        <div className='mt-6 top-[100px] left-10 absolute flex flex-col items-center'>
+        <div className='mt-6 top-[100px] left-10 absolute flex flex-col items-start'>
 
           <div className='text-[64px]  text-white leading-relaxed font-semibold font-Kanit  tracking-widest uppercase' >
             make your <br/>own Story in <br/>DEXBATTALE
@@ -25,7 +25,7 @@ export default function Main() {
             className=' h-[50px] w-auto'/> </a>
           </div>
           </div>
-          
+          <button className='mt-8 text-[20px] py-4 px-10 bg-transparent border border-blue-400 text-blue-400 uppercase'>Learn More</button>
 
         </div>
        
