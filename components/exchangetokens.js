@@ -100,7 +100,7 @@ useEffect(() => {
                         <button className={toggleState === 1? 'tabs- active tabs bg-white text-black text-[18px] font-Kanit py-2 px-10 rounded-md' : "tabs active-tabs border border-white text-white py-2 text-[18px] font-Kanit px-10 rounded-md"}
                         onClick={() => toggleTab(1)}> BUY</button>
 
-                        <button className={toggleState === 2 ?'tabs active-tabs border border-white text-white py-2 text-[18px] font-Kanit px-10 rounded-md':"tabs- active tabs bg-white text-black text-[18px] font-Kanit py-2 px-10 rounded-md" }
+                        <button className={toggleState === 2 ?'tabs active-tabs border border-white text-white py-2 text-[18px] font-Kanit px-10 rounded-md':"tabs- active tabs bg-yellow-200 text-black text-[18px] font-Kanit py-2 px-10 rounded-md" }
                         onClick={() => toggleTab(2)}> SELL</button>
                     </div> 
 
