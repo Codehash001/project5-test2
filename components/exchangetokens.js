@@ -48,12 +48,9 @@ useEffect(() => {
   const doBuyHandler = async () => {
     setIsMinting(true)
     const Amount = BigInt(buyingAmount*10**18)
-    const { success, status } = await doBuy(Amount) 
+    await doBuy(Amount) 
 
-    setStatus({
-      success,
-      message: status
-    })
+   
 
     setIsMinting(false)
   }
