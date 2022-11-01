@@ -105,7 +105,7 @@ useEffect(() => {
                     </div> 
 
  {/*buy form*/}
- <div className={toggleState === 1 ? "content active-content w-full max-w-xs": "content"}>
+  <div className='w-full max-w-xs'>
   <form class=" ">
     <div class="mb-4">
       <label class="block text-gray-700 text-sm font-bold mb-2" for="dexBlance">
