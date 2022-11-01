@@ -11,7 +11,7 @@ export default function Main() {
         />
         <div className='mt-6 top-[100px] left-10 absolute flex flex-col items-start'>
 
-          <div className='text-[64px]  text-white leading-relaxed font-semibold font-Kanit  tracking-widest uppercase' >
+          <div className='md:text-[64px] text-[40px] text-white leading-relaxed font-semibold font-Kanit  tracking-widest uppercase' >
             make your <br/>own Story in <br/>DEXBATTALE
           </div>
           <div className='mt-10 flex flex-row items-center'>
