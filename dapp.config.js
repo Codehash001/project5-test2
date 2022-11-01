@@ -12,6 +12,7 @@ const config = {
   maxPublicForWhitelisted : 5,
   wlcost: 10,
   rate: 10*10**18,
+  exchangeRate: 100,
   publicSalePrice:10
 }
 
