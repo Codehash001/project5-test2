@@ -3,7 +3,7 @@ import { useState,useEffect } from "react"
 // import { initOnboard } from "../ulits/onboard"
 // import { config } from '../dapp.config'
 
-// export default function Exchange() {
+export default function Exchange() {
 
 //   const [status, setStatus] = useState(null)
 //   const [mintAmount, setMintAmount] = useState(1)
