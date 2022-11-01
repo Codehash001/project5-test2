@@ -47,8 +47,8 @@ useEffect(() => {
 
   const doBuyHandler = async () => {
     setIsMinting(true)
-    const Amount = BigInt(buyingAmount*10**18)
-    await doBuy(Amount) 
+    const payableAmount = payAmount
+    await doBuy(payableAmount) 
 
    
 
@@ -60,6 +60,8 @@ useEffect(() => {
   const handler = e =>{
     setBuyingAmount (e.target.value)
   }
+
+  const payAmount = (buyingAmount/config.exchangeRate)
 
 
 
@@ -92,7 +94,7 @@ useEffect(() => {
         Balance
       </label>
       {/* <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="number" placeholder="0"/> */}
-      <div className='shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline'> {buyingAmount}</div>
+      <div className='shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline'> {payAmount}</div>
     </div>
     <div class="flex items-center justify-between">
      {walletAddress ? ( <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"

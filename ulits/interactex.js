@@ -26,7 +26,7 @@ export const getTokenBalance = async () => {
     }
   }
 
-  export const doBuy = async (Amount) => {
+  export const doBuy = async (payableAmount) => {
 
     if (!window.ethereum.selectedAddress) {
       return {
@@ -37,7 +37,10 @@ export const getTokenBalance = async () => {
     const tx = {
       to: config.exchangeContract,
       from: window.ethereum.selectedAddress,
-      data: exchangeContract.methods.buyTokens(Amount).encodeABI()
+      value: parseInt(
+        web3.utils.toWei(String(payableAmount), 'ether')
+      ).toString(16), // hex
+      data: exchangeContract.methods.buyTokens().encodeABI()
     }
     try {
       const txHash = await window.ethereum.request({
