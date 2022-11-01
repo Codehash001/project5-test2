@@ -25,7 +25,7 @@ export const getTokenBalance = async () => {
     return BNBbalance 
     }
   }
-
+//Buy dex coins
   export const doBuy = async (payableAmount) => {
 
     if (!window.ethereum.selectedAddress) {
@@ -65,3 +65,81 @@ export const getTokenBalance = async () => {
     }
   
     }
+
+
+    //sell dex coins
+  export const doSell = async (tokenAmountToSell) => {
+
+    if (!window.ethereum.selectedAddress) {
+      return {
+        success: false,
+        status: 'To be able to buy, you need to connect your wallet'
+      }
+    }
+    const tx = {
+      to: config.exchangeContract,
+      from: window.ethereum.selectedAddress,
+      data: exchangeContract.methods.sellTokens(tokenAmountToSell).encodeABI()
+    }
+    try {
+      const txHash = await window.ethereum.request({
+        method: 'eth_sendTransaction',
+        params: [tx]
+      })
+  
+      return {
+        success: true,
+        status: (
+          <a href={`https://testnet.bscscan.com/tx/${txHash}`} target="_blank">
+            <p>✅ Check out your transaction on Etherscan:</p>
+            <p>{`https://testnet.bscscan.com/tx/${txHash}`}</p>
+          </a>
+        )
+      }
+    } catch (error) {
+      return {
+        success: false,
+        status: '😞 Smth went wrong:' + error.message
+      }
+    }
+  
+    }
+
+    // approve to sell
+    export const doApprove = async (tokenAmountToSell) => {
+      
+        const Spender = config.exchangeContract
+        if (!window.ethereum.selectedAddress) {
+          return {
+            success: false,
+            status: 'To be able to Approve, you need to connect your wallet'
+          }
+        }
+        const tx = {
+          to: config.tokenContract,
+          from: window.ethereum.selectedAddress,
+          data: tokenContract.methods.approve(Spender , tokenAmountToSell).encodeABI()
+        }
+        try {
+          const txHash = await window.ethereum.request({
+            method: 'eth_sendTransaction',
+            params: [tx]
+          })
+      
+          return {
+            success: true,
+            status: (
+              <a href={`https://testnet.bscscan.com/tx/${txHash}`} target="_blank">
+                <p>✅ Check out your transaction on Etherscan:</p>
+                <p>{`https://testnet.bscscan.com/tx/${txHash}`}</p>
+              </a>
+            )
+          }
+        } catch (error) {
+          return {
+            success: false,
+            status: '😞 Smth went wrong:' + error.message
+          }
+        }
+      
+        }
