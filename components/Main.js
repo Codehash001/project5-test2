@@ -5,11 +5,12 @@ import "aos/dist/aos.css";
 
 export default function Main() {
 
-
 useEffect(() => {
-  Aos.init({ duration : 1000,
-             delay : 100})
-}, []);
+    Aos.init({ duration : 1500,
+               offset: 100,
+               delay : 500})
+    }, []); 
+
     return(
     <div id="home"className='overflow-hidden flex flex-col'>
         <div className="w-full h-screen flex flex-col items-center justify-center relative">

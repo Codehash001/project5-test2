@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 useEffect(() => {
     Aos.init({ duration : 1500,
-               offset: 200,
+               offset: 130,
                delay : 500})
   }, []);
 
