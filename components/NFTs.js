@@ -8,7 +8,7 @@ function Nfts () {
 
     useEffect(() => {
         Aos.init({ duration : 1500,
-                   delay : 100})
+                   delay : 500})
       }, []);
 
     return (
