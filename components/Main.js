@@ -1,7 +1,12 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function Main() {
+
+
+useEffect(() => {
+  Aos.init({ duration : 2000})
+}, []);
     return(
     <div id="home"className='overflow-hidden flex flex-col'>
         <div className="w-full h-screen flex flex-col items-center justify-center relative">
@@ -11,7 +16,7 @@ export default function Main() {
         />
         <div className='mt-6 top-[100px] left-10 absolute flex flex-col items-start'>
 
-          <div className='md:text-[64px] text-[40px] text-white leading-relaxed font-semibold font-Kanit  tracking-widest uppercase' >
+          <div data-aos="fade-up"className='md:text-[64px] text-[40px] text-white leading-relaxed font-semibold font-Kanit  tracking-widest uppercase' >
             make your <br/>own Story in <br/>DEXBATTALE
           </div>
           <div className='mt-10 flex flex-row items-center'>
@@ -31,7 +36,7 @@ export default function Main() {
        
         </div>
         
-        <div className='flex flex-row mx-16 justify-between  bg-gray-700/40 backdrop-blur-sm rounded-lg items-center'>
+        <div data-aos ="fade-up"className='flex flex-row mx-16 justify-between  bg-gray-700/40 backdrop-blur-sm rounded-lg items-center'>
           <div className='flex flex-col my-4 w-[70%] mx-10'>
             <h1 className='text-5xl font-Kanit text-white tracking-wide'>What is DexBattale?</h1>
             <h1 className='text-[18px] font-Kanit text-gray-400 text-justify mt-6'>

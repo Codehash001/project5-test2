@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@alch/alchemy-web3": "^1.4.7",
+    "aos": "^2.3.4",
     "bnc-onboard": "^1.39.1",
     "dotenv": "^16.0.3",
     "keccak256": "^1.0.6",
