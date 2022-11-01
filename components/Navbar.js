@@ -13,6 +13,7 @@ function Navbar () {
   };
 
   return (
+    <div>
     <div className='fixed z-[100] w-full h-auto bg-black/30 backdrop-blur-sm overflow-hidden border-b-white'>
       <ul className='flex flex-row items-center justify-between my-4 mx-10'>
         <li>
@@ -46,7 +47,7 @@ function Navbar () {
 
       </ul>
       
-      
+      </div>
             {/* Mobile Menu */}
       {/* Overlay */}
       <div className={
@@ -76,12 +77,12 @@ function Navbar () {
              </div>
           </div>
           <div className='border-b py-4 flex flex-col mt-4'>
-              <p className='uppercase text-[18px] text-white font-Righteous text-center'>
+              <p className='uppercase text-[18px] text-white font-Kanit text-center'>
               Dex Battle
               </p>
             </div>
             <div  className='py-4 flex flex-col '>
-        <ul className='uppercase text-gray-200 font-Righteous text-center'>
+        <ul className='uppercase text-gray-200 font-Kanit text-center'>
             <li  className='py-4 text-sm hover:text-white'>
             <Link onClick={() => setNav(false)}  className="cursor-pointer" activeClass ="active" to='about' spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
             </li>
