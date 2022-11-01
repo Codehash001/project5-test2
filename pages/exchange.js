@@ -60,9 +60,7 @@ export default function Exchange() {
                className='h-[90%] rounded-lg border border-white '/>
                </div>
                <div className='border border-white w-full h-full flex flex-col items-center py-4 px-8 rounded-lg my-4'>
-                    <h1 className='text-white font-Kanit text-2xl'>{walletAddress
-                ? walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)
-                : ''}</h1>
+                     <h1 className='text-white font-Kanit text-2xl'>Wallet</h1> 
                     <div className='w-full h-full flex justify-between mt-4'>
                         <button className='bg-white text-black text-[18px] font-Kanit py-2 px-10 rounded-md'> BUY</button>
                         <button className=' border border-white text-white py-2 text-[18px] font-Kanit px-10 rounded-md '> SELL</button>

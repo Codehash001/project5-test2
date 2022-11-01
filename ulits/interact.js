@@ -16,12 +16,7 @@ export const getMaxSupply = async () => {
   return maxSupply
 }
 
-export const getTokenBalance = async () => {
-  if (!window.ethereum.selectedAddress) {
- 	return 0}
-  else {const TokenBalance = await tokenContract.methods.balanceOf(window.ethereum.selectedAddress).call()
-  return TokenBalance }
-}
+
 
 export const getTotalMinted = async () => {
   const totalMinted = await nftContract.methods.totalSupply().call()
@@ -71,9 +66,9 @@ export const doPublicMint = async (mintAmount) => {
     return {
       success: true,
       status: (
-        <a href={`https://testnet.bscscan.io/tx/${txHash}`} target="_blank">
+        <a href={`https://testnet.bscscan.com/tx/${txHash}`} target="_blank">
           <p>✅ Check out your transaction on Etherscan:</p>
-          <p>{`https://testnet.bscscan.io/tx/${txHash}`}</p>
+          <p>{`https://testnet.bscscan.com/tx/${txHash}`}</p>
         </a>
       )
     }
@@ -107,9 +102,9 @@ export const doPublicMint = async (mintAmount) => {
       return {
         success: true,
         status: (
-          <a href={`https://testnet.bscscan.io/tx/${txHash}`} target="_blank">
+          <a href={`https://testnet.bscscan.com/tx/${txHash}`} target="_blank">
             <p>✅ Check out your transaction on Etherscan:</p>
-            <p>{`https://testnet.bscscan.io/tx/${txHash}`}</p>
+            <p>{`https://testnet.bscscan.com/tx/${txHash}`}</p>
           </a>
         )
       }
@@ -146,9 +141,9 @@ export const doPublicMint = async (mintAmount) => {
         return {
           success: true,
           status: (
-            <a href={`https://testnet.bscscan.io/tx/${txHash}`} target="_blank">
+            <a href={`https://testnet.bscscan.com/tx/${txHash}`} target="_blank">
               <p>✅ Check out your transaction on Etherscan:</p>
-              <p>{`https://testnet.bscscan.io/tx/${txHash}`}</p>
+              <p>{`https://testnet.bscscan.com/tx/${txHash}`}</p>
             </a>
           )
         }
