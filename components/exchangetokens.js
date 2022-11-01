@@ -97,10 +97,10 @@ useEffect(() => {
                <div className='border border-white w-full h-full flex flex-col items-center py-4 px-8 rounded-lg my-4'>
                      <h1 className='text-white font-Kanit text-2xl'>Wallet</h1> 
                     <div className='w-full h-full flex justify-between mt-4'>
-                        <button className={toggleState === 1? 'tabs- active tabs bg-white text-black text-[18px] font-Kanit py-2 px-10 rounded-md' : "tabs"}
+                        <button className={toggleState === 1? 'tabs- active tabs bg-white text-black text-[18px] font-Kanit py-2 px-10 rounded-md' : "tabs active-tabs border border-white text-white py-2 text-[18px] font-Kanit px-10 rounded-md"}
                         onClick={() => toggleTab(1)}> BUY</button>
 
-                        <button className={toggleState === 2 ?'tabs active-tabs border border-white text-white py-2 text-[18px] font-Kanit px-10 rounded-md':"tabs" }
+                        <button className={toggleState === 2 ?'tabs active-tabs border border-white text-white py-2 text-[18px] font-Kanit px-10 rounded-md':"tabs- active tabs bg-white text-black text-[18px] font-Kanit py-2 px-10 rounded-md" }
                         onClick={() => toggleTab(2)}> SELL</button>
                     </div> 
 
@@ -122,8 +122,8 @@ useEffect(() => {
     </div>
     <div class="flex items-center justify-between">
      {walletAddress ? ( <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
-     onClick={doBuyHandler}>
-        Buy DEX coins
+     onClick={toggleState === 1 ? doBuyHandler : doSellHandler}>
+        { toggleState === 1 ? "Buy DEX coins" : "Sell Dex Coins"}
       </button> ) : ( <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
       onClick={connectWalletHandler}>
         Connect Wallet
@@ -142,44 +142,6 @@ useEffect(() => {
   
 </div>
 
-
-{/*sell form*/}
-<div className={toggleState === 2 ? "content active-content w-full max-w-xs": "content"}>
-  <form class=" ">
-    <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="dexBlance">
-        Balance
-      </label>
-      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="dexBalance" type="number" placeholder="0" value={exchangeAmount} onChange={handler}/>
-    </div>
-    <div class="mb-6">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-        Balance
-      </label>
-      {/* <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="number" placeholder="0"/> */}
-      <div className='shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline'> {payAmount}</div>
-    </div>
-    <div class="flex items-center justify-between">
-     {walletAddress ? ( <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
-     onClick={doSellHandler}>
-        Sell DEX coins
-      </button> ) : ( <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
-      onClick={connectWalletHandler}>
-        Connect Wallet
-      </button> )}  
-      
-
-      
-    </div>
-    <div class="flex items-center justify-between my-4">
-      <button className="w-full bg-gray-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-        Mint NFTs with Dex coin
-      </button>
-      
-    </div>
-  </form>
-  
-</div>
 
                </div>
 
