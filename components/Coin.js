@@ -2,15 +2,18 @@ import React, { useEffect } from 'react';
 import Aos from 'aos';
 import "aos/dist/aos.css";
 
-useEffect(() => {
-    Aos.init({ duration : 1500,
-               offset: 130,
-               delay : 500})
-  }, []);
+
 
 
 
 function Coins () {
+
+    useEffect(() => {
+        Aos.init({ duration : 1500,
+                   offset: 130,
+                   delay : 500})
+      }, []);
+      
     return (
         <div id="dexcoin"className='overflow-hidden flex flex-col'>
      <div className='flex flex-row mx-16 justify-between items-center'>
