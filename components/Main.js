@@ -34,7 +34,7 @@ useEffect(() => {
             className=' h-[50px] w-auto'/> </a>
           </div>
         </div>
-        <button className='mt-8 text-[16px] mx-8 py-4 px-10 bg-transparent border border-blue-400 text-blue-400 uppercase hover:border-white rounded-lg'>Learn More</button>
+        <button className='mt-8 text-[16px]  py-4 px-[100px] bg-transparent border border-blue-400 text-blue-400 uppercase hover:border-white rounded-lg'>Learn More</button>
           
 
         </div>
