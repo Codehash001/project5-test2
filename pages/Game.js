@@ -112,7 +112,7 @@ function Coins () {
                 </h1>
 
     
-  <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-[50px]">
+  <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-5">
     <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Alita.png" alt="" />
@@ -191,6 +191,34 @@ function Coins () {
         
       </div>
     </div>
+
+    <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+      <div class="h-96 w-72">
+        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Angela.png" alt="" />
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+      <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+        <h1 class="font-Kanit text-3xl font-bold text-white">BISHOP</h1>
+        <ol class="mb-3 text-[15px] italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <li>Walkspeed:5 </li>
+            <li>Runspeed:7.85</li>
+            <li>Stealthspeed:1</li>
+            <li>Acceleration:10</li>
+            <li>Crouchspeed:2</li>
+            <li>Crouchtransitionspeed:0.16</li>
+            <li>Slidespeed:12</li>
+            <li>Jumpforce:5</li>
+            <li>Jumprate:0.82</li>
+            <li>Gravitymultiplier:2</li>
+            <li>Health:100</li>
+            <li>Start toregeneratein:4</li>
+            <li>Regenerationspeed:3(max)</li>
+            <li>Regenerateupto:75</li>
+        </ol>
+        
+      </div>
+    </div>
+    
   </div>
   
 </div>
