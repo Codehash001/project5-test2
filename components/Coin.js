@@ -52,19 +52,19 @@ overall brand of Dex coin.
         </div> 
 
         <div className=' flex flex-row mx-16 my-[50px] justify-evenly'>
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col items-center mx-10'>
                 <hl className='text-blue-400 font-Kanit text-[40px] text-center'>1 000 000 000</hl>
                 <hl data-aos="fade-up" className='text-white font-Kanit text-2xl text-center'>Total Supply</hl>
             </div>
 
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col items-center mx-10'>
                 <hl className='text-blue-400 font-Kanit text-[40px] text-center'>Binance Samrt Chain</hl>
                 <hl data-aos="fade-up" className='text-white font-Kanit text-2xl text-center'>Blockchain</hl>
             </div>
         </div>
 
         <div className='mb-4'>
-                    <button className=' border border-white bg-yellow-400 text-center text-[20px] text-white font-Kanit hover:bg-yellow-600 hover:text-black hover:font-semibold px-4 py-2 rounded-lg'>
+                    <button className=' bg-yellow-400 text-center text-[20px] text-black font-Kanit hover:font-semibold hover:border-white px-[60px] py-2 rounded-lg'>
                         Buy Dex Coin Tokens
                     </button>
         </div>

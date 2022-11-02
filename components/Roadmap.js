@@ -7,9 +7,9 @@ function Roadmap () {
     < div id="roadmap"className='mx-16 my-8'>
     <h1 className=" font-Kanit tracking-wide uppercase text-blue-400 text-[36px] my-8 ">Roadmap</h1>
   <div className='flex flex-row w-full h-full items-start'>
-  <div className='flex flex-col w-full h-full'>
+  <div className='flex flex-col w-full h-full border border-blue-300'>
     <div className='flex flex-col '>
-      <h1 className=" font-Kanit tracking-wide uppercase text-white text-2xl"> Phase 01</h1>
+      <h1 className=" font-Kanit tracking-wide uppercase text-yellow-600 text-2xl"> Phase 01</h1>
       <div className='flex flex-row '>
       <div className=' h-auto w-0.5 border border-white mt-0 ml-4'></div>
          <ol className="m-6 ml-10 font-Kanit tracking-wide list-disc text-gray-500 text-2xl">
@@ -24,7 +24,7 @@ function Roadmap () {
     </div> 
 
     <div className='flex flex-col '>
-      <h1 className=" font-Kanit tracking-wide uppercase text-white text-2xl"> Phase 02</h1>
+      <h1 className=" font-Kanit tracking-wide uppercase text-yellow-600 text-2xl"> Phase 02</h1>
       <div className='flex flex-row '>
       <div className=' h-auto w-0.5 border border-white mt-0 ml-4'></div>
          <ol className="m-6 ml-10 font-Kanit tracking-wide list-disc text-gray-500 text-2xl">
@@ -42,7 +42,7 @@ function Roadmap () {
 
 
     <div className='flex flex-col '>
-      <h1 className=" font-Kanit tracking-wide uppercase text-white text-2xl"> Phase 03</h1>
+      <h1 className=" font-Kanit tracking-wide uppercase text-yellow-600 text-2xl"> Phase 03</h1>
       <div className='flex flex-row '>
       <div className=' h-auto w-0.5 border border-white mt-0 ml-4'></div>
          <ol className="m-6 ml-10 font-Kanit tracking-wide list-disc text-gray-500 text-2xl">
@@ -59,7 +59,7 @@ function Roadmap () {
     </div>  
 
     <div className='flex flex-col '>
-      <h1 className=" font-Kanit tracking-wide uppercase text-white text-2xl"> More Comming...</h1>
+      <h1 className=" font-Kanit tracking-wide uppercase text-yellow-600 text-2xl"> More Comming...</h1>
       <div className='flex flex-row '>
       <div className=' h-auto w-0.5 border border-white mt-0 ml-4'></div>
          <ol className="m-6 ml-10 font-Kanit tracking-wide list-disc text-gray-500 text-2xl">
@@ -78,7 +78,7 @@ function Roadmap () {
 
       <div className='flex flex-col items-center w-full h-full'>
           <img src ='/DexBattle PNG/DexBattle-nostore.jpg'
-          className='w-full h-[70%]'/>
+          className='w-[200px] h-[350px]'/>
       </div>
 
     </div>
