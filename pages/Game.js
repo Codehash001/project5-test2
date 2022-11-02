@@ -107,13 +107,13 @@ function Coins () {
                     </button>
                 </div>
 
-                <h1 data-aos="flip-right" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[22px] font-semibold'>
+                <h1 data-aos="flip-right" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[22px] font-semibold mt-4'>
                     DexBattle Characters
                 </h1>
 
-  <div className='w-full flex flex-col items-center justify-between overflow-hidden'> 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-    <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+  <div className='w-full flex flex-col items-center justify-between overflow-hidden my-4'> 
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 ">
+    <div class="my-4 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Alita.png" alt="" />
       </div>
@@ -121,70 +121,70 @@ function Coins () {
       <div class="absolute inset-0 flex translate-y-[80%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
         <h1 class="font-Kanit text-3xl font-bold text-white uppercase">APOLLO</h1>
         <ol class="mb-3 text-[15px] italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-        <li>Walkspeed:4.5</li>
-        <li>Runspeed:8</li>
-        <li>Stealthspeed:1</li>
+        <li>Walk speed:4.5</li>
+        <li>Run speed:8</li>
+        <li>Stealth speed:1</li>
         <li>Acceleration:9</li>
-        <li>Crouchspeed:2</li>
-        <li>Crouchtransitionspeed:0.16</li>
-        <li>Slidespeed:12</li>
-        <li>Jumpforce:8.5</li>
-        <li>Jumprate:0.82</li>
-        <li>Gravitymultiplier:1</li>
+        <li>Crouch speed:2</li>
+        <li>Crouch transition speed:0.16</li>
+        <li>Slide speed:12</li>
+        <li>Jump force:8.5</li>
+        <li>Jump rate:0.82</li>
+        <li>Gravity multiplier:1</li>
         <li>Health:100</li>
-        <li>Start toregeneratein:4</li>
-        <li>Regenerationspeed:3(max)</li>
-        <li>Regenerateupto:75</li>
+        <li>Start to regenerate in:4</li>
+        <li>Regeneration speed:3(max)</li>
+        <li>Regenerate upto:75</li>
         </ol>
     </div>
     </div>
 
-    <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+    <div class="my-4 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Alita.png" alt="" />
       </div>
       <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-      <div class="absolute inset-0 flex translate-y-[40%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+      <div class="absolute inset-0 flex translate-y-[80%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
         <h1 class="font-Kanit text-3xl font-bold text-white">BILLY</h1>
         <ol class="mb-3 text-[15px] italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-        <li>Walkspeed:6.62</li>
-        <li>Runspeed:11.13</li>
-        <li>Stealthspeed:1.16</li>
+        <li>Walk speed:6.62</li>
+        <li>Run speed:11.13</li>
+        <li>Stealth speed:1.16</li>
         <li>Acceleration:7.4</li>
-        <li>Crouchspeed:1.77</li>
-        <li>Crouchtransitionspeed:0.16</li>
-        <li>Slidespeed:11</li>
-        <li>Jumpforce:8.2</li>
-        <li>Jumprate:0.82</li>
-        <li>Gravitymultiplier:2</li>
+        <li>Crouch speed:1.77</li>
+        <li>Crouch transition speed:0.16</li>
+        <li>Slide speed:11</li>
+        <li>Jump force:8.2</li>
+        <li>Jump rate:0.82</li>
+        <li>Gravity multiplier:2</li>
         <li>Health:100</li>
-        <li>Start regeneratein:4</li>
-        <li>Regenerationspeed:3(max)</li>
-        <li>Regenerateupto:75</li>
+        <li>Start to regenerate in:4</li>
+        <li>Regeneration speed:3(max)</li>
+        <li>Regenerate up to:75</li>
         </ol>
         
       </div>
     </div>
-    <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+    <div class="my-4 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Angela.png" alt="" />
       </div>
       <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-      <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+      <div class="absolute inset-0 flex translate-y-[80%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
         <h1 class="font-Kanit text-3xl font-bold text-white">BISHOP</h1>
         <ol class="mb-3 text-[15px] italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <li>Walkspeed:5 </li>
-            <li>Runspeed:7.85</li>
-            <li>Stealthspeed:1</li>
+            <li>Walk speed:5 </li>
+            <li>Run speed:7.85</li>
+            <li>Stealth speed:1</li>
             <li>Acceleration:10</li>
-            <li>Crouchspeed:2</li>
-            <li>Crouchtransitionspeed:0.16</li>
+            <li>Crouch speed:2</li>
+            <li>Crouchtransition speed:0.16</li>
             <li>Slidespeed:12</li>
             <li>Jumpforce:5</li>
             <li>Jumprate:0.82</li>
             <li>Gravitymultiplier:2</li>
             <li>Health:100</li>
-            <li>Start toregeneratein:4</li>
+            <li>Start to regeneratein:4</li>
             <li>Regenerationspeed:3(max)</li>
             <li>Regenerateupto:75</li>
         </ol>
@@ -192,158 +192,158 @@ function Coins () {
       </div>
     </div>
 
-    <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+    <div class="my-4 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Angela.png" alt="" />
       </div>
       <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-      <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+      <div class="absolute inset-0 flex translate-y-[80%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
         <h1 class="font-Kanit text-3xl font-bold text-white">IRONA</h1>
         <ol class="mb-3 text-[15px] italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <li>Walkspeed:5 </li>
-            <li>Runspeed:7.85</li>
-            <li>Stealthspeed:1</li>
-            <li>Acceleration:10</li>
-            <li>Crouchspeed:2</li>
-            <li>Crouchtransitionspeed:0.16</li>
-            <li>Slidespeed:12</li>
-            <li>Jumpforce:5</li>
+            <li>Walk speed:7.1 </li>
+            <li>Run speed:9</li>
+            <li>Stealth speed:1</li>
+            <li>Acceleration:8.3</li>
+            <li>Crouch speed:2.34</li>
+            <li>Crouch transition speed:0.192</li>
+            <li>Slide speed:12</li>
+            <li>Jumpforce:6.6</li>
             <li>Jumprate:0.82</li>
             <li>Gravitymultiplier:2</li>
             <li>Health:100</li>
-            <li>Start toregeneratein:4</li>
-            <li>Regenerationspeed:3(max)</li>
-            <li>Regenerateupto:75</li>
+            <li>Start to regenerate in:4</li>
+            <li>Regeneration speed:3(max)</li>
+            <li>Regenerate upto:75</li>
         </ol>
     </div>
     </div>
 
-    <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+    <div class="my-4 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Angela.png" alt="" />
       </div>
       <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-      <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+      <div class="absolute inset-0 flex translate-y-[80%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
         <h1 class="font-Kanit text-3xl font-bold text-white">OMEGA</h1>
         <ol class="mb-3 text-[15px] italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <li>Walkspeed:5 </li>
-            <li>Runspeed:7.85</li>
-            <li>Stealthspeed:1</li>
-            <li>Acceleration:10</li>
-            <li>Crouchspeed:2</li>
-            <li>Crouchtransitionspeed:0.16</li>
-            <li>Slidespeed:12</li>
-            <li>Jumpforce:5</li>
+            <li>Walk speed:5.2 </li>
+            <li>Run speed:9</li>
+            <li>Stealth speed:1</li>
+            <li>Acceleration:9</li>
+            <li>Crouch speed:2</li>
+            <li>Crouch transition speed:0.16</li>
+            <li>Slide speed:12</li>
+            <li>Jumpforce:6.6</li>
             <li>Jumprate:0.82</li>
             <li>Gravitymultiplier:2</li>
             <li>Health:100</li>
-            <li>Start toregeneratein:4</li>
-            <li>Regenerationspeed:3(max)</li>
-            <li>Regenerateupto:75</li>
+            <li>Start to regenerate in:4</li>
+            <li>Regeneration speed:3(max)</li>
+            <li>Regenerate upto:75</li>
         </ol>
     </div>
     </div>
 
-    <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+    <div class="my-4 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Angela.png" alt="" />
       </div>
       <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-      <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+      <div class="absolute inset-0 flex translate-y-[80%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
         <h1 class="font-Kanit text-3xl font-bold text-white">REGEN</h1>
         <ol class="mb-3 text-[15px] italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <li>Walkspeed:5 </li>
-            <li>Runspeed:7.85</li>
-            <li>Stealthspeed:1</li>
-            <li>Acceleration:10</li>
-            <li>Crouchspeed:2</li>
-            <li>Crouchtransitionspeed:0.16</li>
-            <li>Slidespeed:12</li>
+            <li>Walk speed:4.5 </li>
+            <li>Run speed:8</li>
+            <li>Stealth speed:1</li>
+            <li>Acceleration:9</li>
+            <li>Crouch speed:2</li>
+            <li>Crouch transition speed:0.16</li>
+            <li>Slide speed:12</li>
             <li>Jumpforce:5</li>
             <li>Jumprate:0.82</li>
             <li>Gravitymultiplier:2</li>
             <li>Health:100</li>
-            <li>Start toregeneratein:4</li>
-            <li>Regenerationspeed:3(max)</li>
-            <li>Regenerateupto:75</li>
+            <li>Start to regenerate in:2</li>
+            <li>Regeneration speed:3(max)</li>
+            <li>Regenerate upto:75</li>
         </ol>
     </div>
     </div>
 
-    <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+    <div class="my-4 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Angela.png" alt="" />
       </div>
       <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-      <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+      <div class="absolute inset-0 flex translate-y-[80%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
         <h1 class="font-Kanit text-3xl font-bold text-white">ULTRON</h1>
         <ol class="mb-3 text-[15px] italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <li>Walkspeed:5 </li>
-            <li>Runspeed:7.85</li>
-            <li>Stealthspeed:1</li>
+            <li>Walk speed:5</li>
+            <li>Run speed:8</li>
+            <li>Stealth speed:1</li>
             <li>Acceleration:10</li>
-            <li>Crouchspeed:2</li>
-            <li>Crouchtransitionspeed:0.16</li>
-            <li>Slidespeed:12</li>
+            <li>Crouch speed:3</li>
+            <li>Crouch transition speed:0.16</li>
+            <li>Slide speed:12</li>
             <li>Jumpforce:5</li>
             <li>Jumprate:0.82</li>
             <li>Gravitymultiplier:2</li>
             <li>Health:100</li>
-            <li>Start toregeneratein:4</li>
-            <li>Regenerationspeed:3(max)</li>
-            <li>Regenerateupto:75</li>
+            <li>Start to regenerate in:4</li>
+            <li>Regeneration speed:3(max)</li>
+            <li>Regenerate upto:75</li>
         </ol>
     </div>
     </div>
 
-    <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+    <div class="my-4 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Angela.png" alt="" />
       </div>
       <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-      <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+      <div class="absolute inset-0 flex translate-y-[80%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
         <h1 class="font-Kanit text-3xl font-bold text-white">VADER</h1>
         <ol class="mb-3 text-[15px] italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <li>Walkspeed:5 </li>
-            <li>Runspeed:7.85</li>
-            <li>Stealthspeed:1</li>
-            <li>Acceleration:10</li>
-            <li>Crouchspeed:2</li>
-            <li>Crouchtransitionspeed:0.16</li>
-            <li>Slidespeed:12</li>
-            <li>Jumpforce:5</li>
+            <li>Walk speed:6.77 </li>
+            <li>Run speed:8</li>
+            <li>Stealth speed:1.21</li>
+            <li>Acceleration:12.3</li>
+            <li>Crouch speed:2.97</li>
+            <li>Crouch transition speed:0.16</li>
+            <li>Slide speed:12.65</li>
+            <li>Jumpforce:6.5</li>
             <li>Jumprate:0.82</li>
             <li>Gravitymultiplier:2</li>
             <li>Health:100</li>
-            <li>Start toregeneratein:4</li>
-            <li>Regenerationspeed:3(max)</li>
-            <li>Regenerateupto:75</li>
+            <li>Start to regenerate in:4</li>
+            <li>Regeneration speed:3(max)</li>
+            <li>Regenerate upto:75</li>
         </ol>
     </div>
     </div>
 
-    <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+    <div class="my-4 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Angela.png" alt="" />
       </div>
       <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-      <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-        <h1 class="font-Kanit text-3xl font-bold text-white">VADER</h1>
+      <div class="absolute inset-0 flex translate-y-[80%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+        <h1 class="font-Kanit text-3xl font-bold text-white">ALITA</h1>
         <ol class="mb-3 text-[15px] italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <li>Walkspeed:5 </li>
-            <li>Runspeed:7.85</li>
-            <li>Stealthspeed:1</li>
-            <li>Acceleration:10</li>
-            <li>Crouchspeed:2</li>
-            <li>Crouchtransitionspeed:0.16</li>
-            <li>Slidespeed:12</li>
-            <li>Jumpforce:5</li>
+            <li>Walk speed:6.57 </li>
+            <li>Run speed:10.48</li>
+            <li>Stealth speed:1.1</li>
+            <li>Acceleration:10.4</li>
+            <li>Crouch speed:2</li>
+            <li>Crouch transition speed:0.16</li>
+            <li>Slide speed:12</li>
+            <li>Jumpforce:6.5</li>
             <li>Jumprate:0.82</li>
             <li>Gravitymultiplier:2</li>
             <li>Health:100</li>
-            <li>Start toregeneratein:4</li>
-            <li>Regenerationspeed:3(max)</li>
-            <li>Regenerateupto:75</li>
+            <li>Start to regenerate in:4</li>
+            <li>Regeneration speed:3(max)</li>
+            <li>Regenerate upto:75</li>
         </ol>
     </div>
     </div>
