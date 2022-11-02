@@ -89,14 +89,14 @@ explaining how to manage everything like minting, presale, whitelisting
           <div className=" w-full h-full flex flex-col items-center">
             <div className="items-center">
               <img src="/placeholder2.png" className="object-cover w-full sm:h-[200px] md:w-[200px] rounded-md border border-gray-300"/>
-              <div className='my-2'><button className='bg-green-400 border border-white text-white font-Kanit hover:text-black rounded-lg px-2 py-[50px]'>Buy Now</button></div>
+              <div className='my-2'><button className='bg-green-400 border border-white text-white font-Kanit hover:text-black rounded-lg py-2 px-[50px]'>Buy Now</button></div>
             </div>
           </div>
 
           <div className=" w-full h-full flex flex-col items-center">
             <div className="items-center">
               <img src="/placeholder2.png" className="object-cover w-full sm:h-[200px] md:w-[200px] rounded-md border border-gray-300"/>
-              <div className='my-2'><button className='bg-red-400 border border-white text-white font-Kanit hover:text-black rounded-lg px-2 py-[50px]'>Buy Now</button></div>
+              <div className='my-2'><button className='bg-red-400 border border-white text-white font-Kanit hover:text-black rounded-lg py-2 px-[50px]'>Buy Now</button></div>
             </div>
           </div>
 
@@ -105,14 +105,14 @@ explaining how to manage everything like minting, presale, whitelisting
           <div className=" w-full h-full flex flex-col items-center">
             <div className="items-center">
               <img src="/placeholder2.png" className="object-cover w-full sm:h-[200px] md:w-[200px] rounded-md border border-gray-300"/>
-              <div className='my-2'><button className='bg-yellow-600 border border-white text-white font-Kanit hover:text-black rounded-lg px-2 py-[50px]'>Buy Now</button></div>
+              <div className='my-2'><button className='bg-yellow-600 border border-white text-white font-Kanit hover:text-black rounded-lg py-2 px-[50px]'>Buy Now</button></div>
             </div>
           </div>
 
           <div className=" w-full h-full flex flex-col items-center">
             <div className="items-center">
               <img src="/placeholder2.png" className="object-cover w-full sm:h-[200px] md:w-[200px] rounded-md border border-gray-300"/>
-              <div className='my-2'><button className='bg-purple-600 border border-white text-white font-Kanit hover:text-black rounded-lg px-2 py-[50px]'>Buy Now</button></div>
+              <div className='my-2'><button className='bg-purple-600 border border-white text-white font-Kanit hover:text-black rounded-lg py-2 px-[50px]'>Buy Now</button></div>
             </div>
           </div>
 

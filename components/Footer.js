@@ -6,14 +6,14 @@ function Footer () {
     return(
       <div className='flex md:justify-evenly items-center justify-between w-full h-20 px-2 2xl:px-16 bg-black my-4'>
 	
-            <a href="/mint" className='md:text-2xl text-1xl text-gray-600 font-Kanit' target="_blank" rel="noreferrer">Mint</a>
-            <a href="https://twitter.com/" className='md:yext-2xl text-1xl text-gray-600 font-Kanit' target="_blank" rel="noreferrer">Twitter</a>
+            <a href="/mint" className='md:text-[20px] text-[16px] text-gray-600 font-Kanit' target="_blank" rel="noreferrer">Mint</a>
+            <a href="https://twitter.com/" className='md:text-[20px] text-[16px] text-gray-600 font-Kanit' target="_blank" rel="noreferrer">Twitter</a>
 	
 	
             <Link href="/"><img src="/Dex.png" className='cursor-pointer h-[60px] w-[80px]'/></Link>
 	
-            <a href="https://bscscan.com/" className='md:text-2xl text-1xl text-gray-600 font-Kanit' target="_blank" rel="noreferrer">BscScan</a>
-            <a href="https://discord.gg" className='md:text-2xl text-1xl text-gray-600 font-Kanit' target="_blank" rel="noreferrer">Discord</a>
+            <a href="https://bscscan.com/" className='md:text-[20px] text-[16px] text-gray-600 font-Kanit' target="_blank" rel="noreferrer">BscScan</a>
+            <a href="https://discord.gg" className='md:text-[20px] text-[16px] text-gray-600 font-Kanit' target="_blank" rel="noreferrer">Discord</a>
 		
       </div>
     )
