@@ -9,17 +9,16 @@ function Roadmap () {
   <div className='flex flex-row w-full h-full justify-between'>
   <div className='flex flex-col w-full h-full border border-blue-300 items-center rounded-lg '>
 
-     <div className='flex flex-col '>
+     <div className='flex flex-col mt-10 '>
       <h1 className=" font-Kanit tracking-wide uppercase text-yellow-600 text-2xl"> Phase 01</h1>
       <div className='flex flex-row '>
       <div className=' h-auto w-0.5 border border-white mt-0 ml-4'></div>
          <ol className="mt-6 ml-10 font-Kanit tracking-wide list-disc text-gray-400 text-2xl">
-        <li>Launch Nft</li>
-        <li>Launch token</li>
-        <li>5000 Discord member</li>
-        <li>Airdrop</li>
-        <li>Launch game</li>
-        <li>PVP Mode</li>
+        <li>Website creation</li>
+        <li>White paper</li>
+        <li>Game development</li>
+        <li>Launch community <br/> on discord</li>
+        
          </ol>
          
       </div>
@@ -61,11 +60,11 @@ function Roadmap () {
     
     </div>  
 
-    <div className='flex flex-col '>
+    <div className='flex flex-col mb-10'>
       <h1 className=" font-Kanit tracking-wide uppercase text-yellow-600 text-2xl"> More Comming...</h1>
       <div className='flex flex-row '>
       <div className=' h-auto w-0.5 border border-white mt-0 ml-4'></div>
-         <ol className="mt-6 ml-10 mb-6 font-Kanit tracking-wide list-disc text-gray-400 text-2xl">
+         <ol className="mt-6 ml-10 font-Kanit tracking-wide list-disc text-gray-400 text-2xl">
          <li>More Characters</li>
         <li>GameFi system upgrade</li>
         <li>Dex battle Metaverse</li>
