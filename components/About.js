@@ -80,6 +80,46 @@ explaining how to manage everything like minting, presale, whitelisting
           
       </div>
        </div>
+
+       <div id='about' className= "grid md:grid-flow-row w-full bg-black md:px-24 sm:px-10 p-4 items-start border-b-2 border-white pb-4">
+        <div className= "mt-4 mb-4 pt-2"> 
+        <span className=" font-Kanit tracking-wide uppercase text-blue-400 text-3xl">Partners</span>
+        </div>
+        <div className="mt-4 mb-4 w-full h-full pt-2 grid md:grid-flow-col items-center justify-between ">
+          <div className=" w-full h-full flex flex-col items-center">
+            <div className="items-center">
+              <img src="/placeholder2.png" className="object-cover w-full sm:h-[200px] md:w-[200px] rounded-md border border-gray-300"/>
+              <div><button className='bg-green-400 border border-white text-white font-Kanit hover:text-black rounded-lg'>Buy Now</button></div>
+            </div>
+          </div>
+
+          <div className=" w-full h-full flex flex-col items-center">
+            <div className="items-center">
+              <img src="/placeholder2.png" className="object-cover w-full sm:h-[200px] md:w-[200px] rounded-md border border-gray-300"/>
+              <div><button className='bg-red-400 border border-white text-white font-Kanit hover:text-black rounded-lg'>Buy Now</button></div>
+            </div>
+          </div>
+
+          
+
+          <div className=" w-full h-full flex flex-col items-center">
+            <div className="items-center">
+              <img src="/placeholder2.png" className="object-cover w-full sm:h-[200px] md:w-[200px] rounded-md border border-gray-300"/>
+              <div><button className='bg-yellow-600 border border-white text-white font-Kanit hover:text-black rounded-lg'>Buy Now</button></div>
+            </div>
+          </div>
+
+          <div className=" w-full h-full flex flex-col items-center">
+            <div className="items-center">
+              <img src="/placeholder2.png" className="object-cover w-full sm:h-[200px] md:w-[200px] rounded-md border border-gray-300"/>
+              <div><button className='bg-purple-600 border border-white text-white font-Kanit hover:text-black rounded-lg'>Buy Now</button></div>
+            </div>
+          </div>
+
+
+          
+      </div>
+       </div>
      </div>
     )}
 export default About

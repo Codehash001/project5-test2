@@ -154,7 +154,7 @@ useEffect(() => {
                 </div>
 
                 <img
-                src="/IMG_7750.png"
+                src="/dex.gif"
                   className="object-cover w-full mt-auto mb-0 sm:h-[280px] md:w-[250px] rounded-md border border-gray-100"
                 />
                 </div>

@@ -17,7 +17,7 @@ function Roadmap () {
         <li>Website creation</li>
         <li>White paper</li>
         <li>Game development</li>
-        <li>Launch community <br/> on discord</li>
+        <li>Launch community on <br/>discord</li>
         
          </ol>
          
@@ -81,7 +81,7 @@ function Roadmap () {
       <div className='flex flex-col items-center w-full h-full justify-evenly'>
           <img src ='/DexBattle PNG/DexBattle-nostore.jpg'
           className='w-[400px] h-[480px] my-4'/>
-          <img src ='/DexBattle PNG/DexBattle-nostore.jpg'
+          <img src ='/DexBattle PNG/web1.jpg'
           className='w-[400px] h-[480px] my-4'/>
       </div>
 
