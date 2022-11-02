@@ -39,7 +39,7 @@ function Coins () {
                     big as anything, and a great and powerful drill, with which he planned to break through to the heart of the great
                     star. He was going to harness the power of it to help people, all across the galaxy.  
                     </h1>
-                    <img src='/characters/Dr.M.G..png' className='w-full h-full'/>
+                    <img src='/characters/Dr.M.G..png' className='w-[250px] h-[250px]'/>
                 </div>
                 <div className=' md:flex-row flex flex-col'>
                     {/* para amd image */}
