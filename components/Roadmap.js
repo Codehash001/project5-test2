@@ -6,9 +6,9 @@ function Roadmap () {
     return (
     < div id="roadmap"className='mx-16 my-8'>
     <h1 className=" font-Kanit tracking-wide uppercase text-blue-400 text-[36px] my-8 ">Roadmap</h1>
-  <div className='flex flex-row w-full h-full items-start'>
-  <div className='flex flex-col w-full h-full border border-blue-300 items-center my-6'>
-    <div className='flex flex-col '>
+  <div className='flex flex-row w-full h-full justify-between'>
+  <div className='flex flex-col w-full h-full border border-blue-300 items-center rounded-lg '>
+    <div className='flex flex-col mt-6'>
       <h1 className=" font-Kanit tracking-wide uppercase text-yellow-600 text-2xl"> Phase 01</h1>
       <div className='flex flex-row '>
       <div className=' h-auto w-0.5 border border-white mt-0 ml-4'></div>
@@ -62,7 +62,7 @@ function Roadmap () {
       <h1 className=" font-Kanit tracking-wide uppercase text-yellow-600 text-2xl"> More Comming...</h1>
       <div className='flex flex-row '>
       <div className=' h-auto w-0.5 border border-white mt-0 ml-4'></div>
-         <ol className="m-6 ml-10 font-Kanit tracking-wide list-disc text-gray-400 text-2xl">
+         <ol className="m-6 ml-10 mb-6 font-Kanit tracking-wide list-disc text-gray-400 text-2xl">
          <li>More Characters</li>
         <li>GameFi system upgrade</li>
         <li>Dex battle Metaverse</li>
@@ -76,7 +76,9 @@ function Roadmap () {
       </div>
       </div>
 
-      <div className='flex flex-col items-center w-full h-full'>
+      <div className='flex flex-col items-center w-full h-full justify-evenly'>
+          <img src ='/DexBattle PNG/DexBattle-nostore.jpg'
+          className='w-[400px] h-[480px]'/>
           <img src ='/DexBattle PNG/DexBattle-nostore.jpg'
           className='w-[400px] h-[480px]'/>
       </div>
