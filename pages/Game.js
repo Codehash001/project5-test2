@@ -11,14 +11,14 @@ function Coins () {
     useEffect(() => {
         Aos.init({ duration : 1500,
                    offset: 100,
-                   delay : 500})
+                   delay : 100})
       }, []);
       
     return (
         <div id="game"className='overflow-hidden flex flex-col'>
             <div className='mx-16 flex flex-col items-center justify-between'>
 
-            <h1 data-aos="fade" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[20px]'>
+            <h1 data-aos="fade" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[22px] font-semibold'>
                     Game Concept
                 </h1>
                 <p data-aos="fade" className='text-[20px] font-Kanit text-gray-400 text-justify '>
@@ -27,7 +27,7 @@ function Coins () {
                 rewards to upgrade the game characters and weapons efficiently
                 </p>
 
-                <h1 data-aos="flip-right" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[20px]'>
+                <h1 data-aos="flip-right" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[22px] font-semibold'>
                     Game story
                 </h1>
                 <div data-aos="fade-up" className=' md:flex-row flex flex-col justify-between'>
@@ -106,6 +106,61 @@ function Coins () {
                         Read more in Whitepaper
                     </button>
                 </div>
+
+                <h1 data-aos="flip-right" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[22px] font-semibold'>
+                    DexBattle Characters
+                </h1>
+
+                <div class="flex min-h-screen items-center justify-center bg-neutral-800">
+  <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+    <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+      <div class="h-96 w-72">
+        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Alita.png" alt="" />
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+      <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+        <h1 class="font-Kanit text-3xl font-bold text-white uppercase">BISHOP</h1>
+        <ol class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <li>Walkspeed:5 </li>
+            <li>Runspeed:7.85</li>
+            <li>Stealthspeed:1</li>
+            <li>Acceleration:10</li>
+            <li>Crouchspeed:2</li>
+            <li>Crouchtransitionspeed:0.16</li>
+            <li>Slidespeed:12</li>
+        </ol>
+    </div>
+    </div>
+    
+    <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+      <div class="h-96 w-72">
+        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="" />
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+      <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+        <h1 class="font-Kanit text-3xl font-bold text-white">Beyond Builder</h1>
+        <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+        <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button>
+      </div>
+    </div>
+    <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+      <div class="h-96 w-72">
+        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="https://images.unsplash.com/photo-1502675135487-e971002a6adb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="" />
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+      <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+        <h1 class="font-Kanit text-3xl font-bold text-white">Shooting Star</h1>
+        <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+        <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button>
+      </div>
+    </div>
+  </div>
+  <div class="fixed bottom-16">
+    <p class="font-com text-2xl font-semibold text-white">All Images are from <a href="https://unsplash.com" class="text-blue-500">Unsplash.com</a></p>
+  </div>
+</div>
+
+
             </div>
  
 
