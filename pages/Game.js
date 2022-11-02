@@ -30,7 +30,7 @@ function Coins () {
                 <h1 data-aos="flip-right" className='text-5xl font-Kanit text-blue-400 tracking-wide uppercase'>
                     Game story
                 </h1>
-                <div className=' md:flex-raw flex flex-col'>
+                <div className=' md:flex-row flex flex-col'>
                     <h1 data-aos="flip-right" className='text-[20px] font-Kanit text-gray-400 text-justify '>
                     <span>Dr M.G.</span>
                     He was at the center of the Event, the very catalyst that set off everything. The great start at the center of the
