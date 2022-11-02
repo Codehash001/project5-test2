@@ -40,7 +40,7 @@ experience.
        </div>
        <img
        data-aos="fade-up"
-       src='/banner2.jpg'
+       src='/Banner 01.jpg'
        className='object-cover mt-10 rounded-lg border border-gray-400'/>
 
 <div className='mt-10'>
