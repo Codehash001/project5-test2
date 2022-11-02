@@ -12,7 +12,7 @@ function Roadmap () {
       <h1 className=" font-Kanit tracking-wide uppercase text-yellow-600 text-2xl"> Phase 01</h1>
       <div className='flex flex-row '>
       <div className=' h-auto w-0.5 border border-white mt-0 ml-4'></div>
-         <ol className="m-6 ml-10 font-Kanit tracking-wide list-disc text-gray-400 text-2xl">
+         <ol className="mt-6 ml-10 font-Kanit tracking-wide list-disc text-gray-400 text-2xl">
           <li>Website creation</li>
           <li>White paper</li>
           <li>Game development</li>
@@ -27,7 +27,7 @@ function Roadmap () {
       <h1 className=" font-Kanit tracking-wide uppercase text-yellow-600 text-2xl"> Phase 02</h1>
       <div className='flex flex-row '>
       <div className=' h-auto w-0.5 border border-white mt-0 ml-4'></div>
-         <ol className="m-6 ml-10 font-Kanit tracking-wide list-disc text-gray-400 text-2xl">
+         <ol className="mt-6 ml-10 font-Kanit tracking-wide list-disc text-gray-400 text-2xl">
         <li>Launch Nft</li>
         <li>Launch token</li>
         <li>5000 Discord member</li>
@@ -45,7 +45,7 @@ function Roadmap () {
       <h1 className=" font-Kanit tracking-wide uppercase text-yellow-600 text-2xl"> Phase 03</h1>
       <div className='flex flex-row '>
       <div className=' h-auto w-0.5 border border-white mt-0 ml-4'></div>
-         <ol className="m-6 ml-10 font-Kanit tracking-wide list-disc text-gray-400 text-2xl">
+         <ol className="mt-6 ml-10 font-Kanit tracking-wide list-disc text-gray-400 text-2xl">
         <li>15,000 Discord member</li>
         <li>PVE Mode</li>
         <li>P2E game launch</li>
@@ -62,7 +62,7 @@ function Roadmap () {
       <h1 className=" font-Kanit tracking-wide uppercase text-yellow-600 text-2xl"> More Comming...</h1>
       <div className='flex flex-row '>
       <div className=' h-auto w-0.5 border border-white mt-0 ml-4'></div>
-         <ol className="m-6 ml-10 mb-6 font-Kanit tracking-wide list-disc text-gray-400 text-2xl">
+         <ol className="mt-6 ml-10 mb-6 font-Kanit tracking-wide list-disc text-gray-400 text-2xl">
          <li>More Characters</li>
         <li>GameFi system upgrade</li>
         <li>Dex battle Metaverse</li>
@@ -78,9 +78,9 @@ function Roadmap () {
 
       <div className='flex flex-col items-center w-full h-full justify-evenly'>
           <img src ='/DexBattle PNG/DexBattle-nostore.jpg'
-          className='w-[400px] h-[480px]'/>
+          className='w-[400px] h-[480px] my-4'/>
           <img src ='/DexBattle PNG/DexBattle-nostore.jpg'
-          className='w-[400px] h-[480px]'/>
+          className='w-[400px] h-[480px] my-4'/>
       </div>
 
     </div>
