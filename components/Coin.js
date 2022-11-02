@@ -63,7 +63,11 @@ overall brand of Dex coin.
             </div>
         </div>
 
-        <button className='mt-8 text-[16px]  py-4 px-[80px] bg-transparent border border-blue-400 text-blue-400 uppercase hover:border-white rounded-lg'>Buy Dex Coins</button>
+        <div className='mb-4'>
+                    <button className=' border border-yellow-600 text-center text-[20px] text-gray-700 font-Kanit hover:bg-yellow-600 hover:text-black hover:font-semibold px-4 py-2 rounded-lg'>
+                        Buy Dex Coin Tokens
+                    </button>
+        </div>
 
         <div>
             {/* dohnut chart here */}

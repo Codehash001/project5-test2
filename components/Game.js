@@ -102,7 +102,7 @@ function Game () {
                 </div>
 
                 <div className='mb-4'>
-                    <button className=' border border-blue-200 text-center text-[20px] text-blue-200 font-Kanit hover:bg-blue-400 hover:font-semibold px-4 py-2 rounded-full'>
+                    <button className=' border border-blue-200 text-center text-[20px] text-blue-200 font-Kanit hover:bg-blue-400 hover:text-black hover:font-semibold px-4 py-2 rounded-full'>
                         Read more in Whitepaper
                     </button>
                 </div>
