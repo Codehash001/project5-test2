@@ -15,7 +15,7 @@ function Coins () {
       }, []);
       
     return (
-        <div id="dexcoin"className='overflow-hidden flex flex-col'>
+        <div id="dexcoin"className='overflow-hidden flex flex-col items-center'>
      <div className='flex flex-row mx-16 justify-between items-center'>
           <div className='flex flex-col my-4 w-[70%] mr-10'>
             <h1 data-aos="flip-right" className='text-5xl font-Kanit text-blue-400 tracking-wide uppercase'>Token</h1>
@@ -64,7 +64,7 @@ overall brand of Dex coin.
         </div>
 
         <div className='mb-4'>
-                    <button className=' border border-yellow-600 text-center text-[20px] text-gray-700 font-Kanit hover:bg-yellow-600 hover:text-black hover:font-semibold px-4 py-2 rounded-lg'>
+                    <button className=' border border-white bg-yellow-400 text-center text-[20px] text-white font-Kanit hover:bg-yellow-600 hover:text-black hover:font-semibold px-4 py-2 rounded-lg'>
                         Buy Dex Coin Tokens
                     </button>
         </div>
