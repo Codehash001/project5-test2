@@ -111,8 +111,8 @@ function Coins () {
                     DexBattle Characters
                 </h1>
 
-                <div class="flex min-h-screen items-center justify-center bg-neutral-800">
-  <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+    
+  <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
     <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Alita.png" alt="" />
@@ -131,7 +131,7 @@ function Coins () {
         </ol>
     </div>
     </div>
-    
+
     <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="" />
@@ -155,13 +155,11 @@ function Coins () {
       </div>
     </div>
   </div>
-  <div class="fixed bottom-16">
-    <p class="font-com text-2xl font-semibold text-white">All Images are from <a href="https://unsplash.com" class="text-blue-500">Unsplash.com</a></p>
-  </div>
+  
 </div>
 
 
-            </div>
+         
  
 
     </div>
