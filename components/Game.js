@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 
 
-function Coins () {
+function Game () {
 
     useEffect(() => {
         Aos.init({ duration : 1500,
@@ -361,4 +361,4 @@ function Coins () {
     </div>
     ) 
 }
-export default Coins
+export default Game
