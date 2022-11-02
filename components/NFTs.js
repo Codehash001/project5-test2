@@ -68,16 +68,17 @@ buy with crypto payment from the game.
             src='/DexBattle PNG/DexBattle7-nostore.jpg'
             className=' w-[75%] h-auto rounded-lg border border-gray-400'/>
         </div>
-        <div className='p-4 flex flex-col w-full h-full font-Kanit justify-between'>
+        <div className='p-4 flex flex-col w-full h-full font-Kanit justify-between items-center'>
              <p className='text-white  text-[40px] text-center'>
                 Mint Dex Battel NFTs <br/>  with Dex Coin!
             </p>
                 <p className=' text-yellow-600 mt-4 text-[24px] leading-normal text-center'>
                     1 NFT = 100 DEX <br/>1000 DEX = 1 BNB
                 </p>
-        </div> 
-             <a href='/ ' className='mt-8 text-[20px]'><button className=' py-4 px-10 bg-transparent border border-blue-400 text-blue-400 uppercase hover:border-white hover:text-white '>Buy Dex coin tokens</button></a>
+            <a href='/ ' className='mt-8 text-[20px]'><button className=' py-4 px-10 bg-transparent border border-blue-400 text-blue-400 uppercase hover:border-white hover:text-white '>Buy Dex coin tokens</button></a>
              <a href='/mint'className='mt-4 text-[20px]'><button className=' py-4 px-10 bg-blue-400 text-black  uppercase hover:font-semibold hover:bg-white'>Go to minting portal</button></a>
+        </div> 
+             
         
 
        </div>

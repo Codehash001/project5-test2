@@ -33,9 +33,8 @@ useEffect(() => {
             <a href='/'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1200px-Download_on_the_App_Store_Badge.svg.png'
             className=' h-[50px] w-auto'/> </a>
           </div>
-
-          <button className='mt-8 text-[16px] mx-8 py-4 px-10 bg-transparent border border-blue-400 text-blue-400 uppercase hover:border-white rounded-lg'>Learn More</button>
-          </div>
+        </div>
+        <button className='mt-8 text-[16px] mx-8 py-4 px-10 bg-transparent border border-blue-400 text-blue-400 uppercase hover:border-white rounded-lg'>Learn More</button>
           
 
         </div>
