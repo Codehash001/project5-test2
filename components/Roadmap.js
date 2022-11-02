@@ -16,7 +16,7 @@ function Roadmap () {
           <li>Website creation</li>
           <li>White paper</li>
           <li>Game development</li>
-          <li>Launch community on discord</li>
+          <li>Launch community<br/>on discord</li>
          </ol>
          
       </div>
