@@ -25,14 +25,14 @@ function Navbar () {
             <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='home' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Home</h1></Link>
             <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='nfts' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> NFTs</h1></Link>
             <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='dexcoin' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Dex Coin</h1></Link>
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='game' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Game</h1></Link>
             <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='roadmap' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Roadmap</h1></Link>
-            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='team' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Team</h1></Link>
-            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='/' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>About</h1></Link>
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='about' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>About</h1></Link>
             <a className="cursor-pointer hover:text-blue-400" href='/DexBattleWhitepaper.pdf' download='DexBattleWhitepaper.pdf'><h1 className='mx-4'>Whitepaper</h1></a>
           </div>
 
         <li>
-        <div className=' py-2 px-4 backdrop-blur-md flex flex-row font-Kanit text-white rounded-md border border-white hover:bg-blue-400'>
+        <div className=' py-2 px-4 backdrop-blur-md flex flex-row font-Kanit text-white rounded-md border border-white hover:bg-blue-200 hover:text-black'>
             <a href='/mint'><h1 className='mx-4 uppercase tracking-wide hover:font-semibold'>MINT NOW</h1> </a>
 
           </div>
@@ -72,7 +72,7 @@ function Navbar () {
                 </a>
               </Link>
               <div onClick={handleNav}
-              className='rounded-full bg-gray-400 hover:shadow-lg hover:shadow-gray-600 p-3 cursor-pointer '>
+              className='fixed md:right-[-100%] rounded-full bg-gray-400 hover:shadow-lg hover:shadow-gray-600 p-3 cursor-pointer '>
               <AiOutlineClose size={18} />
              </div>
           </div>
@@ -84,28 +84,27 @@ function Navbar () {
             <div  className='py-4 flex flex-col '>
         <ul className='uppercase text-gray-200 font-Kanit text-center'>
             <li  className='py-4 text-sm hover:text-white'>
-            <Link onClick={() => setNav(false)}  className="cursor-pointer" activeClass ="active" to='about' spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
+            <Link onClick={() => setNav(false)}  className="cursor-pointer" activeClass ="active" to='home' spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
             </li>
             <li  className='py-4 text-sm hover:text-white'>
-              <a onClick={() => setNav(false)} className="cursor-pointer" href='/mint'>About</a>
+            <Link onClick={() => setNav(false)}  className="cursor-pointer" activeClass ="active" to='nfts' spy={true} smooth={true} offset={-70} duration={500}>NFTs</Link>            </li>
+            <li  className='py-4 text-sm hover:text-white'>
+            <Link onClick={() => setNav(false)} className="cursor-pointer" activeClass ="active" to='dexcoin' spy={true} smooth={true} offset={-70} duration={500}>Dex Coin</Link>
             </li>
             <li  className='py-4 text-sm hover:text-white'>
-            <Link onClick={() => setNav(false)} className="cursor-pointer" activeClass ="active" to='roadmap' spy={true} smooth={true} offset={-70} duration={500}>NFTs</Link>
+            <Link onClick={() => setNav(false)} className="cursor-pointer" activeClass ="active" to='game' spy={true} smooth={true} offset={-100} duration={500}>Game</Link>
             </li>
             <li  className='py-4 text-sm hover:text-white'>
-            <Link onClick={() => setNav(false)} className="cursor-pointer" activeClass ="active" to='team' spy={true} smooth={true} offset={-100} duration={500}>Dexcoin</Link>
+            <Link onClick={() => setNav(false)} className="cursor-pointer" activeClass ="active" to='roadmap' spy={true} smooth={true} offset={-100} duration={500}>Roadmap</Link>
             </li>
             <li  className='py-4 text-sm hover:text-white'>
-            <Link onClick={() => setNav(false)} className="cursor-pointer" activeClass ="active" to='team' spy={true} smooth={true} offset={-100} duration={500}>Team</Link>
-            </li>
-            <li  className='py-4 text-sm hover:text-white'>
-            <Link onClick={() => setNav(false)} className="cursor-pointer" activeClass ="active" to='team' spy={true} smooth={true} offset={-100} duration={500}>About</Link>
+            <Link onClick={() => setNav(false)} className="cursor-pointer" activeClass ="active" to='about' spy={true} smooth={true} offset={-100} duration={500}>About</Link>
             </li>
             <li>
             <a className="cursor-pointe"  href='/DexBattleWhitepaper.pdf' download='DexBattleWhitepaper.pdf'>Whitepaper</a>
             </li>
             <li>
-        <div className='hidden py-2 px-4 backdrop-blur-md md:flex flex-row font-Kanit text-white rounded-md border border-white hover:bg-blue-400'>
+        <div className='hidden py-2 px-4 backdrop-blur-md md:flex flex-row font-Kanit text-white rounded-md border border-white hover:bg-blue-200 hover:text-black'>
             <a href='/mint'><h1 className='mx-4 uppercase tracking-wide hover:font-semibold'>MINT NOW</h1> </a>
 
           </div>

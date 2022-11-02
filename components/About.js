@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Team () {
+function About () {
     return (
-        <div id='team' className= "grid md:grid-flow-row w-full bg-black md:px-24 sm:px-10 p-4 items-start border-b-2 border-white pb-4">
+        <div id='about' className= "grid md:grid-flow-row w-full bg-black md:px-24 sm:px-10 p-4 items-start border-b-2 border-white pb-4">
         <div className= "mt-4 mb-4 pt-2"> 
         <span className=" font-Kanit tracking-wide uppercase text-blue-400 text-3xl">Team</span>
         </div>
@@ -47,4 +47,4 @@ function Team () {
       </div>
         </div>
     )}
-export default Team
+export default About

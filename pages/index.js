@@ -6,7 +6,7 @@ import Nfts from '../components/NFTs';
 import Coins from '../components/Coin';
 import Game from '../components/Game';
 import Roadmap from '../components/Roadmap';
-import Team from '../components/Team';
+import About from '../components/About';
 import Footer from '../components/Footer';
 
 
@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>DEX</title>
-        <meta name="Description" content="Dex!" />
+        <title>DexBattle</title>
+        <meta name="Description" content="Dex Battle Game!" />
         <link rel="icon" href="/Dex.png" />
       </Head>
       <Navbar/>
@@ -24,7 +24,7 @@ export default function Home() {
       <Coins/>
       <Game/>
       <Roadmap/>
-      <Team/>
+      <About/>
       <Footer/>
       
        
