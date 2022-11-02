@@ -2,6 +2,40 @@ import React from 'react'
 
 function About () {
     return (
+    <div className='flex flex-col items-center mx-16'>
+                <h1 data-aos="fade" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[22px] font-semibold'>
+                    About Us
+                </h1>
+                <p data-aos="fade" className='text-[20px] font-Kanit text-gray-400 text-justify '>
+                We are a premier independent game development studio focused on developing unique and original games across various
+platforms. While working on NFT & gaming projects, we got inspired to create a grand battle royale NFT Play-to-Earn game
+called Dex battle.
+                </p>
+
+                <h1 data-aos="fade" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[22px] font-semibold'>
+                    Vision
+                </h1>
+                <p data-aos="fade" className='text-[20px] font-Kanit text-gray-400 text-justify '>
+                To become the world's top P2E game by leveraging amazing game development experience, exceptional blockchain
+technology skills, and enthusiasm via our highly-motivated talents and technological specialists.
+                </p>
+
+                <h1 data-aos="fade" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[22px] font-semibold'>
+                    Mission
+                </h1>
+                <p data-aos="fade" className='text-[20px] font-Kanit text-gray-400 text-justify '>
+                Our objective is to build an infrastructure capable of powering online games that are both entertaining and engaging for our players.
+Simultaneously, we aim to construct this game so players can earn NFTs while playing the game. Beyond that extent, Dex battle aims to not
+only create a P2E game but also a game platform that is able to connect your community (friends, crypto owners, gamers, or even
+streamers). However, Dex battle can bring and build a solid relationship as well as make gaming, sharing, and in-game peer-to-peer
+exchange to be famous worldwide in the near future.
+Additionally, I will develop NFT and token contract for binance smart chain. I will create a NFT marketplace with whitelisting, presale, and
+public sale functionality to buy the nfts with your token only. A proof that there are no fees goes to the smart contract development. Video
+explaining how to manage everything like minting, presale, whitelisting
+
+                </p>
+
+
         <div id='about' className= "grid md:grid-flow-row w-full bg-black md:px-24 sm:px-10 p-4 items-start border-b-2 border-white pb-4">
         <div className= "mt-4 mb-4 pt-2"> 
         <span className=" font-Kanit tracking-wide uppercase text-blue-400 text-3xl">Team</span>
@@ -45,6 +79,7 @@ function About () {
 
           
       </div>
-        </div>
+       </div>
+     </div>
     )}
 export default About
