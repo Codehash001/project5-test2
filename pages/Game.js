@@ -42,7 +42,7 @@ function Coins () {
                     <img src='/characters/Dr.M.G..png' className='w-[250px] h-[250px] border'/>
                 </div>
 
-                <div className=' md:flex-row flex flex-col justify-between'>
+                <div className=' md:flex-row flex flex-col justify-between mt-6'>
                     <img src='/characters/Dr.M.G..png' className='w-[250px] h-[250px] border'/>
                     <h1 data-aos="flip-right" className='text-[20px] font-Kanit text-gray-400 text-justify ml-8 '>
                     When he had drilled through, the power that surged out of the center, out through the hole and into space, was
@@ -55,8 +55,30 @@ function Coins () {
                     </h1>
                 </div>
 
+                <div className=' md:flex-row flex flex-col justify-between'>
+                    <h1 data-aos="flip-right" className='text-[20px] font-Kanit text-gray-400 text-justify mr-8 '>
+                    <span className='font-semibold mb-4 text-[24px] text-yellow-600'>No. 1, Angela</span> <br/>
+                    When she was a child, she was bred to be a warrior. Born on the planet Expon in the middle of a battlefield, Angela
+                    lived her life as normal, thinking that this was all she would ever know. She was the greatest warrior in her group, but
+                    the people of Expon were a war-ravaged people, and so not only was the life expectancy rate extremely low, but she
+                    spent her entire childhood watching her friends and family fall beside her as she fought. She expected, and had made
+                    peace with the fact that, she had been born on a battlefield, and she was going to die on one.  
+                    </h1>
+                    <img src='/characters/Angela.png' className='w-[250px] h-[250px] border'/>
+                </div>
+
+                <div className=' md:flex-row flex flex-col justify-between mt-6'>
+                    <img src='/characters/Angela.png' className='w-[250px] h-[250px] border'/>
+                    <h1 data-aos="flip-right" className='text-[20px] font-Kanit text-gray-400 text-justify ml-8 '>
+                    The Event knocked her out, and she woke up alone in the middle of a desert, surrounded by the blood of people who
+                    didn&apos;t exist anymore. She was a skilled warrior, truly, and had not been hurt in battle, and when the beam hit her it
+                    understood that there was no change that needed to be made. She rose to her feet and stayed in her camp alone until
+                    she was called to the scientist, and he made her the leader of his little army
+                    </h1>
+                </div>
+
                 <div>
-                    <button className=' bg-white text-center text-[20px] text-black font-Kanit hover:bg-blue-400 hover:font-semibold'>
+                    <button className=' bg-blue-200 text-center text-[20px] text-black font-Kanit hover:bg-blue-900 hover:font-semibold px-4 py-2 rounded-xl'>
                         Read more in Whitepaper
                     </button>
                 </div>
