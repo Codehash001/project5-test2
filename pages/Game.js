@@ -18,7 +18,7 @@ function Coins () {
         <div id="game"className='overflow-hidden flex flex-col'>
             <div className='mx-16 flex flex-col items-center justify-between'>
 
-            <h1 data-aos="flip-right" className='text-5xl font-Kanit text-blue-400 tracking-wide uppercase'>
+            <h1 data-aos="flip-right" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-6'>
                     Game Concept
                 </h1>
                 <p data-aos="flip-right" className='text-[20px] font-Kanit text-gray-400 text-justify '>
@@ -27,12 +27,12 @@ function Coins () {
                 rewards to upgrade the game characters and weapons efficiently
                 </p>
 
-                <h1 data-aos="flip-right" className='text-5xl font-Kanit text-blue-400 tracking-wide uppercase'>
+                <h1 data-aos="flip-right" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-6'>
                     Game story
                 </h1>
-                <div className=' md:flex-row flex flex-col'>
-                    <h1 data-aos="flip-right" className='text-[20px] font-Kanit text-gray-400 text-justify '>
-                    <span>Dr M.G.</span>
+                <div className=' md:flex-row flex flex-col justify-between'>
+                    <h1 data-aos="flip-right" className='text-[20px] font-Kanit text-gray-400 text-justify mr-8 '>
+                    <span className='font-semibold mb-4'>Dr M.G.</span> <br/>
                     He was at the center of the Event, the very catalyst that set off everything. The great start at the center of the
                     Marsten Galaxy held within its power so great that no one, not a single person or creature in the universe, was said
                     to be able to stand it. He did not believe them, and he did not heed the warnings laid before him. He created a lab,
