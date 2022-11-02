@@ -16,7 +16,7 @@ called Dex battle.
                     Vision
                 </h1>
                 <p data-aos="fade" className='text-[20px] font-Kanit text-gray-400 text-justify '>
-                To become the world's top P2E game by leveraging amazing game development experience, exceptional blockchain
+                To become the world&apos;s top P2E game by leveraging amazing game development experience, exceptional blockchain
 technology skills, and enthusiasm via our highly-motivated talents and technological specialists.
                 </p>
 
