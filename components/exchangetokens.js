@@ -91,14 +91,14 @@ return(
 
             <div className='flex flex-col items-center mx-8 my-4'>
 
-            <h1 className='mt-10 font-Kanit text-[36px] text-gray-400 tracking-wide '>Swap your BNB with DEX coin</h1>
+            <h1 className='font-Kanit text-[36px] text-gray-400 tracking-wide '>Swap your BNB with DEX coin</h1>
 
             <div className=' w-[300px] h-[380px]'>
                 <img src='/dexcoin.jpeg'
                 className='object-cover'/>
             </div>
 
-            <div class="flex items-center justify-between my-4">
+            <div className ="flex items-center justify-between ">
                 <button className="w-full bg-yellow-300 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded ">
                  Mint NFTs with Dex coin
                 </button>
@@ -112,11 +112,11 @@ return(
 
                 <div className='w-full max-w-xs bg-[#D9D9D9] rounded-md border'>
                 <div className='w-full h-full flex justify-between border border-gray-400'>
-                        <button className={toggleState === 1? ' bg-[#D9D9D9] text-black text-[18px] font-Kanit py-2 px-10  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        <button className={toggleState === 1? ' bg-[#D9D9D9] text-black text-[18px] font-Kanit py-2 w-full  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(1)}>
                         BUY </button>
 
-                        <button className={toggleState === 2 ? 'bg-[#D9D9D9] text-black text-[18px] font-Kanit py-2 px-10  border-b-4  border-black' : "bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        <button className={toggleState === 2 ? 'bg-[#D9D9D9] text-black text-[18px] font-Kanit py-2 px-auto w-full  border-black' : "bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(2)}>
                         SELL </button>
                     </div> 
