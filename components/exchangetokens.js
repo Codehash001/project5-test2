@@ -89,7 +89,6 @@ return(
 
         <div className=' flex flex-row items-center justify-between'>
 
-            /*Image side*/
             <div className='flex flex-col items-center mx-8 my-4'>
 
             <h1 className='mt-10 font-Kanit text-[36px] text-gray-400 tracking-wide '>Swap your BNB with DEX coin</h1>
@@ -107,7 +106,6 @@ return(
 
             </div>
 
-            /*Form Side*/
             <div className='flex flex-col items-center mx-8 my-4 bg-[#D9CCCC] rounded-lg'>
                 <h1 className=' my-4 font-kanit text-[22px] text-gray-700'> CONNECT YOUR WALLET</h1>
 
