@@ -93,16 +93,16 @@ return(
 
             <h1 className='font-Kanit text-[36px] text-gray-400 tracking-wide '>Swap your BNB with DEX coin</h1>
 
-            <div className=' w-[300px] h-[380px]'>
+            <div className=' w-[300px] h-[300px]'>
                 <img src='/dexcoin.jpeg'
                 className='object-cover'/>
             </div>
 
-            <div className ="flex items-center justify-between ">
-                <button className="w-full bg-yellow-300 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded ">
+            
+            <button className="w-full bg-yellow-300 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded ">
                  Mint NFTs with Dex coin
-                </button>
-             </div>
+          </button>
+           
 
             </div>
 
@@ -116,7 +116,7 @@ return(
                         onClick={() => toggleTab(1)}>
                         BUY </button>
 
-                        <button className={toggleState === 2 ? 'bg-[#D9D9D9] text-black text-[18px] font-Kanit py-2 px-auto w-full  border-black' : "bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        <button className={toggleState === 2 ? 'bg-[#D9D9D9] text-black text-[18px] font-Kanit py-2 px-auto w-full border-b-4 border-black' : "bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(2)}>
                         SELL </button>
                     </div> 
