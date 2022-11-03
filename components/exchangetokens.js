@@ -98,14 +98,16 @@ useEffect(() => {
                      <h1 className='text-gray-800 font-Kanit text-[22px]'>Connect your Wallet</h1> 
                     <div className='w-full h-full flex justify-between mt-4 border border-gray-400'>
                         <button className={toggleState === 1? ' bg-gray-400 text-black text-[18px] font-Kanit py-2 px-10  border-b-4  border-black' : " border  text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
-                        onClick={() => toggleTab(1)}> BUY</button>
+                        onClick={() => toggleTab(1)}>
+                        BUY </button>
 
-                        <button className={toggleState === 2 ? 'bg-gray-400 text-black text-[18px] font-Kanit py-2 px-10  border-b-4  border-black' : "text-gray-400 py-2 text-[18px] font-Kanit px-10" }
-                        onClick={() => toggleTab(2)}> SELL</button>
+                        <button className={toggleState === 2 ? 'bg-gray-400 text-black text-[18px] font-Kanit py-2 px-10  border-b-4  border-black' : " border  text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        onClick={() => toggleTab(2)}>
+                        SELL </button>
                     </div> 
 
  {/*buy form*/}
-  <div className='w-full max-w-xs'>
+  <div className='w-full max-w-xs bg-gray-400'>
   <form class=" ">
     <div class="mb-4">
       <label class="block text-gray-700 text-sm font-bold mb-2" for="dexBlance">
