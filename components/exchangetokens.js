@@ -93,24 +93,24 @@ return(
 
             <h1 className='font-Kanit text-[36px] text-gray-400 tracking-wide '>Swap your BNB with DEX coin</h1>
 
-            <div className=' w-[300px] h-[300px]'>
+            <div className=' w-[300px] h-[300px] my-4'>
                 <img src='/dexcoin.jpeg'
                 className='object-cover'/>
             </div>
 
             
-            <button className="w-full bg-yellow-300 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded ">
+            <button className="w-full bg-yellow-300 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full my-4">
                  Mint NFTs with Dex coin
           </button>
            
 
             </div>
 
-            <div className='flex flex-col items-center mx-8 my-4 bg-[#D9CCCC] rounded-lg'>
+            <div className='flex flex-col items-center mx-8 my-4 bg-[#D9CCCC] rounded-md'>
             <div className='flex flex-col items-center m-6'>
-                <h1 className=' my-4 font-kanit text-[22px] text-gray-700'> CONNECT YOUR WALLET</h1>
+                <h1 className=' my-4 font-Kanit text-[22px] text-gray-700 '> CONNECT YOUR WALLET</h1>
 
-                <div className='w-full max-w-xs bg-[#D9D9D9] rounded-md border'>
+                <div className='w-full max-w-xs bg-[#D9D9D9] rounded-md p-6 border '>
                 <div className='w-full h-full flex justify-between border border-gray-400'>
                         <button className={toggleState === 1? ' bg-[#D9D9D9] text-black text-[18px] font-Kanit py-2 w-full  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(1)}>
@@ -138,10 +138,10 @@ return(
                     <div className='shadow appearance-none border bg- rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline'> {payAmount}</div>
                   </div>
                   <div class="flex items-center justify-between">
-                   {walletAddress ? ( <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+                   {walletAddress ? ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline" type="button"
                    onClick={toggleState === 1 ? doBuyHandler : doSellHandler}>
                       { toggleState === 1 ? "Buy DEX coins" : "Sell Dex Coins"}
-                    </button> ) : ( <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+                    </button> ) : ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
                     onClick={connectWalletHandler}>
                       Connect Wallet
                     </button> )}  
@@ -149,12 +149,7 @@ return(
               
                     
                   </div>
-                  <div class="flex items-center justify-between my-4">
-                    <button className="w-full bg-gray-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                      Mint NFTs with Dex coin
-                    </button>
-                    
-                  </div>
+
                 </form>
                 
               </div>
