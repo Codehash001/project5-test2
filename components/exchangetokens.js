@@ -107,8 +107,8 @@ useEffect(() => {
                     </div> 
 
  {/*buy form*/}
-  <div className='w-full max-w-xs bg-gray-400'>
-  <form class=" ">
+  <div className='w-full max-w-xs bg-gray-400 rounded-md border border-black'>
+  <form class="mx-5">
     <div class="mb-4">
       <label class="block text-gray-700 text-sm font-bold mb-2" for="dexBlance">
         Balance
