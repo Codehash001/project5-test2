@@ -91,16 +91,16 @@ useEffect(() => {
             <hl className=' mt-2 font-Kanit text-3xl text-gray-300 tracking-wide uppercase'>Swap your BNB with DEX coin</hl>
             <div className='flex flex-row  my-4 overflow-hidden justify-between mx-[20%]'>
                <div className='my-4  flex items-start justify-start '>
-                <img src='/DexBattle PNG/DexCoin nostore.png'
+                <img src='/dexcoin.jpeg'
                className='h-[90%] rounded-lg border border-white '/>
                </div>
-               <div className='border border-white w-full h-full flex flex-col items-center py-4 px-8 rounded-lg my-4'>
+               <div className='border border-white w-full h-full flex flex-col items-center py-4 px-8 rounded-lg my-4 bg-gray-100'>
                      <h1 className='text-white font-Kanit text-2xl'>Wallet</h1> 
                     <div className='w-full h-full flex justify-between mt-4'>
-                        <button className={toggleState === 1? 'mx-2 tabs- active tabs bg-white text-black text-[18px] font-Kanit py-2 px-10 rounded-md' : "mx-2 tabs border border-white text-white py-2 text-[18px] font-Kanit px-10 rounded-md"}
+                        <button className={toggleState === 1? 'tabs- active tabs bg-white text-black text-[18px] font-Kanit py-2 px-10 rounded-md' : "tabs border border-white text-white py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(1)}> BUY</button>
 
-                        <button className={toggleState === 2 ? 'mx-2 tabs- active tabs bg-white text-black text-[18px] font-Kanit py-2 px-10 rounded-md' : "mx-2 tabs border border-white text-white py-2 text-[18px] font-Kanit px-10 rounded-md" }
+                        <button className={toggleState === 2 ? 'tabs- active tabs bg-white text-black text-[18px] font-Kanit py-2 px-10 rounded-md' : "tabs border border-white text-white py-2 text-[18px] font-Kanit px-10 " }
                         onClick={() => toggleTab(2)}> SELL</button>
                     </div> 
 
