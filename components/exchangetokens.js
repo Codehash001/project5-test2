@@ -83,7 +83,7 @@ useEffect(() => {
    }
 
 return(
-        <div className='max-h-screen h-full w-full flex flex-col items-center justify-center mx-[20%]'>
+        <div className='max-h-screen h-full w-full flex flex-col items-center justify-center mx-[20%] overflow-hidden'>
 
         <h1 className='mt-10 font-Kanit text-[40px] text-white tracking-wide uppercase'> Instant dex coin exchange </h1>
 
