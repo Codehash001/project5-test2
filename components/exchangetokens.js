@@ -83,7 +83,7 @@ useEffect(() => {
    }
 
 return(
-        <div className='max-w-screen h-full  flex flex-col items-center justify-center overflow-hidden'>
+        <div className='max-w-screen  flex flex-col items-center justify-center overflow-hidden'>
 
         <h1 className='mt-10 font-Kanit text-[40px] text-white tracking-wide uppercase'> Instant dex coin exchange </h1>
 
@@ -99,7 +99,7 @@ return(
             </div>
 
             <div class="flex items-center justify-between my-4">
-                <button className="w-full bg-yellow-300 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                <button className="w-full bg-yellow-300 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded ">
                  Mint NFTs with Dex coin
                 </button>
              </div>
@@ -107,6 +107,7 @@ return(
             </div>
 
             <div className='flex flex-col items-center mx-8 my-4 bg-[#D9CCCC] rounded-lg'>
+            <div className='flex flex-col items-center m-6'>
                 <h1 className=' my-4 font-kanit text-[22px] text-gray-700'> CONNECT YOUR WALLET</h1>
 
                 <div className='w-full max-w-xs bg-[#D9D9D9] rounded-md border'>
@@ -157,7 +158,7 @@ return(
                 </form>
                 
               </div>
-
+            </div>
             </div>
 
 
