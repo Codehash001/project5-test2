@@ -110,7 +110,7 @@ return(
             <div className='flex flex-col items-center m-6'>
                 <h1 className=' my-4 font-Kanit text-[22px] text-gray-700 '> CONNECT YOUR WALLET</h1>
 
-                <div className='w-full max-w-xs bg-[#D9D9D9] rounded-md p-6 border '>
+                <div className='w-full max-w-xs bg-[#D9D9D9] rounded-md border '>
                 <div className='w-full h-full flex justify-between border border-gray-400'>
                         <button className={toggleState === 1? ' bg-[#D9D9D9] text-black text-[18px] font-Kanit py-2 w-full  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(1)}>
@@ -121,7 +121,7 @@ return(
                         SELL </button>
                     </div> 
 
-                <form class=" ">
+                <form class="mx-6">
                   <div class="my-4">
                  
                     <h1 class="block text-gray-700 text-sm font-bold mb-2">
