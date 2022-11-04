@@ -2,6 +2,7 @@ import React from 'react';
 import { useState,useEffect } from "react"
 import { initOnboard } from "../ulits/onboard"
 import { config } from '../dapp.config'
+import Link from 'next/link'
 
 import {
           doBuy,
@@ -99,24 +100,27 @@ return(
             </div>
 
             
-            <button className="w-full bg-yellow-300 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full my-4">
+            <Link href='/mint'><button className="w-full bg-yellow-300 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full my-4 mx-8">
                  Mint NFTs with Dex coin
           </button>
+          </Link>
            
 
             </div>
 
             <div className='flex flex-col items-center mx-8 my-4 bg-[#D9CCCC] rounded-md'>
-            <div className='flex flex-col items-center m-6'>
-                <h1 className=' my-4 font-Kanit text-[22px] text-gray-700 '> CONNECT YOUR WALLET</h1>
+            <div className='flex flex-col items-center mx-6'>
+                <h1 className=' my-4 font-Kanit text-[22px] text-gray-700 '>{walletAddress
+                ? walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)
+                : 'CONNECT YOUR WALLET'}</h1>
 
-                <div className='w-full max-w-xs bg-[#D9D9D9] rounded-md border '>
+                <div className='w-full max-w-xs bg-[#8e8eec] rounded-md border pb-4'>
                 <div className='w-full h-full flex justify-between border border-gray-400'>
-                        <button className={toggleState === 1? ' bg-[#D9D9D9] text-black text-[18px] font-Kanit py-2 w-full  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        <button className={toggleState === 1? ' bg-[#8e8eec] text-black text-[18px] font-Kanit py-2 w-full  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(1)}>
                         BUY </button>
 
-                        <button className={toggleState === 2 ? 'bg-[#D9D9D9] text-black text-[18px] font-Kanit py-2 px-auto w-full border-b-4 border-black' : "bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        <button className={toggleState === 2 ? 'bg-[#8e8eec] text-black text-[18px] font-Kanit py-2 px-auto w-full border-b-4 border-black' : "bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(2)}>
                         SELL </button>
                     </div> 
@@ -141,7 +145,7 @@ return(
                    {walletAddress ? ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline" type="button"
                    onClick={toggleState === 1 ? doBuyHandler : doSellHandler}>
                       { toggleState === 1 ? "Buy DEX coins" : "Sell Dex Coins"}
-                    </button> ) : ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+                    </button> ) : ( <button className="w-full bg-bl4ue-00 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
                     onClick={connectWalletHandler}>
                       Connect Wallet
                     </button> )}  
