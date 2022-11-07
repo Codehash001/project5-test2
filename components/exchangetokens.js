@@ -100,7 +100,7 @@ return(
             </div>
 
             
-            <Link href='/mint'><button className="w-full bg-yellow-300 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full my-4 mx-8">
+            <Link href='/mint'><button className="w-full bg-yellow-300 hover:bg-blue-700 text-black font-bold py-2 px-2 rounded-full my-4">
                  Mint NFTs with Dex coin
           </button>
           </Link>
