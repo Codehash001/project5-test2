@@ -348,7 +348,7 @@ project ever. The Mutated weapon projects
                     </h1>
                 </div>
 
-                <div className='mb-4'>
+                <div className='my-4'>
                     <button className=' border border-blue-200 text-center text-[20px] text-blue-200 font-Kanit hover:bg-blue-400 hover:text-black hover:font-semibold px-4 py-2 rounded-full'>
                         Read more in Whitepaper
                     </button>
@@ -569,7 +569,7 @@ project ever. The Mutated weapon projects
     </div>
     </div>
 
-    {/*no 10*/}
+    {/*no 19*/}
 
     <div class="my-4 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
@@ -597,6 +597,8 @@ project ever. The Mutated weapon projects
     </div>
     </div>
 
+    {/*No 10*/}
+
     <div class="my-4 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Alita.png" alt="" />
@@ -622,6 +624,64 @@ project ever. The Mutated weapon projects
         </ol>
     </div>
     </div>
+
+    {/*No 11*/}
+
+    <div class="my-4 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+      <div class="h-96 w-72">
+        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Dr.M.G.png" alt="" />
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+      <div class="absolute inset-0 flex translate-y-[80%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+        <h1 class="font-Kanit text-3xl font-bold text-white">DR. MG</h1>
+        <ol class="mb-3 text-[15px] italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <li>Walk speed: </li>
+            <li>Run speed:</li>
+            <li>Stealth speed:</li>
+            <li>Acceleration:</li>
+            <li>Crouch speed:</li>
+            <li>Crouch transition speed:</li>
+            <li>Slide speed:</li>
+            <li>Jumpforce:</li>
+            <li>Jumprate:</li>
+            <li>Gravitymultiplier:</li>
+            <li>Health:</li>
+            <li>Start to regenerate in:</li>
+            <li>Regeneration speed:</li>
+            <li>Regenerate upto:</li>
+        </ol>
+    </div>
+    </div>
+
+    {/*No 12*/}
+
+    <div class="my-4 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+      <div class="h-96 w-72">
+        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Angela.png" alt="" />
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+      <div class="absolute inset-0 flex translate-y-[80%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+        <h1 class="font-Kanit text-3xl font-bold text-white">Angela</h1>
+        <ol class="mb-3 text-[15px] italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <li>Walk speed: </li>
+            <li>Run speed:</li>
+            <li>Stealth speed:</li>
+            <li>Acceleration:</li>
+            <li>Crouch speed:</li>
+            <li>Crouch transition speed:</li>
+            <li>Slide speed:</li>
+            <li>Jumpforce:</li>
+            <li>Jumprate:</li>
+            <li>Gravitymultiplier:</li>
+            <li>Health:</li>
+            <li>Start to regenerate in:</li>
+            <li>Regeneration speed:</li>
+            <li>Regenerate upto:</li>
+        </ol>
+    </div>
+    </div>
+
+    
 
   </div>
 
