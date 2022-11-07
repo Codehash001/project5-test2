@@ -87,7 +87,7 @@ function Game () {
                     on an industrial welder, and the force of the blast (and the subsequent beam that hit him square in the chest) knocked
                     him back, pushing against the welder and searing off half of his face and giving him third degree burns everywhere.  
                     </h1>
-                    <img src='/characters/Peter.png' className='w-[250px] h-[250px] border'/>
+                    <img src=  '/characters/Peter.png' className='w-[250px] h-[250px] border'/>
                 </div>
 
                 <div data-aos="fade-up" className=' md:flex-row flex flex-col justify-between mt-6'>
@@ -339,7 +339,7 @@ sort of homecoming.
                     After summoning all of them Dr.M.G. started to explain how they got their special powers and started to explain gently how that
 event has taken place. He heard everyone&apos;s stories. In the end, Dr.M.G. offered all of them to create a team or league. Since each
 one of them has got a chance to be a hero with special talents. They took some time to think but it did not last that long, since
-they already knew that they don't have anything to lose, not anymore.
+they already knew that they don&apos;t have anything to lose, not anymore.
 Dr.M.G. suggested to start their first fight in Dex sector, or what they have called it, Dex Battle. Overall, no one knows how
 Dr.M.G. got the leadership of this team easily. As his powers are still unknown until now. All of them thought that he just got
 some mind tricks and mind power. But they missed that Dr.M.G. was at the same place of the event and the 11 beams have hit him
