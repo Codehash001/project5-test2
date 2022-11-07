@@ -348,7 +348,7 @@ project ever. The Mutated weapon projects
                     </h1>
                 </div>
 
-                <div className='my-4'>
+                <div className='my-6'>
                     <button className=' border border-blue-200 text-center text-[20px] text-blue-200 font-Kanit hover:bg-blue-400 hover:text-black hover:font-semibold px-4 py-2 rounded-full'>
                         Read more in Whitepaper
                     </button>
@@ -629,7 +629,7 @@ project ever. The Mutated weapon projects
 
     <div class="my-4 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">
-        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Dr.M.G.png" alt="" />
+        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/characters/Dr.M.G..png" alt="" />
       </div>
       <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
       <div class="absolute inset-0 flex translate-y-[80%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
