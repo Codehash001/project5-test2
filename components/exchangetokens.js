@@ -63,7 +63,7 @@ useEffect(() => {
   const addCurrentRate = () =>{
   setRateArrItems([...rateArrItems,{
     id:rateArrItems.length,
-    value:exchangeRate
+    value:
  }])
  console.log(rateArrItems)
   }
