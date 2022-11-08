@@ -7,7 +7,8 @@ import Link from 'next/link'
 import {
           doBuy,
           doSell,
-          doApprove } from '../ulits/interactex'
+          doApprove,
+        getExchangeRate } from '../ulits/interactex'
 
 export default function Exchange() {
 
@@ -16,6 +17,15 @@ export default function Exchange() {
   const [isMinting, setIsMinting] = useState(false)
   const [onboard, setOnboard] = useState(null)
   const [walletAddress, setWalletAddress] = useState('')
+  const [exchangeRate, setExchangeRate] = useState(0)
+
+
+  useEffect ( () => {
+    const init = async () => {
+      setExchangeRate(await(getExchangeRate))
+    }
+    init()
+  }, [])
  
 
   useEffect( () => {
@@ -48,6 +58,16 @@ useEffect(() => {
     }
   }
 
+  const [rateArrItems , setRateArrItems] = useState([])
+
+  const addCurrentRate = () =>{
+  setRateArrItems([...rateArrItems,{
+    id:rateArrItems.length,
+    value:exchangeRate
+ }])
+ console.log(rateArrItems)
+  }
+
   const doBuyHandler = async () => {
     setIsMinting(true)
     const payableAmount = payAmount
@@ -68,6 +88,8 @@ useEffect(() => {
 
     setIsMinting(false)
   }
+
+
 
   const [exchangeAmount, setExchangeAmount] = useState(0)
 
@@ -143,7 +165,7 @@ return(
                   </div>
                   <div class="flex items-center justify-between">
                    {walletAddress ? ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline" type="button"
-                   onClick={toggleState === 1 ? doBuyHandler : doSellHandler}>
+                   onClick={toggleState === 1 ? doBuyHandler && addCurrentRate : doSellHandler && addCurrentRate}>
                       { toggleState === 1 ? "Buy DEX coins" : "Sell Dex Coins"}
                     </button> ) : ( <button className="w-full bg-bl4ue-00 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
                     onClick={connectWalletHandler}>
@@ -153,6 +175,8 @@ return(
               
                     
                   </div>
+
+
 
                 </form>
                 

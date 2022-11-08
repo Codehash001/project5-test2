@@ -141,5 +141,11 @@ export const getTokenBalance = async () => {
             status: '😞 Smth went wrong:' + error.message
           }
         }
-      
+        }
+
+        //Get exchange rate
+
+        export const getExchangeRate = async () => {
+          const exchangeRate = await exchangeContract.methods.rate().call()
+          return exchangeRate
         }

@@ -4,9 +4,9 @@ const RPC_URL = process.env.NEXT_PUBLIC_URL
 const config = {
   title: 'test dapp',
   description: 'test minting Dapp',
-  tokenContract: '0x7F6475d42dF004513608a853ba57613cD875c5C8',
-  nftContract: '0x0213041D9485C14FE65B8Db77A88FdF6851881f6',
-  exchangeContract: '0xA4ED03cA4baA2D4fe809A39d6CA295CabD554d9A',
+  tokenContract: '0xbEe4e388d0856Bfd401eb9909B93a4f8F068d947',
+  nftContract: '0x5FF55aa5eA845C8Dda7C8dBE9bD1ae8f1def1d1C',
+  exchangeContract: '0x67D952dB0267cD0b3FAE12D5FbB5b127AE7ac8e8',
   maxMintAmount: 3,
   WlMaxMintAmount: 2,
   maxPublicForWhitelisted : 5,
