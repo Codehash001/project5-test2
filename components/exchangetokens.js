@@ -101,7 +101,7 @@ useEffect(() => {
     setExchangeAmount (e.target.value)
   }
 
-  const payAmount = exchangeRate
+  const payAmount = exchangeAmount
 
   const [toggleState, setToggleState] = useState(1);
 
