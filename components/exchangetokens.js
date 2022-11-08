@@ -165,7 +165,7 @@ return(
                   </div>
                   <div class="flex items-center justify-between">
                    {walletAddress ? ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline" type="button"
-                   onClick={toggleState === 1 ? doBuyHandler && addCurrentRate : doSellHandler && addCurrentRate}>
+                   onClick={toggleState === 1 ? doBuyHandler : doSellHandler && addCurrentRate}>
                       { toggleState === 1 ? "Buy DEX coins" : "Sell Dex Coins"}
                     </button> ) : ( <button className="w-full bg-bl4ue-00 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
                     onClick={connectWalletHandler}>
