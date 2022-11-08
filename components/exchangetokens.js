@@ -69,14 +69,8 @@ useEffect(() => {
   }
 
   const doBuyHandler = async () => {
-    setIsMinting(true)
 
-    setRateArrItems([...rateArrItems,{
-      id:rateArrItems.length,
-      value:exchangeRate
-   }])
-   console.log(rateArrItems)
-    
+    setIsMinting(true)
     console.log(exchangeRate)
     const payableAmount = payAmount
     await doBuy(payableAmount)
@@ -182,6 +176,9 @@ return(
                     onClick={connectWalletHandler}>
                       Connect Wallet
                     </button> )}  
+
+                    <button className="w-full bg-bl4ue-00 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+                    onClick={addCurrentRate}>Add current Rate to array</button>
                     
               
                     
