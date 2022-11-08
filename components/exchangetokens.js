@@ -108,19 +108,19 @@ return(
 
             </div>
 
-            <div className='flex flex-col items-center mx-8 my-4 bg-[#D9CCCC] rounded-md'>
-            <div className='flex flex-col items-center mx-6'>
-                <h1 className=' my-4 font-Kanit text-[22px] text-gray-700 '>{walletAddress
+            <div className='flex flex-col items-center mx-8 my-4 bg-[#D9CCCC] rounded-md py-4'>
+            <div className='flex flex-col items-center mx-6 '>
+                <h1 className=' mb-4 font-Kanit text-[22px] text-gray-700 '>{walletAddress
                 ? walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)
                 : 'CONNECT YOUR WALLET'}</h1>
 
-                <div className='w-full max-w-xs bg-[#8e8eec] rounded-md border pb-4'>
+                <div className='w-full max-w-xs bg-[#afaff8] rounded-md border pb-4'>
                 <div className='w-full h-full flex justify-between border border-gray-400'>
-                        <button className={toggleState === 1? ' bg-[#8e8eec] text-black text-[18px] font-Kanit py-2 w-full  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        <button className={toggleState === 1? ' bg-[#afaff8] text-black text-[18px] font-Kanit py-2 w-full  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(1)}>
                         BUY </button>
 
-                        <button className={toggleState === 2 ? 'bg-[#8e8eec] text-black text-[18px] font-Kanit py-2 px-auto w-full border-b-4 border-black' : "bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        <button className={toggleState === 2 ? 'bg-[#afaff8] text-black text-[18px] font-Kanit py-2 px-auto w-full border-b-4 border-black' : "bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(2)}>
                         SELL </button>
                     </div> 
@@ -134,7 +134,7 @@ return(
                     <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="dexBalance" type="number" value={exchangeAmount} onChange={handler}/>
                   </div>
                   <div class="my-4">
-                    <h1 class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                    <h1 class="block text-gray-700 text-sm font-bold mb-2" >
                       Balance
                     </h1>
                     
