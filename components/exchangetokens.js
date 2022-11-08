@@ -71,7 +71,8 @@ useEffect(() => {
   const doBuyHandler = async () => {
     setIsMinting(true)
     const payableAmount = payAmount
-    await doBuy(payableAmount) 
+    await doBuy(payableAmount)
+    addCurrentRate 
 
    
 
@@ -83,6 +84,7 @@ useEffect(() => {
     const tokenAmountToSell = BigInt(exchangeAmount*10**18)
     await doApprove(tokenAmountToSell)
     await doSell(tokenAmountToSell) 
+    addCurrentRate
 
    
 
@@ -97,7 +99,7 @@ useEffect(() => {
     setExchangeAmount (e.target.value)
   }
 
-  const payAmount = (exchangeAmount/config.exchangeRate)
+  const payAmount = (exchangeAmount/exchangeRate)
 
   const [toggleState, setToggleState] = useState(1);
 
@@ -165,7 +167,7 @@ return(
                   </div>
                   <div class="flex items-center justify-between">
                    {walletAddress ? ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline" type="button"
-                   onClick={toggleState === 1 ? doBuyHandler : doSellHandler && addCurrentRate}>
+                   onClick={toggleState === 1 ? doBuyHandler : doSellHandler }>
                       { toggleState === 1 ? "Buy DEX coins" : "Sell Dex Coins"}
                     </button> ) : ( <button className="w-full bg-bl4ue-00 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
                     onClick={connectWalletHandler}>
