@@ -63,7 +63,7 @@ useEffect(() => {
   const addCurrentRate = () =>{
   setRateArrItems([...rateArrItems,{
     id:rateArrItems.length,
-    value:
+    value:exchangeRate
  }])
  console.log(rateArrItems)
   }
@@ -101,7 +101,7 @@ useEffect(() => {
     setExchangeAmount (e.target.value)
   }
 
-  const payAmount = exchangeAmount
+  const payAmount = exchangeRate
 
   const [toggleState, setToggleState] = useState(1);
 
