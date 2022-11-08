@@ -70,6 +70,7 @@ useEffect(() => {
 
   const doBuyHandler = async () => {
     setIsMinting(true)
+    consloe.log(exchangeRate)
     const payableAmount = payAmount
     await doBuy(payableAmount)
     addCurrentRate 
@@ -77,7 +78,7 @@ useEffect(() => {
    
 
     setIsMinting(false)
-    consloe.log(exchangeRate)
+    
   }
 
   const doSellHandler = async () => {
