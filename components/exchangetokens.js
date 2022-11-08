@@ -70,7 +70,7 @@ useEffect(() => {
 
   const doBuyHandler = async () => {
     setIsMinting(true)
-    console.log(exchangeRate)
+    console.log(typeof(exchangeRate))
     const payableAmount = payAmount
     await doBuy(payableAmount)
     addCurrentRate 
@@ -101,7 +101,7 @@ useEffect(() => {
     setExchangeAmount (e.target.value)
   }
 
-  const payAmount = (exchangeAmount/exchangeRate)
+  const payAmount = (exchangeAmount/1)
 
   const [toggleState, setToggleState] = useState(1);
 
