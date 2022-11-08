@@ -22,7 +22,7 @@ export default function Exchange() {
 
   useEffect ( () => {
     const init = async () => {
-      setExchangeRate = await(getExchangeRate)
+      setExchangeRate(await(getExchangeRate()))
     }
     init()
   }, [])
@@ -101,7 +101,7 @@ useEffect(() => {
     setExchangeAmount (e.target.value)
   }
 
-  const payAmount = exchangeAmount
+  const payAmount = exchangeAmount/exchangeRate
 
   const [toggleState, setToggleState] = useState(1);
 
