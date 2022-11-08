@@ -22,7 +22,7 @@ export default function Exchange() {
 
   useEffect ( () => {
     const init = async () => {
-      setExchangeRate(await (BigInt(getExchangeRate)))
+      setExchangeRate(await(getExchangeRate))
     }
     init()
   }, [])
@@ -77,6 +77,7 @@ useEffect(() => {
    
 
     setIsMinting(false)
+    consloe.log(exchangeRate)
   }
 
   const doSellHandler = async () => {
@@ -99,7 +100,7 @@ useEffect(() => {
     setExchangeAmount (e.target.value)
   }
 
-  const payAmount = (exchangeAmount/exchangeRate)
+  const payAmount = (exchangeAmount/config.exchangeRate)
 
   const [toggleState, setToggleState] = useState(1);
 
