@@ -63,7 +63,7 @@ useEffect(() => {
   const addCurrentRate = () =>{
   setRateArrItems([...rateArrItems,{
     id:rateArrItems.length,
-    value:exchangeRate
+    value:1/exchangeRate
  }])
  console.log(rateArrItems)
   }
@@ -73,7 +73,11 @@ useEffect(() => {
     setIsMinting(true)
     console.log(exchangeRate)
     const payableAmount = payAmount
-    await doBuy(payableAmount)
+    const {success, status}= await doBuy(payableAmount)
+    setStatus({
+      success,
+      message: status
+    })
      
 
    
@@ -85,9 +89,15 @@ useEffect(() => {
   const doSellHandler = async () => {
     setIsMinting(true)
     const tokenAmountToSell = BigInt(exchangeAmount*10**18)
-    await doApprove(tokenAmountToSell)
-    await doSell(tokenAmountToSell) 
-    addCurrentRate
+    const {success} = await doApprove(tokenAmountToSell)
+    if (success) {
+    const {success, status}=await doSell(tokenAmountToSell)
+    setStatus({
+      success,
+      message: status
+    })
+  }
+    
 
    
 
@@ -127,7 +137,7 @@ return(
             </div>
 
             
-            <Link href='/mint'><button className="w-full bg-yellow-300 hover:bg-blue-700 text-black font-bold py-2 px-2 rounded-full my-4">
+            <Link href='/mint'><button className="w-full bg-yellow-300 hover:bg-blue-600 text-black font-bold py-2 px-6 rounded-full my-4">
                  Mint NFTs with Dex coin
           </button>
           </Link>
@@ -172,17 +182,23 @@ return(
                    {walletAddress ? ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline" type="button"
                    onClick={toggleState === 1 ? doBuyHandler : doSellHandler }>
                       { toggleState === 1 ? "Buy DEX coins" : "Sell Dex Coins"}
-                    </button> ) : ( <button className="w-full bg-bl4ue-00 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+                    </button> ) : ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
                     onClick={connectWalletHandler}>
                       Connect Wallet
                     </button> )}  
-
-                    <button className="w-full bg-bl4ue-00 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
-                    onClick={addCurrentRate}>Add current Rate to array</button>
-                    
-              
-                    
                   </div>
+
+                  {status && (
+              <div
+                className={`border ${
+                  status.success ? 'border-green-500 text-white' : 'border-red-600 text-gray-400'
+                } rounded-md text-start h-full px-4 py-4 w-full mx-auto mt-8 md:mt-4"`}
+              >
+                <p className="flex flex-col space-y-2 text-sm md:text-base break-words ...">
+                  {status.message}
+                </p>
+              </div>
+            )}
 
 
 

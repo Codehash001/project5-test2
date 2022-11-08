@@ -91,7 +91,7 @@ export const getTokenBalance = async () => {
         success: true,
         status: (
           <a href={`https://testnet.bscscan.com/tx/${txHash}`} target="_blank">
-            <p>✅ Check out your transaction on Etherscan:</p>
+            <p>✅ Check out your transaction on BscScan:</p>
             <p>{`https://testnet.bscscan.com/tx/${txHash}`}</p>
           </a>
         )
@@ -130,9 +130,9 @@ export const getTokenBalance = async () => {
             success: true,
             status: (
               <a href={`https://testnet.bscscan.com/tx/${txHash}`} target="_blank">
-                <p>✅ Check out your transaction on Etherscan:</p>
-                <p>{`https://testnet.bscscan.com/tx/${txHash}`}</p>
-              </a>
+            <p>✅ Check out your transaction on BscScan:</p>
+            <p>{`https://testnet.bscscan.com/tx/${txHash}`}</p>
+          </a>
             )
           }
         } catch (error) {
