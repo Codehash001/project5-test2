@@ -70,6 +70,7 @@ useEffect(() => {
 
   const doBuyHandler = async () => {
     setIsMinting(true)
+    console.log(rateArrItems)
     console.log(exchangeRate)
     const payableAmount = payAmount
     await doBuy(payableAmount)
