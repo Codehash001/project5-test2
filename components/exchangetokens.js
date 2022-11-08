@@ -22,7 +22,7 @@ export default function Exchange() {
 
   useEffect ( () => {
     const init = async () => {
-      setExchangeRate(await(getExchangeRate))
+      setExchangeRate = await(getExchangeRate)
     }
     init()
   }, [])
