@@ -125,7 +125,7 @@ return(
 
           <div className="w-full h-full flex flex-col items-center justify-center py-2">
             <img src='/bg2.jpg'
-            className='inset-auto block w-full min-h-screen object-cover'/>
+            className='inset-auto block w-full max-h-screen object-cover'/>
 
           </div>
 
