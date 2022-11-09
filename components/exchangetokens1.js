@@ -122,7 +122,7 @@ useEffect(() => {
    }
 
 return(
-        <div className="relative min-h-screen h-full w-full overflow-hidden flex flex-col items-center justify-center bg-gradient-to-br from-[#141414] to-[#330042]">
+        <div className="relative min-h-screen h-full w-full overflow-hidden flex flex-col justify-center bg-gradient-to-br from-[#141414] to-[#330042]">
 
             <div className="w-full h-full flex flex-col items-start justify-center py-2">
               <Navbar/>
