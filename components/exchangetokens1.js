@@ -3,6 +3,7 @@ import { useState,useEffect } from "react"
 import { initOnboard } from "../ulits/onboard"
 import { config } from '../dapp.config'
 import Link from 'next/link'
+import Navbar from '../components/Navbar';
 
 import {
           doBuy,
@@ -123,11 +124,9 @@ useEffect(() => {
 return(
         <div className="max-h-screen h-full w-full overflow-hidden flex flex-col items-center justify-center bg-gradient-to-br from-[#141414] to-[#330042]">
 
-          <div className="w-full h-full flex flex-col items-center justify-center py-2">
-            <img src='/bg2.jpg'
-            className='inset-auto block w-full max-h-screen object-cover'/>
-
-          </div>
+            <div className="relative w-full h-full flex flex-col items-center justify-center py-2">
+              <Navbar/>
+            </div>
 
         </div>
     )}
