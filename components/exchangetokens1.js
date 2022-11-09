@@ -121,7 +121,7 @@ useEffect(() => {
    }
 
 return(
-        <div className="min-h-screen h-full w-full overflow-hidden flex flex-col items-center justify-center bg-gradient-to-br from-[#141414] to-[#330042]">
+        <div className="max-h-screen h-full w-full overflow-hidden flex flex-col items-center justify-center bg-gradient-to-br from-[#141414] to-[#330042]">
 
           <div className="w-full h-full flex flex-col items-center justify-center py-2">
             <img src='/bg2.jpg'
