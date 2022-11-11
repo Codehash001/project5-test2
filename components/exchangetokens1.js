@@ -127,7 +127,7 @@ return(
             <div className="w-full h-full flex flex-col items-start justify-center py-2">
               <Navbar/>
 
-              <div className="flex flex-col items-center justify-center h-full w-full px-2 md:px-10">
+              <div className="flex flex-col items-center justify-center h-full w-full px-2 md:px-10 mx-11">
 
                 <div className="md:max-w-3xl w-full bg-black/75 filter  py-4 rounded-md px-2 md:px-10 flex flex-col items-center
             bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
@@ -145,9 +145,8 @@ return(
                   className="object-cover w-full mt-auto mb-0 sm:h-[280px] md:w-[250px] rounded-md border border-gray-100"
                 />
                 {/*form*/}
-                <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-0 ">
-
-                <div className='flex flex-col items-center mx-6 '>
+                <div className='flex flex-col items-center mx-8 my-4 bg-[#D9CCCC] rounded-md py-4'>
+            <div className='flex flex-col items-center mx-6 '>
                 <h1 className=' mb-4 font-Kanit text-[22px] text-gray-700 '>{walletAddress
                 ? walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)
                 : 'CONNECT YOUR WALLET'}</h1>
@@ -207,8 +206,7 @@ return(
                 
               </div>
             </div>
-
-                </div>
+            </div>
 
                 </div>
 
