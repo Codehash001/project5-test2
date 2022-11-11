@@ -152,11 +152,6 @@ return(
                 className='object-cover'/>
             </div>
 
-            
-            <Link href='/mint'><button className="w-full bg-yellow-300 hover:bg-blue-600 text-black font-bold py-2 px-6 rounded-full my-4">
-                 Mint NFTs with Dex coin
-          </button>
-          </Link>
            
 
             </div>
