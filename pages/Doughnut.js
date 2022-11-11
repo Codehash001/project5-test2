@@ -1,4 +1,4 @@
-import ChartComponent from "./ChartComponent";
+import ChartComponent from "../components/ChartComponent";
 
 export default function Donutchart() {
   const data = [
