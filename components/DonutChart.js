@@ -1,4 +1,4 @@
-import ReactApexChart from 'react-apexcharts';
+import Chart from 'react-apexcharts';
 import react from 'react';
 
 class ApexChart extends React.Component {
@@ -57,7 +57,7 @@ class ApexChart extends React.Component {
         
 
   <div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="donut" width={380} />
+<Chart options={this.state.options} series={this.state.series} type="donut" width={380} />
 </div>
 
 
