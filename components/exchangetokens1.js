@@ -126,6 +126,96 @@ return(
 
             <div className="w-full h-full flex flex-col items-start justify-center py-2">
               <Navbar/>
+
+              <div className="flex flex-col items-center justify-center h-full w-full px-2 md:px-10">
+
+                <div className="md:max-w-3xl w-full bg-black/75 filter  py-4 rounded-md px-2 md:px-10 flex flex-col items-center
+            bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
+                
+                {/*Haeding*/}
+                <h1 className="tracking-wide font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-4 border-2 border-blue-300 p-3 rounded-md">
+                  Instant Dex Coin Exchange
+                  <span className='text-[28px]'>Swap your dex coin with BNB</span>
+                </h1>
+
+                {/*main content*/}
+                <div className="flex flex-col md:flex-row md:space-x-14 w-full mt-10 md:mt-14">
+                <img
+                src="/dexcoin.png"
+                  className="object-cover w-full mt-auto mb-0 sm:h-[280px] md:w-[250px] rounded-md border border-gray-100"
+                />
+                {/*form*/}
+                <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-0 ">
+
+                <div className='flex flex-col items-center mx-6 '>
+                <h1 className=' mb-4 font-Kanit text-[22px] text-gray-700 '>{walletAddress
+                ? walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)
+                : 'CONNECT YOUR WALLET'}</h1>
+
+                <div className='w-full max-w-xs bg-[#afaff8] rounded-md border pb-4'>
+                <div className='w-full h-full flex justify-between border border-gray-400'>
+                        <button className={toggleState === 1? ' bg-[#afaff8] text-black text-[18px] font-Kanit py-2 w-full  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        onClick={() => toggleTab(1)}>
+                        BUY </button>
+
+                        <button className={toggleState === 2 ? 'bg-[#afaff8] text-black text-[18px] font-Kanit py-2 px-auto w-full border-b-4 border-black' : "bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        onClick={() => toggleTab(2)}>
+                        SELL </button>
+                    </div> 
+
+                <form class="mx-6">
+                  <div class="my-4">
+                 
+                    <h1 class="block text-gray-700 text-sm font-bold mb-2">
+                      Balance
+                    </h1>
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="dexBalance" type="number" value={exchangeAmount} onChange={handler}/>
+                  </div>
+                  <div class="my-4">
+                    <h1 class="block text-gray-700 text-sm font-bold mb-2" >
+                      Balance
+                    </h1>
+                    
+                    
+                    <div className='shadow appearance-none border bg- rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline'> {payAmount}</div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                   {walletAddress ? ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline" type="button"
+                   onClick={toggleState === 1 ? doBuyHandler : doSellHandler }>
+                      { toggleState === 1 ? "Buy DEX coins" : "Sell Dex Coins"}
+                    </button> ) : ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+                    onClick={connectWalletHandler}>
+                      Connect Wallet
+                    </button> )}  
+                  </div>
+
+                  {status && (
+              <div
+                className={`border ${
+                  status.success ? 'border-green-500 text-white' : 'border-red-600 text-gray-400'
+                } rounded-md text-start h-full px-4 py-4 w-full mx-auto mt-8 md:mt-4"`}
+              >
+                <p className="flex flex-col space-y-2 text-sm md:text-base break-words ...">
+                  {status.message}
+                </p>
+              </div>
+            )}
+
+
+
+                </form>
+                
+              </div>
+            </div>
+
+                </div>
+
+                </div>
+
+                </div>
+
+              </div>
+
             </div>
 
         </div>
