@@ -1,6 +1,7 @@
 import {Doughnut} from 'react-chartjs-2';
 
-function DoughnutChart() {
+function DoughnutChart() 
+{
 
     const data = {
         labels: ['Mon','Tue','Wed','Thurs','Fri'],

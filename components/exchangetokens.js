@@ -3,7 +3,7 @@ import { useState,useEffect } from "react"
 import { initOnboard } from "../ulits/onboard"
 import { config } from '../dapp.config'
 import Link from 'next/link'
-import DoughnutChart from './components/Doughnut'
+import DoughnutChart from './components/doughnut'
 
 import {
           doBuy,
