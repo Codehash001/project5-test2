@@ -133,7 +133,7 @@ return(
         <div className="relative w-full h-full flex flex-col items-center justify-center py-2">
 
           <div className="flex flex-col items-center justify-center h-full w-full px-2 md:px-10">
-	   <div className="z-1 md:max-w-3xl w-full bg-black/75 filter  py-4 rounded-md px-2 md:px-10 flex flex-col items-center
+	   <div className="z-1 md:max-w-5xl w-full bg-black/75 filter  py-4 rounded-md px-2 md:px-10 flex flex-col items-center
             bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
   
 	    <h1 className="tracking-wide font-Righteous uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-4 border-2 border-blue-300 p-3 rounded-md">
