@@ -6,11 +6,15 @@ import Link from 'next/link'
 import ChartComponent from "../components/ChartComponent";
 
   const data = [
-    { value: 40 },
-    { value: 25 },
-    { value: 15 },
-    { value: 8 },
-    { value: 2 }
+	{ value: 30 },
+	{ value: 22 },
+	{ value: 5 },
+	{ value: 11 },
+	{ value: 7 },
+	{ value: 4 },
+	{ value: 6 },
+	{ value: 5 },
+	{ value: 10 }
   ];
 
 

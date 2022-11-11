@@ -25,6 +25,19 @@ const drawChart = (element, data) => {
     .append("path")
     .attr("d", arcGenerator)
     .style("fill", (d, i) => colors[i % data.length]);
-};
+
+
+arcs
+    .append("text")
+    .attr("text-anchor", "middle")
+    .text((d) => `${d.data.value}%`)
+    .style("fill", "#fff")
+    .stytle("font-size", "16px")
+    .atr("transform", (d)=> {
+      const[x,y]=arcGenerator.centroid(d);
+      return `translate(${x}, ${y})`;
+    });
+    
+  };
 
 export default drawChart;
