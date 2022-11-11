@@ -125,7 +125,7 @@ return(
         <div className="relative min-h-screen h-full w-full overflow-hidden flex flex-col  bg-gradient-to-br from-[#141414] to-[#330042]">
 
             <div className="w-full h-full flex flex-col items-start justify-center py-2">
-              <Navbar/>
+              
 
               <div className="flex flex-col items-center justify-center h-full w-full px-2 md:px-10 mx-11">
 
@@ -134,7 +134,7 @@ return(
                 
                 {/*Haeding*/}
                 <h1 className="tracking-wide font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-4 border-2 border-blue-300 p-3 rounded-md">
-                  Instant Dex Coin Exchange
+                  Instant Dex Coin Exchange <br/>
                   <span className='text-[28px]'>Swap your dex coin with BNB</span>
                 </h1>
 
