@@ -148,8 +148,10 @@ return(
             </div>
                 
 
-                {/* form */}
+                
+                {/* Increment and decrement */}
 
+                <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-0 ">
                 <div className='flex flex-col items-center mx-8 my-4 bg-[#D9CCCC] rounded-md py-4'>
             <div className='flex flex-col items-center mx-6 '>
                 <h1 className=' mb-4 font-Kanit text-[22px] text-gray-700 '>{walletAddress
@@ -212,6 +214,7 @@ return(
               </div>
             </div>
             </div>
+                </div>
               </div>
 
               {/*Status*/}
