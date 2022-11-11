@@ -126,9 +126,9 @@ return(
 <h1 className="tracking-wide font-Righteous uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-4  p-3 ">
             Instant Dex coin Exchange</h1>
 
-        <div className=' flex flex-row items-center justify-between border'>
+        <div className='relative flex flex-row items-center justify-between border'>
           <img src='/bg2.jpg'
-          className='object-cover w-full h-full'/>
+          className='absolute inset-auto block object-cover'/>
 
             <div className='flex flex-col items-center mx-8 my-4'>
 
