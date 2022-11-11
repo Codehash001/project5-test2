@@ -3,6 +3,7 @@ import { useState,useEffect } from "react"
 import { initOnboard } from "../ulits/onboard"
 import { config } from '../dapp.config'
 import Link from 'next/link'
+import DoughnutChart from './components/Doughnut'
 
 import {
           doBuy,
@@ -133,8 +134,7 @@ return(
             <div className='flex flex-col items-center mx-8 my-4'>
 
             <div className=' w-[300px] h-[300px] my-4'>
-                <img src='/dexcoin.jpeg'
-                className='object-cover'/>
+            <DoughnutChart />
             </div>
 
             
