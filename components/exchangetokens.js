@@ -121,15 +121,14 @@ useEffect(() => {
    }
 
 return(
-        <div className='max-w-screen  flex flex-col items-center justify-center overflow-hidden'>
+        <div className='max-w-screen  flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-[#141414] to-[#330042]'>
 
-        <h1 className='mt-10 font-Kanit text-[40px] text-white tracking-wide uppercase'> Instant dex coin exchange </h1>
+<h1 className="tracking-wide font-Righteous uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-4  p-3 ">
+            Instant Dex coin Exchange</h1>
 
         <div className=' flex flex-row items-center justify-between'>
 
             <div className='flex flex-col items-center mx-8 my-4'>
-
-            <h1 className='font-Kanit text-[36px] text-gray-400 tracking-wide '>Swap your BNB with DEX coin</h1>
 
             <div className=' w-[300px] h-[300px] my-4'>
                 <img src='/dexcoin.jpeg'
@@ -145,19 +144,19 @@ return(
 
             </div>
 
-            <div className='flex flex-col items-center mx-8 my-4 bg-[#D9CCCC] rounded-md py-4'>
+            <div className='flex flex-col items-center mx-8 my-4 backdrop-blur-md bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150 bg-black/75 filter"] rounded-md py-4'>
             <div className='flex flex-col items-center mx-6 '>
                 <h1 className=' mb-4 font-Kanit text-[22px] text-gray-700 '>{walletAddress
                 ? walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)
                 : 'CONNECT YOUR WALLET'}</h1>
 
-                <div className='w-full max-w-xs bg-[#afaff8] rounded-md border pb-4'>
+                <div className='w-full max-w-xs bg-[#D9CCCC] rounded-md border pb-4'>
                 <div className='w-full h-full flex justify-between border border-gray-400'>
-                        <button className={toggleState === 1? ' bg-[#afaff8] text-black text-[18px] font-Kanit py-2 w-full  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        <button className={toggleState === 1? ' bg-[#D9CCCC] text-black text-[18px] font-Kanit py-2 w-full  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(1)}>
                         BUY </button>
 
-                        <button className={toggleState === 2 ? 'bg-[#afaff8] text-black text-[18px] font-Kanit py-2 px-auto w-full border-b-4 border-black' : "bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        <button className={toggleState === 2 ? 'bg-[#D9CCCC] text-black text-[18px] font-Kanit py-2 px-auto w-full border-b-4 border-black' : "bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(2)}>
                         SELL </button>
                     </div> 
