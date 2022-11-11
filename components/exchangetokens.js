@@ -127,6 +127,8 @@ return(
             Instant Dex coin Exchange</h1>
 
         <div className=' flex flex-row items-center justify-between border'>
+          <img src='/bg2.jpg'
+          className='object-cover w-full h-full'/>
 
             <div className='flex flex-col items-center mx-8 my-4'>
 
