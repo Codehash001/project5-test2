@@ -139,13 +139,13 @@ return(
                 </h1>
 
                 {/*main content*/}
-                <h1 className='mt-10 font-Kanit text-[40px] text-white tracking-wide uppercase'> Instant dex coin exchange </h1>
+                
 
         <div className=' flex flex-row items-center justify-between'>
 
             <div className='flex flex-col items-center mx-8 my-4'>
 
-            <h1 className='font-Kanit text-[36px] text-gray-400 tracking-wide '>Swap your BNB with DEX coin</h1>
+            
 
             <div className=' w-[300px] h-[300px] my-4'>
                 <img src='/dexcoin.jpeg'
