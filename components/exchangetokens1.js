@@ -124,7 +124,7 @@ useEffect(() => {
 return(
         <div className="min-h-screen h-full w-full overflow-hidden flex flex-col bg-gradient-to-br from-[#141414] to-[#330042]">
 
-            <div className="w-full h-full flex flex-col items-center justify-center py-2">
+            
               
 
               <div className="flex flex-col items-center justify-center h-full w-full px-2 md:px-10 ">
@@ -226,7 +226,7 @@ return(
 
               </div>
 
-            </div>
+            
 
         </div>
     )}
