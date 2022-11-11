@@ -1,3 +1,6 @@
+import ReactApexChart from 'react-apexcharts';
+import react from 'react';
+
 class ApexChart extends React.Component {
     constructor(props) {
       super(props);
