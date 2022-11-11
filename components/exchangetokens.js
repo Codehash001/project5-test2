@@ -121,7 +121,7 @@ useEffect(() => {
    }
 
 return(
-        <div className='w-full h-full flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-[#141414] to-[#330042]'>
+        <div className='w-full min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-[#141414] to-[#330042]'>
 
 <h1 className="tracking-wide font-Righteous uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-4  p-3 ">
             Instant Dex coin Exchange</h1>
