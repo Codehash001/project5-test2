@@ -1,9 +1,17 @@
-import React from "react";
-import dynamic from "next/dynamic";
+import ChartComponent from "./ChartComponent";
 
+export default function Donutchart() {
+  const data = [
+    { value: 40 },
+    { value: 25 },
+    { value: 15 },
+    { value: 8 },
+    { value: 2 }
+  ];
 
-const Doughnut = dynamic (()=> import("../components/DonutChart"),{ssr:false});
-
-export default function test(){
-    return<Doughnut/>
+  return (
+    <div className="App">
+      <ChartComponent data={data} />
+    </div>
+  );
 }
