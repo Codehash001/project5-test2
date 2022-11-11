@@ -32,8 +32,8 @@ arcs
     .attr("text-anchor", "middle")
     .text((d) => `${d.data.value}%`)
     .style("fill", "#fff")
-    .stytle("font-size", "16px")
-    .atr("transform", (d)=> {
+    .style("font-size", "16px")
+    .attr("transform", (d)=> {
       const[x,y]=arcGenerator.centroid(d);
       return `translate(${x}, ${y})`;
     });
