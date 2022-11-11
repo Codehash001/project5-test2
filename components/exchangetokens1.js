@@ -139,13 +139,29 @@ return(
                 </h1>
 
                 {/*main content*/}
-                <div className="flex flex-col md:flex-row md:space-x-14 w-full mt-10 md:mt-14">
-                <img
-                src="/dexcoin.png"
-                  className="object-cover w-full mt-auto mb-0 sm:h-[280px] md:w-[250px] rounded-md border border-gray-100"
-                />
-                {/*form*/}
-                <div className='flex flex-col items-center mx-8 my-4 bg-[#D9CCCC] rounded-md py-4'>
+                <h1 className='mt-10 font-Kanit text-[40px] text-white tracking-wide uppercase'> Instant dex coin exchange </h1>
+
+        <div className=' flex flex-row items-center justify-between'>
+
+            <div className='flex flex-col items-center mx-8 my-4'>
+
+            <h1 className='font-Kanit text-[36px] text-gray-400 tracking-wide '>Swap your BNB with DEX coin</h1>
+
+            <div className=' w-[300px] h-[300px] my-4'>
+                <img src='/dexcoin.jpeg'
+                className='object-cover'/>
+            </div>
+
+            
+            <Link href='/mint'><button className="w-full bg-yellow-300 hover:bg-blue-600 text-black font-bold py-2 px-6 rounded-full my-4">
+                 Mint NFTs with Dex coin
+          </button>
+          </Link>
+           
+
+            </div>
+
+            <div className='flex flex-col items-center mx-8 my-4 bg-[#D9CCCC] rounded-md py-4'>
             <div className='flex flex-col items-center mx-6 '>
                 <h1 className=' mb-4 font-Kanit text-[22px] text-gray-700 '>{walletAddress
                 ? walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)
@@ -208,7 +224,8 @@ return(
             </div>
             </div>
 
-                </div>
+
+        </div>
 
                 </div>
 
