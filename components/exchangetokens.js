@@ -137,7 +137,7 @@ return(
             <div className='flex flex-col items-center mx-8 my-4'>
 
             <div className=' w-[300px] h-[300px] my-4'>
-            <Doughnut/>
+            
             </div>
 
             
