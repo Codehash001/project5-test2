@@ -121,7 +121,7 @@ useEffect(() => {
    }
 
 return(
-        <div className='max-w-screen  flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-[#141414] to-[#330042]'>
+        <div className='w-full h-full flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-[#141414] to-[#330042]'>
 
 <h1 className="tracking-wide font-Righteous uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-4  p-3 ">
             Instant Dex coin Exchange</h1>
@@ -144,7 +144,7 @@ return(
 
             </div>
 
-            <div className='flex flex-col items-center mx-8 my-4 backdrop-blur-md bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150 bg-black/75 filter"] rounded-md py-4'>
+            <div className='flex flex-col items-center mx-8 my-4 backdrop-blur-md bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150 bg-gray-600/55 filter"] rounded-md py-4'>
             <div className='flex flex-col items-center mx-6 '>
                 <h1 className=' mb-4 font-Kanit text-[22px] text-gray-700 '>{walletAddress
                 ? walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)
