@@ -16,7 +16,7 @@ const drawChart = (element, data) => {
     .append("g")
     .attr("transform", `translate(${boxSize / 2}, ${boxSize / 2})`);
 
-  const arcGenerator = d3.arc().innerRadius(0).outerRadius(250);
+ const arcGenerator = d3.arc().innerRadius(100).outerRadius(250);
 
   const pieGenerator = d3.pie().value((d) => d.value);
 

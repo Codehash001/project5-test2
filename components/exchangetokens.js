@@ -3,10 +3,18 @@ import { useState,useEffect } from "react"
 import { initOnboard } from "../ulits/onboard"
 import { config } from '../dapp.config'
 import Link from 'next/link'
-import dynamic from "next/dynamic";
+import ChartComponent from "../components/ChartComponent";
+
+  const data = [
+    { value: 40 },
+    { value: 25 },
+    { value: 15 },
+    { value: 8 },
+    { value: 2 }
+  ];
 
 
-const Doughnut = dynamic (()=> import("../components/doughnut"),{ssr:false});
+
 
 import {
           doBuy,
@@ -137,6 +145,7 @@ return(
             <div className='flex flex-col items-center mx-8 my-4'>
 
             <div className=' w-[300px] h-[300px] my-4'>
+		<ChartComponent data={data} />
             
             </div>
 
