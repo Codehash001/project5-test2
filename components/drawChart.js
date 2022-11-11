@@ -1,7 +1,7 @@
 import * as d3 from "d3";
 
 const drawChart = (element, data) => {
-  const colors = ["#05BBD2", "#2070C4", "#EB80F1", "#F5C842", "#37D400"];
+  const colors = ["#05BBD2", "#2070C4", "#EB80F1", "#F5C842", "#37D400", '#a5114e' , "#ffcc88" , "#7194ac", "#ef5524"];
   const boxSize = 500;
 
   d3.select(element).select("svg").remove(); // Remove the old svg
