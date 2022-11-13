@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import data from "./TemplateData.json";
+import data from "./TempleteData.json";
 
 function MintComponent() {
   const [searchTerm, setSearchTerm] = useState("");
