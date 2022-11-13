@@ -1,73 +1,318 @@
 [
     {
-        "id": 11,
-        "image": "/characters/Apollo.png",
+        "id": 101,
+        "image": "/wepons/Grenade.PNG",
         "title": "Apollo",
         "supply": 500 ,
         "tier": "Rare"
     },
     {
-        "id": 12,
-        "image": "/characters/Billy.png",
-        "title": "Billy",
+        "id": 102,
+        "image": "/wepons/Eagle.PNG",
+        "title": "Eagle",
         "supply": 400 ,
-        "tier": "Epic"
-    },
-    {
-        "id": 13,
-        "image": "/characters/Bishop.png",
-        "title": "Bishop",
-        "supply": 200 ,
-        "tier": "Common"
-    },
-
-    {
-        "id": 14,
-        "image": "/characters/Irona.png",
-        "title": "Irona",
-        "supply": 200 ,
-        "tier": "Legendary"
-    },
-
-    {
-        "id": 15,
-        "image": "/characters/Omega.png",
-        "title": "Omega",
-        "supply": 200 ,
-        "tier": "Common"
-    },
-
-    {
-        "id": 16,
-        "image": "/characters/Regen.png",
-        "title": "Regen",
-        "supply": 200 ,
         "tier": "Rare"
     },
+    {
+        "id": 103,
+        "image": "/wepons/Blade.PNG",
+        "title": "Blade",
+        "supply": 200 ,
+        "tier": "Common"
+    },
 
     {
-        "id": 17,
-        "image": "/characters/Ultron.png",
+        "id": 104,
+        "image": "/wepons/Molotov.PNG",
+        "title": "Molotov",
+        "supply": 200 ,
+        "tier": "Uncommon"
+    },
+
+    {
+        "id": 105,
+        "image": "/wepons/Fusion Launcher.PNG",
+        "title": "Fusion Launcher",
+        "supply": 200 ,
+        "tier": "Epic"
+    },
+
+    {
+        "id": 106,
+        "image": "/wepons/DEADBOLT.PNG",
+        "title": "DEADBOLT",
+        "supply": 200 ,
+        "tier": "Epic"
+    },
+
+    {
+        "id": 107,
+        "image": "/wepons/Ultron.PNG",
         "title": "Ultron",
         "supply": 200 ,
         "tier": "Uncommon"
     },
 
     {
-        "id": 18,
-        "image": "/characters/Vader.png",
-        "title": "Veder",
+        "id": 108,
+        "image": "/wepons/COAGULATOR.PNG",
+        "title": "COAGULATOR",
         "supply": 200 ,
         "tier": "Legendary"
     },
 
     {
-        "id": 19,
-        "image": "/characters/Alita.png",
-        "title": "Sniper",
+        "id": 109,
+        "image": "/wepons/FUSION.PNG",
+        "title": "FUSION",
+        "supply": 200 ,
+        "tier": "Rare"
+    },
+
+    {
+        "id": 110,
+        "image": "/wepons/Kalashnia.PNG",
+        "title": "Kalashnia",
+        "supply": 200 ,
+        "tier": "Rare"
+    },
+
+    {
+        "id": 111,
+        "image": "/wepons/NEUTRALIZER.PNG",
+        "title": "NEUTRALIZER",
+        "supply": 200 ,
+        "tier": "Uncommon"
+    },
+    
+
+    {
+        "id": 112,
+        "image": "/wepons/RAPIDO.PNG",
+        "title": "RAPIDO",
+        "supply": 200 ,
+        "tier": "Uncommon"
+    },
+    
+
+    {
+        "id": 113,
+        "image": "/wepons/Haywire.PNG",
+        "title": "Haywire",
+        "supply": 200 ,
+        "tier": "Rare"
+    },
+    
+
+    {
+        "id": 114,
+        "image": "/wepons/Tuco.PNG",
+        "title": "Tuco",
+        "supply": 200 ,
+        "tier": "Common"
+    },
+    
+
+    {
+        "id": 115,
+        "image": "/wepons/Tortuga.PNG",
+        "title": "Tortuga",
+        "supply": 200 ,
+        "tier": "Common"
+    },
+    
+
+    {
+        "id": 116,
+        "image": "/wepons/Activa.PNG",
+        "title": "Activa",
+        "supply": 200 ,
+        "tier": "Uncommon"
+    },
+    
+
+    {
+        "id": 117,
+        "image": "/wepons/Whisper.PNG",
+        "title": "Whisper",
+        "supply": 200 ,
+        "tier": "Rare"
+    },
+    
+
+    {
+        "id": 118,
+        "image": "/wepons/Shredder.PNG",
+        "title": "Shredder",
+        "supply": 200 ,
+        "tier": "Rare"
+    },
+    
+
+    {
+        "id": 119,
+        "image": "/wepons/Gusto.PNG",
+        "title": "Gusto",
+        "supply": 200 ,
+        "tier": "Rare"
+    },
+
+    {
+        "id": 120,
+        "image": "/wepons/Genesis.PNG",
+        "title": "Genesis",
+        "supply": 200 ,
+        "tier": "Epic"
+    },
+
+    {
+        "id": 121,
+        "image": "/wepons/Corporal.PNG",
+        "title": "Corporal",
+        "supply": 200 ,
+        "tier": "Rare"
+    },
+
+    {
+        "id": 122,
+        "image": "/wepons/FALCON.PNG",
+        "title": "FALCON",
         "supply": 200 ,
         "tier": "Legendary"
+    },
+
+    {
+        "id": 123,
+        "image": "/wepons/Deloria.PNG",
+        "title": "Deloria",
+        "supply": 200 ,
+        "tier": "Legendary"
+    },
+
+    {
+        "id": 124,
+        "image": "/wepons/RIPPER.PNG",
+        "title": "RIPPER",
+        "supply": 200 ,
+        "tier": "Legendary"
+    },
+
+    {
+        "id": 125,
+        "image": "/wepons/ANTI-MATTER.PNG",
+        "title": "ANTI-MATTER",
+        "supply": 200 ,
+        "tier": "Legendary"
+    },
+
+    {
+        "id": 126,
+        "image": "/wepons/BLAZE.PNG",
+        "title": "BLAZE",
+        "supply": 200 ,
+        "tier": "Rare"
+    },
+
+    {
+        "id": 127,
+        "image": "/wepons/LIGHTNING BLADE.PNG",
+        "title": "LIGHTNING BLADE",
+        "supply": 200 ,
+        "tier": "Epic"
+    },
+
+    {
+        "id": 128,
+        "image": "/wepons/All-Mighty.PNG",
+        "title": "All-Mighty",
+        "supply": 200 ,
+        "tier": "Legendary"
+    },
+
+    {
+        "id": 129,
+        "image": "/wepons/LAVA BLADE.PNG",
+        "title": "LAVA BLADE",
+        "supply": 200 ,
+        "tier": "Uncommon"
+    },
+
+    {
+        "id": 130,
+        "image": "/wepons/Phantom Blaster.PNG",
+        "title": "Phantom Blaster",
+        "supply": 200 ,
+        "tier": "Legendary"
+    },
+
+    {
+        "id": 131,
+        "image": "/wepons/Hate Executioner.PNG",
+        "title": "Hate Executioner",
+        "supply": 200 ,
+        "tier": "Legendary"
+    },
+
+    {
+        "id": 132,
+        "image": "/wepons/Extermination.PNG",
+        "title": "Extermination",
+        "supply": 200 ,
+        "tier": "Epic"
+    },
+
+    {
+        "id": 133,
+        "image": "/wepons/Proton.PNG",
+        "title": "Proton",
+        "supply": 200 ,
+        "tier": "Rare"
+    },
+
+    {
+        "id": 134,
+        "image": "/wepons/Ubiquity.PNG",
+        "title": "Ubiquity",
+        "supply": 200 ,
+        "tier": "Epic"
+    },
+
+    {
+        "id": 135,
+        "image": "/wepons/Justice.PNG",
+        "title": "Justice",
+        "supply": 200 ,
+        "tier": "Rare"
+    },
+
+    {
+        "id": 136,
+        "image": "/wepons/Turbine.PNG",
+        "title": "Turbine",
+        "supply": 200 ,
+        "tier": "Legendary"
+    },
+
+    {
+        "id": 137,
+        "image": "/wepons/Devourer.PNG",
+        "title": "Devourer",
+        "supply": 200 ,
+        "tier": "Legendary"
+    },
+
+    {
+        "id": 138,
+        "image": "/wepons/Tuco-X.PNG",
+        "title": "Tuco-X",
+        "supply": 200 ,
+        "tier": "Epic"
     }
+
+
+    
+    
+
 
     
 ]
