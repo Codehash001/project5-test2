@@ -124,163 +124,115 @@ useEffect(() => {
 
   return ( 
 
- 
-    <div className="min-h-screen h-full w-full overflow-hidden flex flex-col items-center justify-center bg-brand-background ">
-        <div className="relative w-full h-full flex flex-col items-center justify-center py-2">
-        <img
-	        src="/banner2.jpg"
-          className="absolute inset-auto block w-full min-h-screen object-cover"
-        />
-                <div className="flex flex-col items-center justify-center h-full w-full px-2 md:px-10">
-          <div className="z-1 md:max-w-3xl w-full bg-black/75 filter  py-4 rounded-md px-2 md:px-10 flex flex-col items-center
-            bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
-            <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-3">
-            {!walletAddress? 'Minting is Live' : paused ? 'Paused' : isWlMint  ? 'WhiteListed-Sale' : 'Public Sale'} </h1>
-
-            <h3 className="text-sm text-gray-100 tracking-widest">
-            {walletAddress
-                ? walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)
-                : ''}
-              
-            </h3>
-
-            <div className="flex flex-col md:flex-row md:space-x-14 w-full mt-10 md:mt-14">
-              <div className="relative w-full">
-                <div className="font-Kanit z-10 absolute top-2 left-2 opacity-80 filter backdrop-blur-lg text-base px-4 py-2 bg-black border border-brand-purple rounded-md flex items-center justify-center text-white font-semibold">
-                  <p>
-                    <span className="text-brand-05">{totalMinted}</span> /{' '} {maxSupply}
-                   
-                  </p>
-                </div>
-
-                <img
-                src="/dex.gif"
-                  className="object-cover w-full mt-auto mb-0 sm:h-[280px] md:w-[250px] rounded-md border border-gray-100"
-                />
-                </div>
-
-                {/* Increment and decrement */}
-
-                <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-0 ">
-                <div className="font-Kanit flex items-center justify-between w-full">
-                  <button
-                    className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-md"
-                    onClick={incrementMintAmount} >
-                   
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 md:h-8 md:w-8"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                      />
-                    </svg>
-                  </button>
-                  <p className="flex items-center justify-center flex-1 grow text-center font-bold text-brand-02 text-3xl md:text-4xl">
-                  {mintAmount}
-                  </p>
-                  <button
-                    className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-md"
-                    onClick={decrementMintAmount} >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 md:h-8 md:w-8"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M18 12H6"
-                      />
-                    </svg>
-                  </button> 
-                </div>  
-                <p className="text-sm text-gray-100 tracking-widest mt-5">
-                  Max Mint Amount Per Wallet: {paused ? '0' : isWlMint ? config.WlMaxMintAmount : config.maxMintAmount}
-                </p>
-
-                <div className="border-t border-b py-4 mt-9 w-full">
-                  <div className="w-full text-xl font-Kanit flex items-center justify-between text-yellow-300">
-                    <p>Total</p>
-
-                    <div className="flex items-center space-x-3">
-                    <p>
-                        {Number.parseFloat(paused ? '0.00' : isWlMint ? config.wlcost*(mintAmount) :  config.publicSalePrice*mintAmount)}{' '}
-                        DEX
-                      </p>{' '}
-                      <span className="text-yellow-300">+ GAS</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Mint Button && Connect Wallet Button */}
-                {walletAddress ? (
-                  <button
-                    className={` ${
-                      paused || isMinting 
-                        ? 'bg-gray-900 cursor-not-allowed'
-                        : 'bg-gradient-to-br from-brand-01 to-brand-02 shadow-lg border border-transparent hover:shadow-black/60'
-                    } font-Kanit mt-auto mb-0  w-full px-6 py-3 rounded-md text-2xl text-black  mx-4 tracking-wide uppercase border-violet-50`}
-                    disabled={paused || isMinting}
-                    onClick={isWlMint ? wlMintHandler :  publicMintHandler}
-                  >
-                    {isMinting ? 'Minting...' : 'Mint'}
-                  </button>
-                ) : (
-                  <button
-                    className='bg-gradient-to-br from-brand-01 to-brand-02 shadow-lg border border-transparent hover:shadow-black/60
-                     font-Kanit mt-auto mb-0  w-full px-6 py-3 rounded-md text-2xl text-black  mx-4 tracking-wide uppercase border-violet-50'
-                     onClick={connectWalletHandler}
-                     >
-                    Connect wallet
-                  </button> )}
-                </div>
-              </div>
-
-              {/*Status*/}
-        
-              {status && (
-              <div
-                className={`border ${
-                  status.success ? 'border-green-500 text-white' : 'border-red-600 text-red-700'
-                } rounded-md text-start h-full px-4 py-4 w-full mx-auto mt-8 md:mt-4"`}
-              >
-                <p className="flex flex-col space-y-2 text-sm md:text-base break-words ...">
-                  {status.message}
-                </p>
-              </div>
-            )}
-    
-                {/* Contract Address */}
-              
-            <div className="flex flex-col items-center mt-4 py-2 w-full">
-              <h3 className=" text-1xl text-white uppercase mt-2 font-normal">
-                Contract Address :  
-              
-                <a
-                href={`https://goerli.etherscan.io/address/${config.nftContract}#readContract`}
-                target="_blank"
- 		            rel="noreferrer"
-                className="text-white mt-4 font-normal"
-              >
-                <span className="break-all ...">{' '+ config.nftContract}</span>
-              </a>
-              </h3>
-            </div>
-            </div>
-            </div>
-  
+<div class="min-h-screen bg-gradient-to-tr from-red-300 to-yellow-200 flex justify-center items-center py-20">
+  <div class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0">
+    <div class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+      <h3 class="mb-3 text-xl font-bold text-indigo-600">Beginner Friendly</h3>
+      <div class="relative">
+        <img class="w-full rounded-xl" src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Colors" />
+        <p class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">FREE</p>
+      </div>
+      <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Javascript Bootcamp for Absolute Beginners</h1>
+      <div class="my-4">
+        <div class="flex space-x-1 items-center">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </span>
+          <p>1:34:23 Minutes</p>
+        </div>
+        <div class="flex space-x-1 items-center">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </span>
+          <p>3 Parts</p>
+        </div>
+        <div class="flex space-x-1 items-center">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+          </span>
+          <p>Vanilla JS</p>
+        </div>
+        <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Buy Lesson</button>
+      </div>
+    </div>
+    <div class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+      <h3 class="mb-3 text-xl font-bold text-indigo-600">Intermediate</h3>
+      <div class="relative">
+        <img class="w-full rounded-xl" src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" alt="Colors" />
+        <p class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">$12</p>
+        <p class="absolute top-0 right-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-tr-lg rounded-bl-lg">%20 Discount</p>
+      </div>
+      <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Write a Gatsby plugin using Typescript</h1>
+      <div class="my-4">
+        <div class="flex space-x-1 items-center">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </span>
+          <p>1:34:23 Minutes</p>
+        </div>
+        <div class="flex space-x-1 items-center">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </span>
+          <p>3 Parts</p>
+        </div>
+        <div class="flex space-x-1 items-center">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+          </span>
+          <p>TypeScript</p>
+        </div>
+        <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Start Watching Now</button>
+      </div>
+    </div>
+    <div class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+      <h3 class="mb-3 text-xl font-bold text-indigo-600">Beginner Friendly</h3>
+      <div class="relative">
+        <img class="w-full rounded-xl" src="https://images.unsplash.com/photo-1561835491-ed2567d96913?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" alt="Colors" />
+        <p class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">$50</p>
+      </div>
+      <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Advanced React Native for Sustainability</h1>
+      <div class="my-4">
+        <div class="flex space-x-1 items-center">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </span>
+          <p>1:34:23 Minutes</p>
+        </div>
+        <div class="flex space-x-1 items-center">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </span>
+          <p>3 Parts</p>
+        </div>
+        <div class="flex space-x-1 items-center">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+          </span>
+          <p>Vanilla JS</p>
+        </div>
+        <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Buy Lesson</button>
+      </div>
+    </div>
   </div>
-
 </div>
     
         )
