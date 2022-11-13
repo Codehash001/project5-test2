@@ -5,7 +5,7 @@ function MintComponent() {
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <>
-      <div class="min-h-screen bg-gradient-to-tr from-red-300 to-yellow-200 flex justify-center items-center py-20">
+      <div class="min-h-screen bg-gradient-to-tr from-red-300 to-yellow-200 flex justify-center items-center py-20 flex flex-col">
         <div className="w-full h-[60px] bg-white">
           <input id="searchInput" type="text" placeholder="Search here..." onChange={(event) => {
             setSearchTerm(event.target.value);
