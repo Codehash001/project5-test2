@@ -45,13 +45,6 @@
         "tier": "Epic"
     },
 
-    {
-        "id": 107,
-        "image": "/wepons/Ultron.PNG",
-        "title": "Ultron",
-        "supply": 200 ,
-        "tier": "Uncommon"
-    },
 
     {
         "id": 108,
@@ -239,7 +232,7 @@
 
     {
         "id": 130,
-        "image": "/wepons/Phantom Blaster.PNG",
+        "image": "/wepons/Phantom Blaster.png",
         "title": "Phantom Blaster",
         "supply": 200 ,
         "tier": "Legendary"
