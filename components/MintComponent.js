@@ -7,8 +7,9 @@ function MintComponent() {
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <>
-      <div class="min-h-screen bg-gradient-to-tr from-[#141414] to-[#330042] flex justify-center items-center py-10 flex flex-col">
-        <Navbar/>
+      <div class="min-h-screen bg-gradient-to-tr from-[#141414] to-[#330042] justify-center items-center py-10 flex flex-col overflow-hidden">
+        <div><Navbar/></div>
+        
       <form>   
     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
     <div class="relative">
