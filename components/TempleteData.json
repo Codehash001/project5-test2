@@ -3,18 +3,18 @@
         "id": 1,
         "image": "/characters/Regen.png",
         "title": "Regen",
-        "Supply": 500
+        "supply": 500
     },
     {
         "id": 2,
         "image": "/characters/Regen.png",
         "title": "Alita",
-        "Supply": 400
+        "supply": 400
     },
     {
         "id": 3,
         "image": "/characters/Regen.png",
         "title": "Billy",
-        "Supply": 200
+        "supply": 200
     }
 ]
