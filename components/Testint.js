@@ -125,7 +125,7 @@ useEffect(() => {
   return ( 
 
 <div class="min-h-screen bg-gradient-to-tr  from-[#141414] to-[#330042] flex justify-center items-center py-20 ">
-  <div class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-4 gap-5 space-y-4 md:space-y-2 space-x-2 md:mx-4 lg:mx-4">
+  <div class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-2 space-x-2 md:mx-4 lg:mx-4">
 
     <div class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
       <div class="relative">
