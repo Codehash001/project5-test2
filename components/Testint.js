@@ -124,10 +124,10 @@ useEffect(() => {
 
   return ( 
 
-<div class="min-h-screen bg-gradient-to-tr from-red-300 to-yellow-200 flex justify-center items-center py-20">
+<div class="min-h-screen bg-gradient-to-tr  from-[#141414] to-[#330042] flex justify-center items-center py-20">
   <div class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-4 gap-5 space-y-4 md:space-y-0">
 
-    <div class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+    <div class="max-w-sm bg-gray-300 px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
       <div class="relative">
         <img class="w-full rounded-xl" src="/characters/Regen.png" alt="Regan" />
         <p class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">Legendry</p>
