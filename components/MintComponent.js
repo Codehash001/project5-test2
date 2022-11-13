@@ -60,5 +60,44 @@ export default MintComponent;
             setSearchTerm(event.target.value);
           }} />
         </div> */}
+        
+// {
+    //     "id": 3,
+    //     "image": "/characters/Omega.png",
+    //     "title": "Omega",
+    //     "supply": 200 ,
+    //     "tier": "Common"
+    // },
 
+    // {
+    //     "id": 3,
+    //     "image": "/characters/Regen.png",
+    //     "title": "Regen",
+    //     "supply": 200 ,
+    //     "tier": "Rare"
+    // },
+
+    // {
+    //     "id": 3,
+    //     "image": "/characters/Ultron.png",
+    //     "title": "Ultron",
+    //     "supply": 200 ,
+    //     "tier": "Uncommon"
+    // },
+
+    // {
+    //     "id": 3,
+    //     "image": "/characters/Vader.png",
+    //     "title": "Veder",
+    //     "supply": 200 ,
+    //     "tier": "Legendary"
+    // },
+
+    // {
+    //     "id": 3,
+    //     "image": "/characters/Alita.png",
+    //     "title": "Alita",
+    //     "supply": 200 ,
+    //     "tier": "Legendary"
+    // }
 
