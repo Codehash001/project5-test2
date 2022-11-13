@@ -1,20 +1,71 @@
 [
     {
         "id": 1,
-        "image": "/characters/Regen.png",
-        "title": "Regen",
-        "supply": 500
+        "image": "/characters/Apollo.png",
+        "title": "Apollo",
+        "supply": 500 ,
+        "tier": "Rare"
     },
     {
         "id": 2,
-        "image": "/characters/Regen.png",
-        "title": "Alita",
-        "supply": 400
+        "image": "/characters/Billy.png",
+        "title": "Billy",
+        "supply": 400 ,
+        "tier": "Epic"
     },
     {
         "id": 3,
+        "image": "/characters/Bishop.png",
+        "title": "Bishop",
+        "supply": 200 ,
+        "tier": "Common"
+    },
+
+    {
+        "id": 3,
+        "image": "/characters/Irona.png",
+        "title": "Irona",
+        "supply": 200 ,
+        "tier": "Legendary"
+    },
+
+    {
+        "id": 3,
+        "image": "/characters/Omega.png",
+        "title": "Omega",
+        "supply": 200 ,
+        "tier": "Common"
+    },
+
+    {
+        "id": 3,
         "image": "/characters/Regen.png",
-        "title": "Billy",
-        "supply": 200
+        "title": "Regen",
+        "supply": 200 ,
+        "tier": "Rare"
+    },
+
+    {
+        "id": 3,
+        "image": "/characters/Ultron.png",
+        "title": "Ultron",
+        "supply": 200 ,
+        "tier": "Uncommon"
+    },
+
+    {
+        "id": 3,
+        "image": "/characters/Vader.png",
+        "title": "Veder",
+        "supply": 200 ,
+        "tier": "Legendary"
+    },
+
+    {
+        "id": 3,
+        "image": "/characters/Alita.png",
+        "title": "Alita",
+        "supply": 200 ,
+        "tier": "Legendary"
     }
 ]

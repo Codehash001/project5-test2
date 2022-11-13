@@ -19,7 +19,7 @@ function MintComponent() {
         </div>
         </form>
         
-      <div class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-4 gap-5 space-y-4 md:space-y-0 lg:mx-4">
+      <div class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-4 gap-5 space-y-4 md:space-y-0 lg:mx-4 my-4">
           {
             data 
               .filter((val) => {
