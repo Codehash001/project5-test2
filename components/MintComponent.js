@@ -42,6 +42,16 @@ export default function Mint(){
   const [onboard, setOnboard] = useState(null)
   const [walletAddress, setWalletAddress] = useState('')
 
+  const newDta = ChaData.map((val) => {
+    const id =(val.id)
+    async () => {setTotalMinted(await getTotalMinted(id))
+    }
+
+  //ChaData.map(id)
+
+
+  })
+
   useEffect(() => {
     const init = async () => {
       setMaxLeaderSupply(await getMaxLeaderSupply())
@@ -157,7 +167,7 @@ const TotalMinted = async (id) =>{
                           </p>
                       </div>
                       <div class="flex space-x-1 items-center">
-                        <p>Minted:{TotalMinted(val.id)}</p>
+                        <p>Minted:{totalMinted}</p>
                       </div>
                       <div class="flex space-x-1 items-center">
                         <p>Available:400</p>
