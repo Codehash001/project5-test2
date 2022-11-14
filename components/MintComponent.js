@@ -2,9 +2,127 @@ import React, {useState} from "react";
 import ChaData from "./CharacterData.json";
 import WepData from "./WeponData.json";
 import Navbar from '../components/Navbar';
+import { useState,useEffect } from "react"
+import { initOnboard } from "../ulits/onboard"
+import { config } from '../dapp.config'
+import {
+  getTotalMinted,
+  getMaxLeaderSupply,
+  getMaxLegendarySupply,
+  getMaxEpicSupply,
+  getMaxRareSupply,
+  getMaxUncommonSupply,
+  getMaxCommonSupply,
+  isPausedState,
+  doMint,
+  doApprove          } from '../ulits/interact'
 
-function MintComponent() {
-  const [searchTerm, setSearchTerm] = useState("");
+
+
+export default function Mint(){
+  const [searchTerm, setSearchTerm] = useState("")
+
+  const [maxLeaderSupply, setMaxLeaderSupply] = useState(0)
+  const [maxLegendarySupply, setMaxLegendarySupply] = useState(0)
+  const [maxEpicSupply, setMaxEpicSupply] = useState(0)
+  const [maxRareSupply, setMaxRareSupply] = useState(0)
+  const [maxUncommonSupply, setMaxUncommonSupply] = useState(0)
+  const [maxCommonSupply, setMaxCommonSupply] = useState(0)
+
+  const [totalMinted, setTotalMinted] = useState(0)
+  const [NumberMinted, setNumberMinted] = useState(0)
+  const [maxMintAmount, setMaxMintAmount] = useState(0)
+  const [paused, setPaused] = useState(false)
+  const [isPublicSale, setIsPublicSale] = useState(false)
+  const [isWlMint, setIsWlMint] = useState(false)
+  
+
+  const [status, setStatus] = useState(null)
+  const [mintAmount, setMintAmount] = useState(1)
+  const [isMinting, setIsMinting] = useState(false)
+  const [onboard, setOnboard] = useState(null)
+  const [walletAddress, setWalletAddress] = useState('')
+
+  useEffect(() => {
+    const init = async () => {
+      setMaxLeaderSupply(await getMaxLeaderSupply())
+      setMaxLegendarySupply(await getMaxLegendarySupply())
+      setMaxEpicSupply(await getMaxEpicSupply())
+      setMaxRareSupply(await getMaxRareSupply())
+      setMaxUncommonSupply(await getMaxUncommonSupply())
+      setMaxCommonSupply(await getMaxCommonSupply())
+
+      setTotalMinted(await getTotalMinted())
+      setNumberMinted (await getNumberMinted())
+
+      setPaused(await isPausedState())
+      setIsPublicSale(await isPublicSaleState())
+      const isWlMint = await isWlMintState()
+      setIsWlMint(isWlMint)
+      
+      setMaxMintAmount(
+        isWlMint ? config.WlMaxMintAmount : config.maxMintAmount
+      )
+      
+      
+    }
+
+    init()
+  }, [])
+  
+  useEffect( () => {
+    const onboardData = initOnboard( {
+      address: (address) => setWalletAddress(address ? address : ''),
+      wallet: (wallet) => {
+        if (wallet.provider) {
+          window.localStorage.setItem('selectedWallet', wallet.name)
+        } else {
+          window.localStorage.removeItem('selectedWallet') }}
+    }
+    )
+  setOnboard(onboardData)
+  }, [])
+
+  const previouslySelectedWallet = typeof window !== 'undefined' &&
+  window.localStorage.getItem('selectedWallet')
+
+useEffect(() => {
+  if (previouslySelectedWallet !== null && onboard) {
+    onboard.walletSelect(previouslySelectedWallet)
+  }
+}, [onboard, previouslySelectedWallet])
+
+  const connectWalletHandler = async () => {
+    const walletSelected = await onboard.walletSelect()
+    if (walletSelected) {
+      await onboard.walletCheck()
+      window.location.reload(false)
+    }
+  }
+
+
+   /* global Bigint */
+
+  const publicMintHandler = async () => {
+    setIsMinting(true)
+    const Amount = BigInt(config.rate * mintAmount)
+    const { success, status } = await doApprove(Amount) && await doPublicMint(mintAmount) 
+
+    setStatus({
+      success,
+      message: status
+    })
+
+    setIsMinting(false)
+  }
+
+  
+  setTotalMinted() = async (id) => {
+   await getTotalMinted(id)
+    }
+   
+
+ 
   return (
     <>
       <div class="min-h-screen bg-gradient-to-tr from-[#141414] to-[#330042] justify-center items-center py-10 flex flex-col overflow-hidden">
@@ -42,10 +160,12 @@ function MintComponent() {
                     <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">{val.title}</h1>
                     <div class="my-4">
                       <div class="flex space-x-1 items-center">
-                        <p>Supply:{val.supply}</p>
+                        <p>Supply:
+                          {val.id >= 128 ? maxLegendarySupply : val.id >= 99 ? maxEpicSupply : val.id >= 64 ? maxRareSupply : val.id >= 37 ? maxUncommonSupply : val.id >= 10 ? maxCommonSupply : maxLeaderSupply}
+                          </p>
                       </div>
                       <div class="flex space-x-1 items-center">
-                        <p>Minted:100</p>
+                        <p>Minted:{totalMinted(val.id)}</p>
                       </div>
                       <div class="flex space-x-1 items-center">
                         <p>Available:400</p>
@@ -101,12 +221,7 @@ function MintComponent() {
   )
 }
 
-export default MintComponent;
 
-{/* <div className="w-full h-[60px] bg-white">
-          <input id="searchInput" type="text" placeholder="Search here..." onChange={(event) => {
-            setSearchTerm(event.target.value);
-          }} />
-        </div> */}
+
 
 

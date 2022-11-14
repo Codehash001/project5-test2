@@ -11,40 +11,84 @@ const nftContract = new web3.eth.Contract(NFTcontract.abi, config.nftContract)
 const TokenContract = require('../artifacts/contracts/Token.sol/Token.json')
 const tokenContract = new web3.eth.Contract(TokenContract.abi , config.tokenContract)
 
-export const getMaxSupply = async () => {
-  const maxSupply = await nftContract.methods.maxSupply().call() 
+
+//Get supply Amounts
+export const getMaxLeaderSupply = async () => {
+  const maxSupply = await nftContract.methods.maxLeaderSupply().call() 
   return maxSupply
 }
 
+export const getMaxLegendarySupply = async () => {
+  const maxSupply = await nftContract.methods.maxLegendarySupply().call() 
+  return maxSupply
+}
+
+export const getMaxEpicSupply = async () => {
+  const maxSupply = await nftContract.methods.maxEpicSupply().call() 
+  return maxSupply
+}
+
+export const getMaxRareSupply = async () => {
+  const maxSupply = await nftContract.methods.maxRareSupply().call() 
+  return maxSupply
+}
+
+export const getMaxUncommonSupply = async () => {
+  const maxSupply = await nftContract.methods.maxUncommonSupply().call() 
+  return maxSupply
+}
+
+export const getMaxCommonSupply = async () => {
+  const maxSupply = await nftContract.methods.maxCommonSupply().call() 
+  return maxSupply
+}
+
+//Get dex costs
+export const getLeaderCost = async () => {
+  const cost = await nftContract.methods.Leader_items_cost().call() 
+  return cost
+}
+
+export const getLegendaryCost = async () => {
+  const cost = await nftContract.methods.Legendary_items_cost().call() 
+  return cost
+}
+
+export const getEpicCost = async () => {
+  const cost = await nftContract.methods.Epic_items_cost().call() 
+  return cost
+}
+
+export const getRareCost = async () => {
+  const cost = await nftContract.methods.Rare_items_cost().call() 
+  return cost
+}
+
+export const getUncommonCost = async () => {
+  const cost = await nftContract.methods.Uncommon_items_cost().call() 
+  return cost
+}
+
+export const getCommonCost = async () => {
+  const cost = await nftContract.methods.Common_items_cost().call() 
+  return cost
+}
 
 
-export const getTotalMinted = async () => {
-  const totalMinted = await nftContract.methods.totalSupply().call()
+// total minted amount
+export const getTotalMinted = async (id) => {
+  const totalMinted = await nftContract.methods.totalSupply(id).call()
   return totalMinted
 }
 
-export const getNumberMinted = async () => {
-  const NumberMinted = await nftContract.methods.numberMinted(window.ethereum.selectedAddress) .call()
-  return NumberMinted
-}
-
-
+//paused?
 export const isPausedState = async () => {
   const paused = await nftContract.methods.paused().call()
   return paused
 }
 
-export const isPublicSaleState = async () => {
-  const publicSale = await nftContract.methods.publicMint().call()
-  return publicSale
-}
 
-export const isWlMintState = async () => {
-  const WlMint = await nftContract.methods.wlMint().call()
-  return WlMint
-}
-
-export const doPublicMint = async (mintAmount) => {
+export const doMint = async (id) => {
 
   if (!window.ethereum.selectedAddress) {
     return {
@@ -55,7 +99,7 @@ export const doPublicMint = async (mintAmount) => {
   const tx = {
     to: config.nftContract,
     from: window.ethereum.selectedAddress,
-    data: nftContract.methods.PublicMint(mintAmount).encodeABI()
+    data: nftContract.methods.mint(id).encodeABI()
   }
   try {
     const txHash = await window.ethereum.request({
@@ -82,43 +126,9 @@ export const doPublicMint = async (mintAmount) => {
   }
 
 
-  
-  export const doWlMint = async (mintAmount) => {
-  
-    if (!window.ethereum.selectedAddress) {
-      return {
-        success: false,
-        status: 'To be able to mint, you need to connect your wallet'
-      }
-    }
-    nftContract.methods.WLMint(mintAmount).encodeABI()
-  
-    try {
-      const txHash = await window.ethereum.request({
-        method: 'eth_sendTransaction',
-        params: [tx]
-      })
-  
-      return {
-        success: true,
-        status: (
-          <a href={`https://testnet.bscscan.com/tx/${txHash}`} target="_blank">
-            <p>✅ Check out your transaction on Etherscan:</p>
-            <p>{`https://testnet.bscscan.com/tx/${txHash}`}</p>
-          </a>
-        )
-      }
-    } catch (error) {
-      return {
-        success: false,
-        status: '😞 Smth went wrong:' + error.message
-      }
-    }
-  
-    }
 
 
-    export const doApprove = async (Amount) => {
+    export const doApprove = async (Amount) => { 
       
       const Spender = config.nftContract
       if (!window.ethereum.selectedAddress) {
