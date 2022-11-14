@@ -146,7 +146,7 @@ useEffect(() => {
                 }
               })
               .map((val) => {
-                {setTokenId(val.id)}
+
                 return(
                     <div class="max-w-sm bg-gray-200 px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500" key={val.id}>
                     <div class="relative">
@@ -161,7 +161,7 @@ useEffect(() => {
                           </p>
                       </div>
                       <div class="flex space-x-1 items-center">
-                        <p> Minted:{totalMinted}</p>
+                        <p> Minted:</p>
                       </div>
                       <div class="flex space-x-1 items-center">
                         <p>Available:400</p>
