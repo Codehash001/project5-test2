@@ -171,7 +171,7 @@ useEffect(() => {
                         <p>Available:400</p>
                       </div>
                       <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
-                      onClick={console.log(id)}>Mint now</button>
+                      >Mint now</button>
                     </div>
                   </div>
           
