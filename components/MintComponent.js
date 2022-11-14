@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import ChaData from "./CharacterData.json";
 import WepData from "./WeponData.json";
 import Navbar from '../components/Navbar';
