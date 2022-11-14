@@ -42,13 +42,13 @@ export default function Mint(){
   const [onboard, setOnboard] = useState(null)
   const [walletAddress, setWalletAddress] = useState('')
 
-  const ID = ChaData.map((val) => {
-    const id =(val.id)
-    return id
-  //ChaData.map(id)
+  // const ID = ChaData.map((val) => {
+  //   const id =(val.id)
+  //   return id
+  // ChaData.map(id)
 
 
-  })
+  // })
 
   useEffect(() => {
     const init = async () => {
@@ -59,7 +59,7 @@ export default function Mint(){
       setMaxUncommonSupply(await getMaxUncommonSupply())
       setMaxCommonSupply(await getMaxCommonSupply())
 
-      setTotalMinted(await getTotalMinted(ID))
+      setTotalMinted(await getTotalMinted(id))
 
       setPaused(await isPausedState())
       //setIsPublicSale(await isPublicSaleState())
@@ -160,7 +160,7 @@ useEffect(() => {
                           </p>
                       </div>
                       <div class="flex space-x-1 items-center">
-                        <p>Minted:{totalMinted}</p>
+                        <p>Minted:{totalMinted(val.id)}</p>
                       </div>
                       <div class="flex space-x-1 items-center">
                         <p>Available:400</p>
