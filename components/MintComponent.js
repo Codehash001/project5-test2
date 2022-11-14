@@ -28,7 +28,7 @@ export default function Mint(){
   const [maxRareSupply, setMaxRareSupply] = useState(0)
   const [maxUncommonSupply, setMaxUncommonSupply] = useState(0)
   const [maxCommonSupply, setMaxCommonSupply] = useState(0)
-  const [id ,setId] = useState(0)
+  //const [TokenId ,setTokenId] = useState(0)
 
   const [totalMinted, setTotalMinted] = useState(0)
   const [maxMintAmount, setMaxMintAmount] = useState(0)
@@ -60,7 +60,7 @@ export default function Mint(){
       setMaxUncommonSupply(await getMaxUncommonSupply())
       setMaxCommonSupply(await getMaxCommonSupply())
 
-      setTotalMinted(await getTotalMinted(id))
+      //setTotalMinted(await getTotalMinted())
 
       setPaused(await isPausedState())
       //setIsPublicSale(await isPublicSaleState())
@@ -99,6 +99,10 @@ useEffect(() => {
       await onboard.walletCheck()
       window.location.reload(false)
     }
+  }
+
+  const MintedAmount = async (tokenId) => {
+    await(getTotalMinted(tokenId))
   }
 
 
@@ -150,7 +154,6 @@ useEffect(() => {
                 return(
                     <div class="max-w-sm bg-gray-200 px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500" key={val.id}>
                     <div class="relative">
-                      {setId(val.id)}
                       <img class="w-full rounded-xl" src={val.image} alt="Character" />
                       <p class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">{val.tier}</p>
                     </div>
@@ -162,7 +165,7 @@ useEffect(() => {
                           </p>
                       </div>
                       <div class="flex space-x-1 items-center">
-                        <p> Minted:{totalMinted}</p>
+                        <p> Minted:{MintedAmount(val.id)}</p>
                       </div>
                       <div class="flex space-x-1 items-center">
                         <p>Available:400</p>
