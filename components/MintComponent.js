@@ -162,7 +162,7 @@ useEffect(() => {
                           </p>
                       </div>
                       <div class="flex space-x-1 items-center">
-                        <p>Minted:{totalMinted(val.id)}</p>
+                        <p>Minted:{totalMinted}</p>
                       </div>
                       <div class="flex space-x-1 items-center">
                         <p>Available:400</p>
