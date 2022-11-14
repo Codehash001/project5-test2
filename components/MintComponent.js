@@ -147,10 +147,10 @@ useEffect(() => {
                 }
               })
               .map((val) => {
-                setId(val.id)
                 return(
                     <div class="max-w-sm bg-gray-200 px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500" key={val.id}>
                     <div class="relative">
+                      {setId(val.id)}
                       <img class="w-full rounded-xl" src={val.image} alt="Character" />
                       <p class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">{val.tier}</p>
                     </div>
@@ -162,12 +162,13 @@ useEffect(() => {
                           </p>
                       </div>
                       <div class="flex space-x-1 items-center">
-                        <p>Minted:{totalMinted}</p>
+                        <p> Minted:{totalMinted}</p>
                       </div>
                       <div class="flex space-x-1 items-center">
                         <p>Available:400</p>
                       </div>
-                      <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700">Mint now</button>
+                      <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
+                      onClick={console.log(id)}>Mint now</button>
                     </div>
                   </div>
           
