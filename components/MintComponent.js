@@ -28,7 +28,7 @@ export default function Mint(){
   const [maxRareSupply, setMaxRareSupply] = useState(0)
   const [maxUncommonSupply, setMaxUncommonSupply] = useState(0)
   const [maxCommonSupply, setMaxCommonSupply] = useState(0)
-  //const [TokenId ,setTokenId] = useState(0)
+  const [TokenId, setTokenId] = useState(0)
 
   const [totalMinted, setTotalMinted] = useState(0)
   const [maxMintAmount, setMaxMintAmount] = useState(0)
@@ -60,7 +60,7 @@ export default function Mint(){
       setMaxUncommonSupply(await getMaxUncommonSupply())
       setMaxCommonSupply(await getMaxCommonSupply())
 
-      //setTotalMinted(await getTotalMinted())
+      setTotalMinted(await getTotalMinted(tokenId))
 
       setPaused(await isPausedState())
       //setIsPublicSale(await isPublicSaleState())
@@ -100,11 +100,6 @@ useEffect(() => {
       window.location.reload(false)
     }
   }
-
-  const MintedAmount = async (tokenId) => {
-    await(getTotalMinted(tokenId))
-  }
-
 
    /* global Bigint */
 
@@ -151,6 +146,7 @@ useEffect(() => {
                 }
               })
               .map((val) => {
+                {setTokenId(val.id)}
                 return(
                     <div class="max-w-sm bg-gray-200 px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500" key={val.id}>
                     <div class="relative">
@@ -165,7 +161,7 @@ useEffect(() => {
                           </p>
                       </div>
                       <div class="flex space-x-1 items-center">
-                        <p> Minted:{MintedAmount(val.id)}</p>
+                        <p> Minted:{totalMinted}</p>
                       </div>
                       <div class="flex space-x-1 items-center">
                         <p>Available:400</p>
