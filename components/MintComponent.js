@@ -30,7 +30,6 @@ export default function Mint(){
   const [maxCommonSupply, setMaxCommonSupply] = useState(0)
 
   const [totalMinted, setTotalMinted] = useState(0)
-  const [NumberMinted, setNumberMinted] = useState(0)
   const [maxMintAmount, setMaxMintAmount] = useState(0)
   const [paused, setPaused] = useState(false)
   const [isPublicSale, setIsPublicSale] = useState(false)
@@ -52,17 +51,10 @@ export default function Mint(){
       setMaxUncommonSupply(await getMaxUncommonSupply())
       setMaxCommonSupply(await getMaxCommonSupply())
 
-      setTotalMinted(await getTotalMinted())
-      setNumberMinted (await getNumberMinted())
+      //setTotalMinted(await getTotalMinted())
 
       setPaused(await isPausedState())
-      setIsPublicSale(await isPublicSaleState())
-      const isWlMint = await isWlMintState()
-      setIsWlMint(isWlMint)
-      
-      setMaxMintAmount(
-        isWlMint ? config.WlMaxMintAmount : config.maxMintAmount
-      )
+      //setIsPublicSale(await isPublicSaleState())
       
       
     }
@@ -116,10 +108,10 @@ useEffect(() => {
     setIsMinting(false)
   }
 
-  
-  setTotalMinted() = async (id) => {
-   await getTotalMinted(id)
-    }
+const TotalMinted = async (id) =>{
+  await(getTotalMinted(id))
+
+}
    
 
  
@@ -165,7 +157,7 @@ useEffect(() => {
                           </p>
                       </div>
                       <div class="flex space-x-1 items-center">
-                        <p>Minted:{totalMinted(val.id)}</p>
+                        <p>Minted:{TotalMinted(val.id)}</p>
                       </div>
                       <div class="flex space-x-1 items-center">
                         <p>Available:400</p>
