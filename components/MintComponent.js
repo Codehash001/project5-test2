@@ -118,11 +118,9 @@ useEffect(() => {
     setIsMinting(false)
   }
 
-  const MintedAmount = async () => {
-    const minted= await getTotalMinted(TokenId)
-    return minted
-    
-  }
+const tid = ChaData.map(id)
+
+
    
 
  
@@ -177,7 +175,7 @@ useEffect(() => {
                       <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
                      
                       >Mint now</button>
-                     
+                     {console.log(tid)}
                     </div>
                   </div>
           
