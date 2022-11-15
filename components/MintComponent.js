@@ -170,7 +170,7 @@ const getMintedamount = async (id) => {
                           </p>
                       </div>
                       <div class="flex space-x-1 items-center">
-                        <p> Minted:</p>
+                        <p> Minted:{Mintedamount}</p>
                       </div>
                       <div class="flex space-x-1 items-center">
                         <p>Available:400</p>
