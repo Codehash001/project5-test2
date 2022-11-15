@@ -28,7 +28,7 @@ export default function Mint(){
   const [maxRareSupply, setMaxRareSupply] = useState(0)
   const [maxUncommonSupply, setMaxUncommonSupply] = useState(0)
   const [maxCommonSupply, setMaxCommonSupply] = useState(0)
-  const [TokenId, setTokenId] = useState(0)
+  const [id, setid] = useState(0)
 
   const [totalMinted, setTotalMinted] = useState(0)
   const [maxMintAmount, setMaxMintAmount] = useState(0)
@@ -62,7 +62,7 @@ export default function Mint(){
       setMaxUncommonSupply(await getMaxUncommonSupply())
       setMaxCommonSupply(await getMaxCommonSupply())
 
-      setTotalMinted(await getTotalMinted())
+      setTotalMinted(await getTotalMinted(id))
 
       setPaused(await isPausedState())
       //setIsPublicSale(await isPublicSaleState())
@@ -177,7 +177,7 @@ const tid = ChaData.map((val) => {
                        <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
                      
                       >Mint now</button>
-                     {console.log(val.id)}
+                     {()=> setid(val.id)}
                     </div>
                   </div>
           
