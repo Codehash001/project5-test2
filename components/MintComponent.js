@@ -129,7 +129,7 @@ const tid = ChaData.map((val) => {
   return (
     <>
       <div class="min-h-screen bg-gradient-to-tr from-[#141414] to-[#330042] justify-center items-center py-10 flex flex-col overflow-hidden">
-      {console.log(tid)}
+      
       <form>   
     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
     <div class="relative">
@@ -174,10 +174,10 @@ const tid = ChaData.map((val) => {
                       <div class="flex space-x-1 items-center">
                         <p>Available:400</p>
                       </div>
-                      <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
+                       <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
                      
                       >Mint now</button>
-                     
+                     {console.log(val.id)}
                     </div>
                   </div>
           
