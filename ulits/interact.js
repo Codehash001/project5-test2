@@ -76,8 +76,8 @@ export const getCommonCost = async () => {
 
 
 // total minted amount
-export const getTotalMinted = async (TokenId) => {
-  const totalMinted = await nftContract.methods.totalSupply(TokenId).call()
+export const getTotalMinted = async () => {
+  const totalMinted = await nftContract.methods.totalSupply(10).call()
   return totalMinted
 }
 
