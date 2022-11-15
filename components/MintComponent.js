@@ -118,7 +118,9 @@ useEffect(() => {
     setIsMinting(false)
   }
 
-const tid = ChaData.map(id)
+const tid = ChaData.map((val) => {
+  return val.id
+})
 
 
    
