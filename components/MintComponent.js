@@ -163,7 +163,7 @@ useEffect(() => {
                           </p>
                       </div>
                       <div class="flex space-x-1 items-center">
-                        <p> Minted:{totalMinted}</p>
+                        <p onClick={console.log(totalMinted)}> Minted:{totalMinted}</p>
                       </div>
                       <div class="flex space-x-1 items-center">
                         <p>Available:400</p>
