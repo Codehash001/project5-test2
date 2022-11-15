@@ -178,6 +178,7 @@ const tid = ChaData.map((val) => {
                      
                       >Mint now</button>
                      {()=> setid(val.id)}
+                     {console.log(id)}
                     </div>
                   </div>
           
