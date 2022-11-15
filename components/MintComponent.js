@@ -62,7 +62,7 @@ export default function Mint(){
       setMaxUncommonSupply(await getMaxUncommonSupply())
       setMaxCommonSupply(await getMaxCommonSupply())
 
-      setTotalMinted(await getTotalMinted(tokenId))
+      setTotalMinted(await getTotalMinted(TokenId))
 
       setPaused(await isPausedState())
       //setIsPublicSale(await isPublicSaleState())
@@ -163,7 +163,7 @@ useEffect(() => {
                           </p>
                       </div>
                       <div class="flex space-x-1 items-center">
-                        <p> Minted:</p>
+                        <p> Minted:{totalMinted}</p>
                       </div>
                       <div class="flex space-x-1 items-center">
                         <p>Available:400</p>
