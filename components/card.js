@@ -20,6 +20,7 @@ const [maxRareSupply, setMaxRareSupply] = useState(0)
 const [maxUncommonSupply, setMaxUncommonSupply] = useState(0)
 const [maxCommonSupply, setMaxCommonSupply] = useState(0)
 const [maxSupply, setMaxSupply] = useState(0)
+const [paused, setPaused] =useState(false)
 
 
 
@@ -75,7 +76,7 @@ useEffect(() => {
           </p>
       </div>
       <div class="flex space-x-1 items-center" >
-        <p> Minted: {totalMinted} </p>
+        <p> Minted:{totalMinted}</p>
       </div>
       <div class="flex space-x-1 items-center">
         <p>Available:{totalMinted - maxSupply}</p>
