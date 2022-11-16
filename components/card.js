@@ -70,7 +70,7 @@ useEffect(() => {
     <div class="my-4">
       <div class="flex space-x-1 items-center">
         <p>Supply :
-        {maxSupply}
+        {id >= 128 ? maxLegendarySupply : id >= 99 ? maxEpicSupply : id >= 64 ? maxRareSupply : id >= 37 ? maxUncommonSupply : id >= 10 ? maxCommonSupply : maxLeaderSupply}
           </p>
       </div>
       <div class="flex space-x-1 items-center" >
