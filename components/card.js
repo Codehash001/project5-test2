@@ -1,6 +1,7 @@
 import React from "react";
 
-const Cards = ({ item, handleClick, init }) => {
+const Cards = ({ item, handleClick, init , MintedAmount }) => {
+
 
   const { id ,title, tier, supply, image } = item;
   return (
@@ -12,7 +13,7 @@ const Cards = ({ item, handleClick, init }) => {
     <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">{title}</h1>
     <div class="my-4">
       <div class="flex space-x-1 items-center">
-        <p>Supply:
+        <p onLoad={() => init(item)}>Supply : {MintedAmount}
           {supply}
           </p>
       </div>

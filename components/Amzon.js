@@ -24,7 +24,7 @@ const Amazon = () => {
   const [maxUncommonSupply, setMaxUncommonSupply] = useState(0)
   const [maxCommonSupply, setMaxCommonSupply] = useState(0)
 
-  const [totalMinted, setTotalMinted ] = useState(0)
+  const [MintedAmount, setMintedAmount ] = useState(0)
   
 
   //const [totalMinted, setTotalMinted] = useState(0)
@@ -98,8 +98,8 @@ useEffect(() => {
 
     const init = async (item) => {
         const id = item.id
-        const MintedAmount = await getTotalMinted(id)
-        console.log(MintedAmount)
+        setMintedAmount(await getTotalMinted(id))
+        
 
     }
 
@@ -125,7 +125,7 @@ useEffect(() => {
   return (
     <section className="min-h-screen bg-gradient-to-tr from-[#141414] to-[#330042] justify-center items-center py-10 flex flex-col overflow-hidden">
       {list.map((item) => (
-        <Cards key={item.id} item={item} handleClick={handleClick} init={init} />
+        <Cards key={item.id} item={item} handleClick={handleClick} init={init} MintedAmount={MintedAmount} />
       ))}
     </section>
   );
