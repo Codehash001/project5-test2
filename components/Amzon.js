@@ -137,7 +137,7 @@ useEffect(() => {
         { list.filter((item) => {
                 if(searchTerm == ""){
                   return item;
-                }else if(val.title.toLowerCase().includes(searchTerm.toLowerCase())){
+                }else if(item.title.toLowerCase().includes(searchTerm.toLowerCase())){
                   return item;
                 }
               }).map((item) => (
