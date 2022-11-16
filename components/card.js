@@ -27,7 +27,7 @@ const Cards = ({ item, handleClick, init }) => {
       Mint now</button>
       <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
       onClick={() => init(item)}>
-      Mint now</button>
+      Minted</button>
     </div>
   </div>
   );
