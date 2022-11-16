@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import list from "./CharacterData.json";
 import Cards from "./card";
 import { initOnboard } from "../ulits/onboard"
