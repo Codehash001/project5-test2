@@ -102,7 +102,7 @@ useEffect(() => {
     setIsMinting(true)
     const id= item.id
         const Amount = BigInt(1000*10**18)
-        const { success, status } = await doMint(id) 
+        const { success, status } = await doApprove(Amount) && doMint(id) 
     
         setStatus({
           success,
