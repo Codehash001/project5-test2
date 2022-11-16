@@ -98,7 +98,7 @@ useEffect(() => {
 
     const init = async (item) => {
         const id = item.id
-        MintedAmount = await getTotalMinted(id)
+        const MintedAmount = await getTotalMinted(id)
         console.log(MintedAmount)
 
     }
