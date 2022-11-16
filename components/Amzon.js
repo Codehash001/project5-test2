@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import list from "./data";
+import list from "./CharacterData.json";
 import Cards from "./card";
 
 const Amazon = () => {
