@@ -1,9 +1,24 @@
 import { useEffect, useState } from "react";
 import React from "react";
+import {
+    getTotalMinted          } from '../ulits/interact'
 
 const Cards = ({ item, handleClick, }) => {
 
+const [totalMinted, setTotalMinted ] = useState(0)
+
+
+
  const { id ,title, tier, supply, image } = item;
+ 
+ useEffect(() => {
+    const init = async (id) => {
+      
+      setTotalMinted(await getTotalMinted(id))
+ }
+
+    init()
+  }, [])
   return (
     <div class="max-w-sm bg-gray-200 px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
     <div class="relative">
@@ -18,7 +33,7 @@ const Cards = ({ item, handleClick, }) => {
           </p>
       </div>
       <div class="flex space-x-1 items-center" >
-        <p> Minted: {id}</p>
+        <p> Minted: {totalMinted}</p>
       </div>
       <div class="flex space-x-1 items-center">
         <p>Available:400</p>
