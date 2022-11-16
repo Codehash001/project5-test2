@@ -28,17 +28,12 @@ export default function Mint(){
   const [maxRareSupply, setMaxRareSupply] = useState(0)
   const [maxUncommonSupply, setMaxUncommonSupply] = useState(0)
   const [maxCommonSupply, setMaxCommonSupply] = useState(0)
-  const [Mintedamount, setMintedamount] = useState(0)
-
-  //const [totalMinted, setTotalMinted] = useState(0)
-  const [maxMintAmount, setMaxMintAmount] = useState(0)
-  const [paused, setPaused] = useState(false)
-  const [isPublicSale, setIsPublicSale] = useState(false)
-  const [isWlMint, setIsWlMint] = useState(false)
   
 
+  //const [totalMinted, setTotalMinted] = useState(0)
+  )
+  const [paused, setPaused] = useState(false)
   const [status, setStatus] = useState(null)
-  const [mintAmount, setMintAmount] = useState(1)
   const [isMinting, setIsMinting] = useState(false)
   const [onboard, setOnboard] = useState(null)
   const [walletAddress, setWalletAddress] = useState('')
@@ -118,10 +113,7 @@ useEffect(() => {
     setIsMinting(false)
   }
 
-const getMintedamount = async (id) => {
-  setMintedamount(await getTotalMinted(id))
-  
-}
+
 
 
    
@@ -155,8 +147,7 @@ const getMintedamount = async (id) => {
                 }
               })
               .map((val) => {
-
-                return(
+                  return(
                     <div class="max-w-sm bg-gray-200 px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500" key={val.id}>
                     <div class="relative">
                       <img class="w-full rounded-xl" src={val.image} alt="Character" />
@@ -170,15 +161,14 @@ const getMintedamount = async (id) => {
                           </p>
                       </div>
                       <div class="flex space-x-1 items-center">
-                        <p> Minted:{Mintedamount}</p>
+                        <p> Minted:</p>
                       </div>
                       <div class="flex space-x-1 items-center">
                         <p>Available:400</p>
                       </div>
                        <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
-                     onClick={getMintedamount(val.id)}
-                      >Mint now</button>
-                     {console.log(Mintedamount)}
+                      >
+                      Mint now</button>
                     </div>
                   </div>
           
