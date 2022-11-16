@@ -31,7 +31,7 @@ export default function Mint(){
   
 
   //const [totalMinted, setTotalMinted] = useState(0)
-  )
+  
   const [paused, setPaused] = useState(false)
   const [status, setStatus] = useState(null)
   const [isMinting, setIsMinting] = useState(false)

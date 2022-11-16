@@ -2,8 +2,8 @@ import React from "react";
 import dynamic from "next/dynamic";
 
 
-const Testint = dynamic (()=> import("../components/Testint"),{ssr:false});
+const Minttest = dynamic (()=> import("../components/Mintetst"),{ssr:false});
 
 export default function test(){
-    return<Testint/>
+    return<Minttest/>
 }
