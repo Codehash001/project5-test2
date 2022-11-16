@@ -23,6 +23,8 @@ const Amazon = () => {
   const [maxRareSupply, setMaxRareSupply] = useState(0)
   const [maxUncommonSupply, setMaxUncommonSupply] = useState(0)
   const [maxCommonSupply, setMaxCommonSupply] = useState(0)
+
+  const [totalMinted, setTotalMinted ] = useState(0)
   
 
   //const [totalMinted, setTotalMinted] = useState(0)
@@ -93,16 +95,18 @@ useEffect(() => {
     }
   }
 
+const ShowMinted = async (item) => {
+    const id = item.id
+    const MintedAmount =await getTotalMinted(id)
+    return MintedAmount
+}
    /* global Bigint */
-
-
-
   const handleClick = async (item) => {
 
     setIsMinting(true)
     const id= item.id
-        const Amount = BigInt(1000*10**18)
-        const { success, status } = await doApprove(Amount) && doMint(id) 
+    const Amount = BigInt(1000*10**18)
+    const { success, status } = await doApprove(Amount) && doMint(id) 
     
         setStatus({
           success,
@@ -116,7 +120,7 @@ useEffect(() => {
   return (
     <section className="min-h-screen bg-gradient-to-tr from-[#141414] to-[#330042] justify-center items-center py-10 flex flex-col overflow-hidden">
       {list.map((item) => (
-        <Cards key={item.id} item={item} handleClick={handleClick} />
+        <Cards key={item.id} item={item} handleClick={handleClick} ShowMinted={ShowMinted} />
       ))}
     </section>
   );

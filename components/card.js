@@ -16,7 +16,7 @@ const Cards = ({ item, handleClick }) => {
           </p>
       </div>
       <div class="flex space-x-1 items-center">
-        <p> Minted:</p>
+        <p> Minted:`{ShowMinted(item)}`</p>
       </div>
       <div class="flex space-x-1 items-center">
         <p>Available:400</p>
@@ -24,8 +24,6 @@ const Cards = ({ item, handleClick }) => {
        <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
       onClick={() => handleClick(item)}>
       Mint now</button>
-      <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
-      onClick={console.log(id)}>Show Id</button>
     </div>
   </div>
   );
