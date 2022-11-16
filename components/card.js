@@ -16,7 +16,7 @@ const Cards = ({ item, handleClick, ShowMinted }) => {
           </p>
       </div>
       <div class="flex space-x-1 items-center">
-        <p> Minted:`{ShowMinted(item)}`</p>
+        <p> Minted:{ShowMinted(item)}</p>
       </div>
       <div class="flex space-x-1 items-center">
         <p>Available:400</p>
