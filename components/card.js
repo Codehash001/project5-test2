@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cards = ({ item, handleClick }) => {
+const Cards = ({ item, handleClick, ShowMinted }) => {
   const { id ,title, tier, supply, image } = item;
   return (
     <div class="max-w-sm bg-gray-200 px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
