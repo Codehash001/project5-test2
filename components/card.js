@@ -43,6 +43,7 @@ useEffect(() => {
         setMaxRareSupply(await getMaxRareSupply())
         setMaxUncommonSupply(await getMaxUncommonSupply())
         setMaxCommonSupply(await getMaxCommonSupply())
+        setPaused(await isPausedState())
   
  }
 
@@ -52,7 +53,7 @@ useEffect(() => {
 useEffect(() => {
     const init = async (id) => {
 
-        setPaused(await isPausedState())
+        
         setMaxSupply(id >= 128 ? maxLegendarySupply : id >= 99 ? maxEpicSupply : id >= 64 ? maxRareSupply : id >= 37 ? maxUncommonSupply : id >= 10 ? maxCommonSupply : maxLeaderSupply)
 
  }
