@@ -1,6 +1,6 @@
 import React from "react";
 import ChaData from "./CharacterData.json";
-import WepData from "./WeponData.json";
+import WepData from "./WeaponData.json";
 import Navbar from '../components/Navbar';
 import { useState,useEffect } from "react"
 import { initOnboard } from "../ulits/onboard"
