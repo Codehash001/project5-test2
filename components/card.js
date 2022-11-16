@@ -1,18 +1,9 @@
 import { useEffect, useState } from "react";
 import React from "react";
 
-const Cards = ({ item, handleClick, init , }) => {
+const Cards = ({ item, handleClick, }) => {
 
-    const [totalMinted , setTotalMinted] = useState (0)
-
-    useEffect(() => {
-        setTotalMinted(() => init(item))
-    
-        
-        
-      }, [])
-
-  const { id ,title, tier, supply, image } = item;
+ const { id ,title, tier, supply, image } = item;
   return (
     <div class="max-w-sm bg-gray-200 px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
     <div class="relative">
@@ -27,7 +18,7 @@ const Cards = ({ item, handleClick, init , }) => {
           </p>
       </div>
       <div class="flex space-x-1 items-center" >
-        <p> Minted:  {totalMinted}</p>
+        <p> Minted: {id}</p>
       </div>
       <div class="flex space-x-1 items-center">
         <p>Available:400</p>
