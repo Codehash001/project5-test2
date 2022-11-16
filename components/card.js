@@ -34,8 +34,8 @@ useEffect(() => {
     init(id)
   }, [])
 
-useEffect(() => {
-    const init = async (id) => {
+  useEffect(() => {
+    const init = async () => {
       
         setMaxLeaderSupply(await getMaxLeaderSupply())
         setMaxLegendarySupply(await getMaxLegendarySupply())
@@ -44,6 +44,14 @@ useEffect(() => {
         setMaxUncommonSupply(await getMaxUncommonSupply())
         setMaxCommonSupply(await getMaxCommonSupply())
   
+ }
+
+    init()
+  }, [])
+
+useEffect(() => {
+    const init = async (id) => {
+
         setPaused(await isPausedState())
         setMaxSupply(id >= 128 ? maxLegendarySupply : id >= 99 ? maxEpicSupply : id >= 64 ? maxRareSupply : id >= 37 ? maxUncommonSupply : id >= 10 ? maxCommonSupply : maxLeaderSupply)
 
@@ -62,14 +70,14 @@ useEffect(() => {
     <div class="my-4">
       <div class="flex space-x-1 items-center">
         <p>Supply :
-        {maxSupply - totalMinted}
+        {maxSupply}
           </p>
       </div>
       <div class="flex space-x-1 items-center" >
         <p> Minted: {totalMinted} </p>
       </div>
       <div class="flex space-x-1 items-center">
-        <p>Available:{totalMinted}</p>
+        <p>Available:{totalMinted - maxSupply}</p>
       </div>
        <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
       onClick={() => handleClick(item)}>
