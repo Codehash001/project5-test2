@@ -12,7 +12,7 @@ const Cards = ({ item, handleClick, init }) => {
     <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">{title}</h1>
     <div class="my-4">
       <div class="flex space-x-1 items-center">
-        <p>Supply:{totalMinted(item)}
+        <p>Supply:
           {supply}
           </p>
       </div>
