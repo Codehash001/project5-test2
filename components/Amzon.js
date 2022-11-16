@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import list from "./CharacterData.json";
+import Chalist from "./CharacterData.json";
+import Weaplist from './WeaponData.json'
 import Cards from "./card";
 import { initOnboard } from "../ulits/onboard"
 import { config } from '../dapp.config'
@@ -134,7 +135,7 @@ useEffect(() => {
 
         <h1 className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[22px] font-semibold mt-4'>Characters</h1>
         <div class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-4 gap-5 space-y-4 md:space-y-0 lg:mx-4 my-4">
-        { list.filter((item) => {
+        { Chalist.filter((item) => {
                 if(searchTerm == ""){
                   return item;
                 }else if(item.title.toLowerCase().includes(searchTerm.toLowerCase())){
@@ -144,6 +145,20 @@ useEffect(() => {
         <Cards key={item.id} item={item} handleClick={handleClick}/>
       ))}
     </div>
+
+    <h1 className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[22px] font-semibold mt-4'>Weapons</h1>
+        <div class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-4 gap-5 space-y-4 md:space-y-0 lg:mx-4 my-4">
+        { Weaplist.filter((item) => {
+                if(searchTerm == ""){
+                  return item;
+                }else if(item.title.toLowerCase().includes(searchTerm.toLowerCase())){
+                  return item;
+                }
+              }).map((item) => (
+        <Cards key={item.id} item={item} handleClick={handleClick}/>
+      ))}
+    </div>
+
     </div>
   );
 };
