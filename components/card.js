@@ -13,12 +13,12 @@ const Cards = ({ item, handleClick, init , MintedAmount }) => {
     <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">{title}</h1>
     <div class="my-4">
       <div class="flex space-x-1 items-center">
-        <p onLoad={() => init(item)}>Supply : {MintedAmount}
+        <p>Supply :
           {supply}
           </p>
       </div>
-      <div class="flex space-x-1 items-center">
-        <p> Minted:</p>
+      <div class="flex space-x-1 items-center"  onLoad={() => init(item)}>
+        <p> Minted:  {MintedAmount}</p>
       </div>
       <div class="flex space-x-1 items-center">
         <p>Available:400</p>
