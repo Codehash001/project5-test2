@@ -8,7 +8,8 @@ const Cards = ({ item, handleClick, init , }) => {
     useEffect(() => {
         setTotalMinted(() => init(item))
     
-        load()
+        
+        
       }, [])
 
   const { id ,title, tier, supply, image } = item;
