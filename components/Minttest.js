@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Amazon from "../components/amazon";
+import Amzon from "../components/Amzon";
 
 const Minttest= () => {
     return (
         <React.Fragment>
-          <Amazon/>
+          <Amzon/>
         </React.Fragment>
       );
 
