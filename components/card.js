@@ -1,6 +1,7 @@
 import React from "react";
 
-const Cards = ({ item, handleClick, ShowMinted }) => {
+const Cards = ({ item, handleClick, totalMinted }) => {
+
   const { id ,title, tier, supply, image } = item;
   return (
     <div class="max-w-sm bg-gray-200 px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
@@ -11,12 +12,12 @@ const Cards = ({ item, handleClick, ShowMinted }) => {
     <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">{title}</h1>
     <div class="my-4">
       <div class="flex space-x-1 items-center">
-        <p>Supply:
+        <p>Supply:{totalMinted(item)}
           {supply}
           </p>
       </div>
       <div class="flex space-x-1 items-center">
-        <p> Minted:{ShowMinted(item)}</p>
+        <p> Minted:</p>
       </div>
       <div class="flex space-x-1 items-center">
         <p>Available:400</p>

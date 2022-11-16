@@ -95,11 +95,17 @@ useEffect(() => {
     }
   }
 
-const ShowMinted = async (item) => {
-    const id = item.id
-    const MintedAmount =await getTotalMinted(id)
-    return MintedAmount
-}
+  useEffect(() => {
+    const init = async (item) => {
+        const id = item.id
+        setTotalMinted(await getTotalMinted(id))
+
+    }
+
+    init()
+  }, [])
+
+
    /* global Bigint */
   const handleClick = async (item) => {
 
@@ -120,7 +126,7 @@ const ShowMinted = async (item) => {
   return (
     <section className="min-h-screen bg-gradient-to-tr from-[#141414] to-[#330042] justify-center items-center py-10 flex flex-col overflow-hidden">
       {list.map((item) => (
-        <Cards key={item.id} item={item} handleClick={handleClick} ShowMinted={ShowMinted} />
+        <Cards key={item.id} item={item} handleClick={handleClick} totalMinted={totalMinted} />
       ))}
     </section>
   );
