@@ -5,7 +5,7 @@ import Amzon from "../components/Amzon";
 const Minttest= () => {
     return (
         <React.Fragment>
-          <div>
+          <div className="min-h-screen bg-gradient-to-tr from-[#141414] to-[#330042] justify-center items-center py-10 flex flex-col overflow-hidden">
           
           <Amzon/>
           </div> 
