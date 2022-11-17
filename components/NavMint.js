@@ -13,7 +13,7 @@ function Navbar () {
   };
 
   return (
-    
+    <div>
     <div className='fixed z-[100] w-screen md:mx-10 lg:mx-10 bg-black/30 backdrop-blur-sm overflow-hidden border-b-white rounded-md'>
       <ul className='flex flex-row items-center justify-between '>
         <li>
@@ -43,8 +43,9 @@ function Navbar () {
         </li>
 
       </ul>
-
-       {/* Mobile Menu */}
+      
+      </div>
+            {/* Mobile Menu */}
       {/* Overlay */}
       <div className={
          nav? 'z-[120] md:hidden fixed left-0 top-0 w-full h-screen bg-gray-400/10 backdrop-filter backdrop-blur-sm' : ""
@@ -164,11 +165,8 @@ function Navbar () {
         
 
       </div>
-      
-      </div>
-           
 
-    
+    </div>
   )
 }
 
