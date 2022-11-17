@@ -5,7 +5,6 @@ import Cards from "./card";
 import { initOnboard } from "../ulits/onboard"
 import { config } from '../dapp.config'
 import NavMint from "../components/NavMint";
-import NavMint from "../components/NavMint";
 import {
   getTotalMinted,
   getMaxLeaderSupply,
