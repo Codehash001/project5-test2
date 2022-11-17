@@ -14,7 +14,7 @@ function Navbar () {
 
   return (
     <div>
-    <div className='min-w-screen md:mx-10 lg:mx-10 bg-black/30 backdrop-blur-sm overflow-hidden border-b-white rounded-md'>
+    <div className='w-screen md:mx-10 lg:mx-10 bg-black/30 backdrop-blur-sm overflow-hidden border-b-white rounded-md'>
       <ul className='flex flex-row items-center justify-between '>
         <li>
           <img className = 'w-auto h-[55px]' 
