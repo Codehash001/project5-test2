@@ -83,7 +83,7 @@ buy with crypto payment from the game.
 </section>
 
     </div>
-    </div>f
+    </div>
     ) 
 }
 export default Nfts
