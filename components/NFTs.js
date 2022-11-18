@@ -66,16 +66,16 @@ buy with crypto payment from the game.
             <img class="object-cover w-full lg:mx-6 lg:w-auto rounded-xl h-72 lg:h-96" src="/DexBattle PNG/DexBattle-Characters.jpg"alt=""/>
 
             <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
-                <p class="text-[28px] text-blue-500 uppercase mb-8">Mint DexBattle nft with dex coins</p>
+                <p class="text-[28px] text-blue-500 uppercase mb-8 font-Kanit">Mint DexBattle nft with dex coins</p>
 
                 <a href="/Exchange">
-                <button type="button" class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+                <button type="button" class="text-white my-3 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-[18px]px-5 py-2.5 text-center mr-2 mb-2 font-Kanit">
                     Buy Dex Coin Tokens</button>
                 </a>
 
 
                 <a href="/mint">
-                <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">
+                <button type="button" class="text-white my-3 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-[18px] px-5 py-2.5 text-center mr-2 mb-2 font-Kanit">
                     Mint DexBattale NFTs</button></a>
             </div>
         </div>
