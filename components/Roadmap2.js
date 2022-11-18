@@ -1,4 +1,5 @@
-<!-- component -->
+function Rmap () {
+  return (
 <section>
     <div class="bg-black text-white py-8">
     <div class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
@@ -6,7 +7,7 @@
         <p class="ml-2 text-yellow-300 uppercase tracking-loose">Working Process</p>
         <p class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">Working Process of Fest</p>
         <p class="text-sm md:text-base text-gray-50 mb-4">
-          Here’s your guide to the tech fest 2021 process. Go through all the steps to know the exact process of the
+          Hers your guide to the tech fest 2021 process. Go through all the steps to know the exact process of the
           fest.
         </p>
         <a href="#"
@@ -26,8 +27,8 @@
                 <p class="mb-3 text-base text-yellow-300">1-6 May, 2021</p>
                 <h4 class="mb-3 font-bold text-lg md:text-2xl">Registration</h4>
                 <p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
-                  Pick your favourite event(s) and register in that event by filling the form corresponding to that
-                  event. Its that easy :)
+                  Pick your favourite event and register in that event by filling the form corresponding to that
+                  event. Its that easy
                 </p>
               </div>
             </div>
@@ -73,3 +74,6 @@
     </div>
   </div>
   </section>
+)}
+
+export default Rmap
