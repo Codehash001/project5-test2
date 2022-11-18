@@ -32,8 +32,8 @@ function Navbar () {
           </div>
 
         <li>
-        <div className=' py-2 px-4 backdrop-blur-md flex flex-row font-Kanit text-white rounded-md border border-white hover:bg-blue-200 hover:text-black  hover:font-semibold'>
-            <a href='/mint'><h1 className='mx-4 uppercase tracking-wide'>MINT NOW</h1> </a>
+        <div className=' py-2 px-4 backdrop-blur-md flex flex-row font-Kanit text-white rounded-md border border-white hover:bg-blue-400 hover:text-black  hover:font-semibold'>
+            <a href='/mint2'><h1 className='mx-4 uppercase tracking-wide'>MINT NOW</h1> </a>
 
           </div>
           

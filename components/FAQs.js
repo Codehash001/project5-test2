@@ -18,15 +18,15 @@ export default function FAQs() {
   };
  
   return (
-    <div className='mx-16 p-6 my-[44px] rounded-lg bg-gray-600'>
+    <div className='mx-16 p-6 my-[44px] rounded-lg'>
       <h1 className='text-3xl text-blue-400 font-Kanit text-center uppercase font-semibold tracking-wide'> Frequently Asked Questions</h1>
       <Accordion open={open === 1} animate={customAnimation}>
         <AccordionHeader onClick={() => handleOpen(1)} className='text-white font-Kanit text-[22px]'>
           How to mint Dexbattle NFTs?
         </AccordionHeader>
         <AccordionBody className='text-justify text-gray-300 font-Kanit text-[20px]'>
-          To mint DexBattle nfts you need to have $Dex coins. You can earn $Dex coins by playing DexBattle. Also you can buy $Dex Coins from our <a href="/exchnage1" className="text-semibold text-blue-500">exchnage.</a>
-          After that you can mint DexBattle nfts from our <a href="/exchnage1" className="text-semibold text-blue-500">minting page. </a>You need to connect your metamask or binance wallet first.
+          To mint DexBattle nfts you need to have $Dex coins. You can earn $Dex coins by playing DexBattle. Also you can buy $Dex Coins from our <a href="/exchnage" className="text-semibold text-blue-500">exchnage.</a>
+          After that you can mint DexBattle nfts from our <a href="/mint2" className="text-semibold text-blue-500">minting page. </a>You need to connect your metamask or binance wallet first.
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 2} animate={customAnimation} className='text-white font-Kanit text-[22px]'>
@@ -34,7 +34,7 @@ export default function FAQs() {
           How to buy $Dex Coins?
         </AccordionHeader>
         <AccordionBody className='text-justify text-gray-300 font-Kanit text-[20px]'>
-        You can earn $Dex coins by playing DexBattle and you can swap BNB with $Dex Coins from our instant <a href="/exchnage1" className="text-semibold text-blue-500">exchnage.</a> 
+        You can earn $Dex coins by playing DexBattle and you can swap BNB with $Dex Coins from our instant <a href="/exchnage" className="text-semibold text-blue-500">exchnage.</a> 
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 3} animate={customAnimation} className='text-white font-Kanit text-[22px]'>
