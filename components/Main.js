@@ -28,9 +28,9 @@ useEffect(() => {
       <h1
         class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-[64px] font-extrabold text-transparent sm:text-[64px] uppercase"
       >
-        Make your
+        Make your Own story in
 
-        <span class="sm:block"> Own story in </span>
+        
         <span class="sm:block"> DexBattle </span>
       </h1>
 
