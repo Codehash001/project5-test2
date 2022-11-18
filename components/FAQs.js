@@ -18,7 +18,7 @@ export default function FAQs() {
   };
  
   return (
-    <div className='mx-16 p-6 my-[44px] rounded-lg'>
+    <div id='faqs'className='mx-16 p-6 my-[44px] rounded-lg'>
       <h1 className='text-3xl text-blue-400 font-Kanit text-center uppercase font-semibold tracking-wide'> Frequently Asked Questions</h1>
       <Accordion open={open === 1} animate={customAnimation}>
         <AccordionHeader onClick={() => handleOpen(1)} className='text-white font-Kanit text-[22px]'>

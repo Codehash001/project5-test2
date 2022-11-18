@@ -18,7 +18,7 @@ useEffect(() => {
           src="/banner2.jpg"
           className="w-screen h-auto brightness-75 object-fill blur-[1px]"
         />
-        <div className='mt-6 top-[30px] absolute flex flex-col items-start font-Kanit'>
+        <div className='mt-6 top-[25px] absolute flex flex-col items-start font-Kanit'>
 
         
   <div
