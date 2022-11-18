@@ -2,7 +2,7 @@ import React from 'react'
 
 function Roadmaps () {
   return (
-<section>
+
     <div class="bg-black text-white py-8">
     <div class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
       <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
@@ -70,12 +70,12 @@ function Roadmaps () {
               </div>
             </div>
           </div>
-          <img class="mx-auto -mt-36 md:-mt-36" src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png" />
+          <img class="mx-auto -mt-36 md:-mt-36" src="Dex.png" />
         </div>
       </div>
     </div>
   </div>
-  </section>
+ 
 )}
 
 export default Roadmaps
