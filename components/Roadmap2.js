@@ -1,4 +1,6 @@
-function Rmap () {
+import React from 'react'
+
+function Roadmap () {
   return (
 <section>
     <div class="bg-black text-white py-8">
@@ -76,4 +78,4 @@ function Rmap () {
   </section>
 )}
 
-export default Rmap
+export default Roadmap
