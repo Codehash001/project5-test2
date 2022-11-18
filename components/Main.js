@@ -18,7 +18,7 @@ useEffect(() => {
           src="/banner2.jpg"
           className="w-screen h-auto brightness-75 object-fill blur-[1px]"
         />
-        <div className='mt-6 top-[100px] absolute flex flex-col items-start font-Kanit'>
+        <div className='mt-6 top-[50px] absolute flex flex-col items-start font-Kanit'>
 
         
   <div
@@ -26,7 +26,7 @@ useEffect(() => {
   >
     <div class="mx-auto max-w-3xl text-center">
       <h1
-        class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-[64px] font-extrabold text-transparent sm:text-[64px] uppercase"
+        class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-[68px] font-extrabold text-transparent sm:text-[68px] uppercase"
       >
         Make your Own story
 
