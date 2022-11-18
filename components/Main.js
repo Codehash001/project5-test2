@@ -26,7 +26,7 @@ useEffect(() => {
   >
     <div class="mx-auto max-w-3xl text-center">
       <h1
-        class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-5xl font-extrabold text-transparent sm:text-5xl uppercase"
+        class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-[64px] font-extrabold text-transparent sm:text-[64px] uppercase"
       >
         Make your
 
