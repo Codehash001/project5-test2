@@ -5,7 +5,7 @@ import Main from '../components/Main';
 import Nfts from '../components/NFTs';
 import Coins from '../components/Coin';
 import Game from '../components/Game';
-import Roadmaps from '../components/Roadmaps';
+import Roadmap from '../components/Roadmap';
 import About from '../components/About';
 import Footer from '../components/Footer';
 import Faqs from '../components/FAQs';
@@ -24,7 +24,7 @@ export default function Home() {
       <Nfts/>
       <Coins/>
       <Game/>
-      <Roadmaps/>
+      <Roadmap/>
       <About/>
       <Faqs/>
       <Footer/>

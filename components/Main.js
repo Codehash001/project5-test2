@@ -18,23 +18,45 @@ useEffect(() => {
           src="/banner2.jpg"
           className="w-screen h-auto brightness-75 object-fill blur-[1px]"
         />
-        <div className='mt-6 top-[100px] left-10 absolute flex flex-col items-start'>
+        <div className='mt-6 top-[100px] absolute flex flex-col items-start font-Kanit'>
 
-          <div className='md:text-[64px] text-[40px] text-white leading-relaxed font-semibold font-Kanit  tracking-widest uppercase' >
-            make your <br/>own Story in <br/>DEXBATTALE
-          </div>
-          <div className='mt-10 flex flex-row items-center'>
-          <div className=''>
-          <a href='/'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1200px-Google_Play_Store_badge_EN.svg.png' alt= "Google Play Store badge EN.svg"
-            className=' h-[50px] w-auto'/></a>
-          </div>
+        <section class="bg-gray-900 text-white">
+  <div
+    class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
+  >
+    <div class="mx-auto max-w-3xl text-center">
+      <h1
+        class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl uppercase"
+      >
+        Make your
 
-          <div className=' ml-10'>
-            <a href='/'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1200px-Download_on_the_App_Store_Badge.svg.png'
-            className=' h-[50px] w-auto'/> </a>
-          </div>
-        </div>
-        {/* <button className='mt-8 text-[16px]  py-4 px-[100px] bg-transparent border border-blue-400 text-blue-400 uppercase hover:border-white rounded-lg'>Learn More</button> */}
+        <span class="sm:block"> Own story </span>
+        <span class="sm:block"> In DexBattle </span>
+      </h1>
+
+      <p class="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
+        tenetur fuga ducimus numquam ea!
+      </p>
+
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a
+          class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+          href="/get-started"
+        >
+          Get Started
+        </a>
+
+        <a
+          class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+          href="/about"
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
           
 
         </div>
