@@ -15,10 +15,6 @@ function Nfts () {
     return (
         <div id="nfts"className='overflow-hidden flex flex-col'>
     <div className='flex flex-col my-10 mx-16 justify-between items-center'>
-       <img
-       data-aos="fade-up"
-       src='/DexBattle PNG/DexBattle-Characters.jpg'
-       className='object-cover'/>
        <div className='mt-10'>
         <h1 data-aos="flip-right" className='text-3xl text-blue-400  font-Kanit text-center uppercase font-semibold tracking-wide'>The Problem</h1>
         <p data-aos="flip-right" className='text-center font-Kanit text-[20px] text-gray-400 mt-4 mb-5'>
@@ -62,26 +58,32 @@ buy with crypto payment from the game.
             </p>
        </div>
 
-       <div className='mt-10 flex flex-row items-center'>
-        <div className='p-4'>
-            <img
-            src='/DexBattle PNG/DexBattle7-nostore.jpg'
-            className=' w-[75%] h-auto rounded-lg border border-gray-400'/>
-        </div>
-        <div className='p-4 flex flex-col w-full h-full font-Kanit justify-between items-center'>
-             <p className='text-white  text-[40px] text-center'>
-                Mint Dex Battel NFTs <br/>  with Dex Coin!
-            </p>
-                <p className=' text-yellow-600 mt-4 text-[24px] leading-normal text-center'>
-                    1 NFT = 100 DEX <br/>1000 DEX = 1 BNB
-                </p>
-            <a href='/ ' className='mt-8 text-[20px]'><button className=' py-4 px-10 bg-transparent border border-blue-400 text-blue-400 uppercase hover:border-white hover:text-white '>Buy Dex coin tokens</button></a>
-             <a href='/mint'className='mt-4 text-[20px]'><button className=' py-4 px-10 bg-blue-400 text-black  uppercase hover:font-semibold hover:bg-white'>Go to minting portal</button></a>
-        </div> 
-             
+       <section class="bg-white dark:bg-gray-900">
+    <div class="container px-6 py-10 mx-auto">
         
 
-       </div>
+        <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+            <img class="/DexBattle PNG/DexBattle-Characters.jpg"alt=""/>
+
+            <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
+                <p class="text-sm text-blue-500 uppercase">Mint DexBattle nft with dex coinf</p>
+
+                <a href="/Exchange">
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    Buy Dex Coins
+                </span>
+                </button>
+                </a>
+
+
+                <a href="/mint">
+                <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">
+                    Mint DexBattale NFTs</button></a>
+            </div>
+        </div>
+    </div>
+</section>
 
     </div>
     </div>
