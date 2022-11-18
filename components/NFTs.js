@@ -15,6 +15,10 @@ function Nfts () {
     return (
         <div id="nfts"className='overflow-hidden flex flex-col'>
     <div className='flex flex-col my-10 mx-16 justify-between items-center'>
+       <img
+       data-aos="fade-up"
+       src='/DexBattle PNG/DexBattle-Characters.jpg'
+       className='object-cover'/>
        <div className='mt-10'>
         <h1 data-aos="flip-right" className='text-3xl text-blue-400  font-Kanit text-center uppercase font-semibold tracking-wide'>The Problem</h1>
         <p data-aos="flip-right" className='text-center font-Kanit text-[20px] text-gray-400 mt-4 mb-5'>
@@ -34,10 +38,6 @@ experience.
             </p>
             
        </div>
-       <img
-       data-aos="fade-up"
-       src='/Banner 01.jpg'
-       className='object-cover mt-10 rounded-lg border border-gray-400'/>
 
 <div className='mt-10'>
         <h1 data-aos="flip-right" className='text-3xl text-blue-400 font-Kanit text-center uppercase font-semibold tracking-wide'>NFT Characters</h1>
@@ -58,15 +58,15 @@ buy with crypto payment from the game.
             </p>
        </div>
 
-       <section class="bg-white dark:bg-gray-900">
+       <section class=" dark:bg-gray-900">
     <div class="container px-6 py-10 mx-auto">
-        
+        <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">From the blog</h1>
 
         <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
-            <img class="/DexBattle PNG/DexBattle-Characters.jpg"alt=""/>
+            <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="/DexBattle PNG/DexBattle-Characters.jpg"alt=""/>
 
             <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
-                <p class="text-sm text-blue-500 uppercase">Mint DexBattle nft with dex coinf</p>
+                <p class="text-sm text-blue-500 uppercase mb-8">Mint DexBattle nft with dex coins</p>
 
                 <a href="/Exchange">
                 <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
