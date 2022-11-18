@@ -18,45 +18,45 @@ export default function FAQs() {
   };
  
   return (
-    <Fragment>
+    <Fragment className='mx-10 p-4 my-6 rounded-lg bg-gray-800'>
       <Accordion open={open === 1} animate={customAnimation}>
-        <AccordionHeader onClick={() => handleOpen(1)}>
+        <AccordionHeader onClick={() => handleOpen(1)} className='text-white font-Kanit text-[24px]'>
           How to mint Dexbattle NFTs?
         </AccordionHeader>
-        <AccordionBody>
+        <AccordionBody className='text-justify text-gray-300 font-Kanit text-[20px]'>
           We&apos;re not always in the position that we want to be at.
           We&apos;re constantly growing. We&apos;re constantly making mistakes.
           We&apos;re constantly trying to express ourselves and actualize our
           dreams.
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 2} animate={customAnimation}>
+      <Accordion open={open === 2} animate={customAnimation} className='text-white font-Kanit text-[24px]'>
         <AccordionHeader onClick={() => handleOpen(2)}>
           How to buy $Dex Coins?
         </AccordionHeader>
-        <AccordionBody>
+        <AccordionBody className='text-justify text-gray-300 font-Kanit text-[20px]'>
           We&apos;re not always in the position that we want to be at.
           We&apos;re constantly growing. We&apos;re constantly making mistakes.
           We&apos;re constantly trying to express ourselves and actualize our
           dreams.
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 3} animate={customAnimation}>
+      <Accordion open={open === 3} animate={customAnimation} className='text-white font-Kanit text-[24px]'>
         <AccordionHeader onClick={() => handleOpen(3)}>
           How much costs Dexbattle NFTs?
         </AccordionHeader>
-        <AccordionBody>
+        <AccordionBody className='text-justify text-gray-300 font-Kanit text-[20px]'>
           We&apos;re not always in the position that we want to be at.
           We&apos;re constantly growing. We&apos;re constantly making mistakes.
           We&apos;re constantly trying to express ourselves and actualize our
           dreams.
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 3} animate={customAnimation}>
-        <AccordionHeader onClick={() => handleOpen(3)}>
+      <Accordion open={open === 4} animate={customAnimation} className='text-white font-Kanit text-[24px]'>
+        <AccordionHeader onClick={() => handleOpen(4)}>
           What is the total supply of Dexbattle NFts?
         </AccordionHeader>
-        <AccordionBody>
+        <AccordionBody className='text-justify text-gray-300 font-Kanit text-[20px]'>
           We&apos;re not always in the position that we want to be at.
           We&apos;re constantly growing. We&apos;re constantly making mistakes.
           We&apos;re constantly trying to express ourselves and actualize our
