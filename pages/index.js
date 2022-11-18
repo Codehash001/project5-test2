@@ -8,6 +8,7 @@ import Game from '../components/Game';
 import Roadmap from '../components/Roadmap';
 import About from '../components/About';
 import Footer from '../components/Footer';
+import Faqs from '../components/FAQs';
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <Game/>
       <Roadmap/>
       <About/>
+      <Faqs/>
       <Footer/>
       
        
