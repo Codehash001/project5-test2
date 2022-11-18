@@ -5,7 +5,7 @@ import Main from '../components/Main';
 import Nfts from '../components/NFTs';
 import Coins from '../components/Coin';
 import Game from '../components/Game';
-import Roadmap from '../components/Roadmap';
+import Roadmap from '../components/Roadmap2';
 import About from '../components/About';
 import Footer from '../components/Footer';
 import Faqs from '../components/FAQs';
