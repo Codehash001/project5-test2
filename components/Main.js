@@ -28,10 +28,10 @@ useEffect(() => {
       <h1
         class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-[64px] font-extrabold text-transparent sm:text-[64px] uppercase"
       >
-        Make your Own story in
+        Make your Own story
 
         
-        <span class="sm:block"> DexBattle </span>
+        <span class="sm:block">in DexBattle </span>
       </h1>
 
       <p class="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed">
@@ -40,19 +40,20 @@ useEffect(() => {
       </p>
 
       <div class="mt-8 flex flex-wrap justify-center gap-4">
-        <a
-          class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-          href="/get-started"
-        >
-          Get Started
-        </a>
-
-        <a
-          class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-          href="/about"
-        >
-          Learn More
-        </a>
+      <div class="flex items-center border rounded-lg px-4 py-2 w-52 mx-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" class="w-7 md:w-8"/>
+                    <div class="text-left ml-3">
+                        <p class='text-xs text-gray-200'>Download on </p>
+                        <p class="text-sm md:text-base"> Google Play Store </p>
+                    </div>
+                </div>
+                <div class="flex items-center border rounded-lg px-4 py-2 w-52 mx-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/888/888841.png" class="w-7 md:w-8"/>
+                    <div class="text-left ml-3">
+                        <p class='text-xs text-gray-200'>Download on </p>
+                        <p class="text-sm md:text-base"> Apple App Store </p>
+                    </div>
+                </div>
       </div>
     </div>
   </div>

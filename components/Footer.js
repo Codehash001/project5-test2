@@ -17,7 +17,7 @@ function Footer () {
                         <p class="text-sm md:text-base"> Google Play Store </p>
                     </div>
                 </div>
-                <div class="flex items-center border rounded-lg px-4 py-2 w-44 mx-2">
+                <div class="flex items-center border rounded-lg px-4 py-2 w-52 mx-2">
                     <img src="https://cdn-icons-png.flaticon.com/512/888/888841.png" class="w-7 md:w-8"/>
                     <div class="text-left ml-3">
                         <p class='text-xs text-gray-200'>Download on </p>
