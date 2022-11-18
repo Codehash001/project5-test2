@@ -18,7 +18,7 @@ export default function FAQs() {
   };
  
   return (
-    <Fragment className='mx-10 p-4 my-6 rounded-lg bg-gray-800'>
+    <div className='mx-10 p-4 my-6 rounded-lg bg-gray-800'>
       <Accordion open={open === 1} animate={customAnimation}>
         <AccordionHeader onClick={() => handleOpen(1)} className='text-white font-Kanit text-[24px]'>
           How to mint Dexbattle NFTs?
@@ -63,6 +63,6 @@ export default function FAQs() {
           dreams.
         </AccordionBody>
       </Accordion>
-    </Fragment>
+    </div>
   );
 }
