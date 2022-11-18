@@ -20,7 +20,7 @@ export default function FAQs() {
   return (
     <div className='mx-10 p-4 my-6 rounded-lg bg-gray-800'>
       <Accordion open={open === 1} animate={customAnimation}>
-        <AccordionHeader onClick={() => handleOpen(1)} className='text-white font-Kanit text-[24px]'>
+        <AccordionHeader onClick={() => handleOpen(1)} className='text-white font-Kanit text-[22px]'>
           How to mint Dexbattle NFTs?
         </AccordionHeader>
         <AccordionBody className='text-justify text-gray-300 font-Kanit text-[20px]'>
@@ -30,7 +30,7 @@ export default function FAQs() {
           dreams.
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 2} animate={customAnimation} className='text-white font-Kanit text-[24px]'>
+      <Accordion open={open === 2} animate={customAnimation} className='text-white font-Kanit text-[22px]'>
         <AccordionHeader onClick={() => handleOpen(2)}>
           How to buy $Dex Coins?
         </AccordionHeader>
@@ -41,7 +41,7 @@ export default function FAQs() {
           dreams.
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 3} animate={customAnimation} className='text-white font-Kanit text-[24px]'>
+      <Accordion open={open === 3} animate={customAnimation} className='text-white font-Kanit text-[22px]'>
         <AccordionHeader onClick={() => handleOpen(3)}>
           How much costs Dexbattle NFTs?
         </AccordionHeader>
