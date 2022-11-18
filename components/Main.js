@@ -26,12 +26,12 @@ useEffect(() => {
   >
     <div class="mx-auto max-w-3xl text-center">
       <h1
-        class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl uppercase"
+        class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-5xl font-extrabold text-transparent sm:text-5xl uppercase"
       >
         Make your
 
-        <span class="sm:block"> Own story </span>
-        <span class="sm:block"> In DexBattle </span>
+        <span class="sm:block"> Own story in </span>
+        <span class="sm:block"> DexBattle </span>
       </h1>
 
       <p class="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed">
