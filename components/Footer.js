@@ -4,18 +4,38 @@ import React from 'react';
 
 function Footer () {
     return(
-      <div className='flex md:justify-evenly items-center justify-between w-full h-20 px-2 2xl:px-16 bg-black my-4'>
-	
-            <a href="/mint" className='md:text-[20px] text-[16px] text-gray-600 font-Kanit' target="_blank" rel="noreferrer">Mint</a>
-            <a href="https://twitter.com/" className='md:text-[20px] text-[16px] text-gray-600 font-Kanit' target="_blank" rel="noreferrer">Twitter</a>
-	
-	
-            <Link href="/"><img src="/Dex.png" className='cursor-pointer h-[60px] w-[80px]'/></Link>
-	
-            <a href="https://bscscan.com/" className='md:text-[20px] text-[16px] text-gray-600 font-Kanit' target="_blank" rel="noreferrer">BscScan</a>
-            <a href="https://discord.gg" className='md:text-[20px] text-[16px] text-gray-600 font-Kanit' target="_blank" rel="noreferrer">Discord</a>
-		
-      </div>
+      <div class=" bg-gray-900">
+    <div class="max-w-2xl mx-auto text-white py-10">
+        <div class="text-center">
+            <h3 class="text-3xl mb-3"> Download our fitness app </h3>
+            <p> Stay fit. All day, every day. </p>
+            <div class="flex justify-center my-10">
+                <div class="flex items-center border rounded-lg px-4 py-2 w-52 mx-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" class="w-7 md:w-8"/>
+                    <div class="text-left ml-3">
+                        <p class='text-xs text-gray-200'>Download on </p>
+                        <p class="text-sm md:text-base"> Google Play Store </p>
+                    </div>
+                </div>
+                <div class="flex items-center border rounded-lg px-4 py-2 w-44 mx-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/888/888841.png" class="w-7 md:w-8"/>
+                    <div class="text-left ml-3">
+                        <p class='text-xs text-gray-200'>Download on </p>
+                        <p class="text-sm md:text-base"> Apple Store </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
+            <p class="order-2 md:order-1 mt-8 md:mt-0"> &copy; Beautiful Footer, 2021. </p>
+            <div class="order-1 md:order-2">
+                <span class="px-2">About us</span>
+                <span class="px-2 border-l">Contact us</span>
+                <span class="px-2 border-l">Privacy Policy</span>
+            </div>
+        </div>
+    </div>
+</div>
     )
 }
 
