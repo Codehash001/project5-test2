@@ -20,7 +20,7 @@ useEffect(() => {
         />
         <div className='mt-6 top-[100px] absolute flex flex-col items-start font-Kanit'>
 
-        <section class="bg-gray-900 text-white">
+        
   <div
     class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
   >
@@ -56,7 +56,7 @@ useEffect(() => {
       </div>
     </div>
   </div>
-</section>
+
           
 
         </div>
