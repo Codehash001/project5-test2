@@ -12,7 +12,7 @@ function Navbar () {
     setNav(!nav);
   };
 
-  return (
+  return ( 
     <div>
     <div className='fixed z-[100] w-screen md:mx-10 lg:mx-10 bg-black/30 backdrop-blur-sm overflow-hidden border-b-white rounded-md'>
       <ul className='flex flex-row items-center justify-between '>

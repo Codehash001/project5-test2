@@ -4,7 +4,7 @@ import Weaplist from './WeaponData.json'
 import Cards from "./card";
 import { initOnboard } from "../ulits/onboard"
 import { config } from '../dapp.config'
-import NavMint from "../components/NavMint";
+
 import {
   getTotalMinted,
   getMaxLeaderSupply,
@@ -120,8 +120,8 @@ useEffect(() => {
 
 
   return (
-    <div>
-      <NavMint/>
+    <div >
+      
           <form>   
     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
     <div class="relative">
