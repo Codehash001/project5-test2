@@ -120,9 +120,41 @@ useEffect(() => {
 
 
   return (
-    <div >
+    <div className="min-h-screen bg-gradient-to-tr from-[#141414] to-[#330042] justify-center items-center py-10 flex flex-col overflow-hidden">
+
+<div className='fixed z-[100] w-screen md:mx-10 lg:mx-10 bg-black/30 backdrop-blur-sm overflow-hidden border-b-white rounded-md my-4'>
+      <ul className='flex flex-row items-center justify-between '>
+        <li>
+          <img className = 'w-auto h-[55px]' 
+            src = '/Dex.png'
+          />
+        </li>
+          <div className='hidden bg-gray-700/30 py-2 px-4 backdrop-blur-md md:flex flex-row font-Kanit text-white rounded-full text-[20px]'>
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='home' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Home</h1></Link>
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='nfts' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> Characters</h1></Link>
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='dexcoin' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Weapons</h1></Link>
+            <a className="cursor-pointer hover:text-blue-400" href='/DexBattleWhitepaper.pdf' download='DexBattleWhitepaper.pdf'><h1 className='mx-4'>Whitepaper</h1></a>
+          </div>
+
+        <li>
+        <div className=' py-2 px-4 backdrop-blur-md flex flex-row font-Kanit text-white rounded-md border border-white hover:bg-blue-200 hover:text-black  hover:font-semibold'>
+            <a href='/mint'><h1 className='mx-4 uppercase tracking-wide'>Connect Wallet</h1> </a>
+
+          </div>
+          
+        </li>
+        <li>
+        <div onClick={handleNav}
+          className=' md:hidden rounded-md p-2 bg-white mr-2 cursor-pointer' >
+            <AiOutlineMenu size={18} />
+          </div>
+        </li>
+
+      </ul>
       
-          <form>   
+      </div>
+      
+    <form>   
     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
     <div class="relative">
         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
