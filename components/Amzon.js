@@ -32,23 +32,12 @@ const Amazon = () => {
 
   const [MintedAmount, setMintedAmount ] = useState(0)
   
-
-  //const [totalMinted, setTotalMinted] = useState(0)
   
   const [paused, setPaused] = useState(false)
   const [status, setStatus] = useState(null)
   const [isMinting, setIsMinting] = useState(false)
   const [onboard, setOnboard] = useState(null)
   const [walletAddress, setWalletAddress] = useState('')
-
-
-  // const ID = ChaData.map((val) => {
-  //   const id =(val.id)
-  //   return id
-  // ChaData.map(id)
-
-
-  // })
 
 
 useEffect(() => {
@@ -160,11 +149,17 @@ useEffect(() => {
           </div>
 
         <li>
-        <div className=' py-2 px-4 backdrop-blur-md flex flex-row font-Kanit text-white rounded-md border border-white hover:bg-blue-200 hover:text-black  hover:font-semibold'>
-            { walletAddress ?  (<h1 className='mx-4 uppercase tracking-wide'>Connected: {walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)}</h1>) : (<h1 className='mx-4 uppercase tracking-wide' onClick={connectWalletHandler}>Connect Wallet</h1>
-            ) }
+        
+            { walletAddress ?  (
+            <div className=' py-2 px-4 backdrop-blur-md flex flex-row font-Kanit text-white rounded-md border border-white bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'>
+            <h1 className='mx-4 uppercase tracking-wide'>Connected: {walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)}</h1> </div>
+            ) : (
+            <div className=' py-2 px-4 backdrop-blur-md flex flex-row font-Kanit text-white rounded-md border border-white hover:bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 hover:text-black' onClick={connectWalletHandler}>
+            <h1 className='mx-4 uppercase tracking-wide'>Connect Wallet</h1></div>
+            )
+            }
 
-          </div>
+          
           
         </li>
         <li>

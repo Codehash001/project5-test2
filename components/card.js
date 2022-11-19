@@ -49,7 +49,7 @@ if (previouslySelectedWallet !== null && onboard) {
 
 
 
- const { id ,title, tier, supply, image } = item;
+ const { id ,title, tier, image } = item;
  
 useEffect(() => {
     const init = async (id) => {
@@ -80,7 +80,7 @@ useEffect(() => {
     const init = async (id) => {
 
         
-        setMaxSupply(id >= 128 ? maxLegendarySupply : id >= 99 ? maxEpicSupply : id >= 64 ? maxRareSupply : id >= 37 ? maxUncommonSupply : id >= 10 ? maxCommonSupply : maxLeaderSupply)
+        setMaxSupply(id >= 128 ? maxLegendarySupply() : id >= 99 ? maxEpicSupply() : id >= 64 ? maxRareSupply() : id >= 37 ? maxUncommonSupply() : id >= 10 ? maxCommonSupply() : maxLeaderSupply())
 
  }
 
@@ -104,14 +104,14 @@ useEffect(() => {
         <p> Minted:{totalMinted}</p>
       </div>
       <div class="flex space-x-1 items-center">
-        <p>Available:{totalMinted - maxSupply}</p>
+        <p>Available:{maxSupply - totalMinted}</p>
       </div>
       {walletAddress?
       (<button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
     onClick={() => handleClick(item)}>
     Mint now</button>) : (
     <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
-    onClick={() => alert("TO BE ABLE TO MINT YOU NEED TO CONNECT WALLET")}>
+    onClick={() => alert("To be able to mint you nedd to connect your wallet")}>
     Mint now</button>)  }
     </div>
   </div>

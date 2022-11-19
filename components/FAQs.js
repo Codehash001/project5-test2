@@ -31,10 +31,10 @@ export default function FAQs() {
       </Accordion>
       <Accordion open={open === 2} animate={customAnimation} className='text-white font-Kanit text-[22px]'>
         <AccordionHeader onClick={() => handleOpen(2)}>
-          How to buy $Dex Coins?
+          How to buy Dex Coins?
         </AccordionHeader>
         <AccordionBody className='text-justify text-gray-300 font-Kanit text-[20px]'>
-        You can earn $Dex coins by playing DexBattle and you can swap BNB with $Dex Coins from our instant <a href="/exchnage" className="text-semibold text-blue-500">exchnage.</a> 
+        You can earn Dex coins by playing DexBattle and you can swap BNB with Dex Coins from our instant <a href="/exchnage" className="text-semibold text-blue-500">exchnage.</a> 
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 3} animate={customAnimation} className='text-white font-Kanit text-[22px]'>
