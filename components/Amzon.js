@@ -129,9 +129,9 @@ useEffect(() => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-tr from-[#141414] to-[#330042] justify-center items-center py-10 flex flex-col overflow-hidden mx-4">
+    <div className="min-h-screen bg-gradient-to-tr from-[#141414] to-[#330042] justify-center items-center pb-10 flex flex-col overflow-hidden">
 
-<div className='w-screen md:mx-10 lg:mx-10 bg-black/30 backdrop-blur-sm overflow-hidden border-b-white rounded-md my-4'>
+<div className='w-screen mx-10 md:mx-10 lg:mx-10 bg-black/30 backdrop-blur-sm overflow-hidden border-b-white rounded-md my-4'>
       <ul className='flex flex-row items-center justify-between '>
         <li>
           <img className = 'w-auto h-[55px]' 
@@ -139,7 +139,7 @@ useEffect(() => {
           />
         </li>
         <li>
-        <form>   
+        <form className='my-4'>   
     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
     <div class="relative">
         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
