@@ -10,17 +10,19 @@ import {
     getMaxUncommonSupply,
     getMaxCommonSupply,
     isPausedState          } from '../ulits/interact'
-import { Legend } from "chart.js";
+import {config} from '../info.config'
+
+
 
 const Cards = ({ item, handleClick, }) => {
 
 const [totalMinted, setTotalMinted ] = useState(0)
-const [maxLeaderSupply, setMaxLeaderSupply] = useState(0)
-const [maxLegendarySupply, setMaxLegendarySupply] = useState(0)
-const [maxEpicSupply, setMaxEpicSupply] = useState(0)
-const [maxRareSupply, setMaxRareSupply] = useState(0)
-const [maxUncommonSupply, setMaxUncommonSupply] = useState(0)
-const [maxCommonSupply, setMaxCommonSupply] = useState(0)
+// const [maxLeaderSupply, setMaxLeaderSupply] = useState(0)
+// const [maxLegendarySupply, setMaxLegendarySupply] = useState(0)
+// const [maxEpicSupply, setMaxEpicSupply] = useState(0)
+// const [maxRareSupply, setMaxRareSupply] = useState(0)
+// const [maxUncommonSupply, setMaxUncommonSupply] = useState(0)
+// const [maxCommonSupply, setMaxCommonSupply] = useState(0)
 const [maxSupply, setMaxSupply] = useState(0)
 const [paused, setPaused] =useState(false)
 const [onboard, setOnboard] = useState(null)
@@ -67,19 +69,20 @@ useEffect(() => {
   useEffect(() => {
     const init = async () => {
       
-        setMaxLeaderSupply(await getMaxLeaderSupply())
-        setMaxLegendarySupply(await getMaxLegendarySupply())
-        setMaxEpicSupply(await getMaxEpicSupply())
-        setMaxRareSupply(await getMaxRareSupply())
-        setMaxUncommonSupply(await getMaxUncommonSupply())
-        setMaxCommonSupply(await getMaxCommonSupply())
         setPaused(await isPausedState())
-
-        setMaxSupply(id >=10 ? maxLeaderSupply() : maxCommonSupply())
   
  }
 
     init()
+  }, [])
+
+  useEffect(() => {
+    const init = async (id) => {
+      
+      setMaxSupply(id >= 128 ? config.CommonSupply : config.LeaderSupply)
+ }
+
+    init(id)
   }, [])
 
 
