@@ -5,6 +5,9 @@ import Cards from "./card";
 import { initOnboard } from "../ulits/onboard"
 import { config } from '../dapp.config'
 
+import {Link} from 'react-scroll/modules';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+
 import {
   getTotalMinted,
   getMaxLeaderSupply,
@@ -97,6 +100,12 @@ useEffect(() => {
       window.location.reload(false)
     }
   }
+
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
 
 
