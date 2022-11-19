@@ -26,6 +26,9 @@ const [paused, setPaused] =useState(false)
 const [onboard, setOnboard] = useState(null)
 const [walletAddress, setWalletAddress] = useState('')
 
+
+
+
 useEffect( () => {
   const onboardData = initOnboard( {
     address: (address) => setWalletAddress(address ? address : ''),
@@ -71,6 +74,8 @@ useEffect(() => {
         setMaxUncommonSupply(await getMaxUncommonSupply())
         setMaxCommonSupply(await getMaxCommonSupply())
         setPaused(await isPausedState())
+
+        setMaxSupply(id >=10 ? maxLeaderSupply() : maxCommonSupply())
   
  }
 
@@ -89,7 +94,7 @@ useEffect(() => {
     <div class="my-4">
       <div class="flex space-x-1 items-center">
         <p>Supply :
-        {tier == Leader? maxLeaderSupply : tier == Epic ? maxEpicSupply : tier == Rare? maxRareSupply :tier == Uncommon? maxUncommonSupply : tire == Common ? maxCommonSupply : maxLegendarySupply}
+        {maxSupply}
           </p>
       </div>
       <div class="flex space-x-1 items-center" >
