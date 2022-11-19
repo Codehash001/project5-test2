@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { initOnboard } from "../ulits/onboard"
 import React from "react";
 import {
     getTotalMinted,
