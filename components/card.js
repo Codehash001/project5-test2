@@ -89,7 +89,7 @@ useEffect(() => {
     <div class="my-4">
       <div class="flex space-x-1 items-center">
         <p>Supply :
-        {tier == Legendary ? maxLegendarySupply : tier == Leader? maxLeaderSupply : tier == Epic ? maxEpicSupply : tier == Rare? maxRareSupply :tier == Uncommon? maxUncommonSupply : maxCommonSupply}
+        {tier == Leader? maxLeaderSupply : tier == Epic ? maxEpicSupply : tier == Rare? maxRareSupply :tier == Uncommon? maxUncommonSupply : tire == Common ? maxCommonSupply : maxLegendarySupply}
           </p>
       </div>
       <div class="flex space-x-1 items-center" >
