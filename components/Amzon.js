@@ -22,7 +22,7 @@ const Amazon = () => {
   const [isMinting, setIsMinting] = useState(false)
   const [onboard, setOnboard] = useState(null)
   const [walletAddress, setWalletAddress] = useState('')
-  const [cost, setCost] = useSatet(0)
+  const [cost, setCost] = useState(0)
 
 
 useEffect(() => {
