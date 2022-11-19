@@ -18,13 +18,13 @@ useEffect(() => {
           src="/banner2.jpg"
           className="w-screen h-auto brightness-75 object-fill blur-[1px]"
         />
-        <div className='mt-6 top-[20px] absolute flex flex-col items-start font-Kanit bg-black/30 backdrop-blur p-6'>
+        <div className='mt-6 top-[20px] absolute flex flex-col items-start font-Kanit '>
 
         
   <div
     class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
   >
-    <div class="mx-auto max-w-3xl text-center">
+    <div class="mx-auto max-w-3xl text-center bg-black/30 backdrop-blur p-6">
       <h1
         class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-[72px] font-extrabold text-transparent sm:text-[68px] uppercase"
       >
