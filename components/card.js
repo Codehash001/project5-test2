@@ -10,6 +10,7 @@ import {
     getMaxUncommonSupply,
     getMaxCommonSupply,
     isPausedState          } from '../ulits/interact'
+import { Legend } from "chart.js";
 
 const Cards = ({ item, handleClick, }) => {
 
@@ -76,16 +77,7 @@ useEffect(() => {
     init()
   }, [])
 
-useEffect(() => {
-    const init = async (id) => {
 
-        
-        setMaxSupply(id >= 128 ? maxLegendarySupply() : id >= 99 ? maxEpicSupply() : id >= 64 ? maxRareSupply() : id >= 37 ? maxUncommonSupply() : id >= 10 ? maxCommonSupply() : maxLeaderSupply())
-
- }
-
-    init(id)
-  }, [])
  
   return (
     <div class="max-w-sm bg-gray-200 px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
@@ -97,7 +89,7 @@ useEffect(() => {
     <div class="my-4">
       <div class="flex space-x-1 items-center">
         <p>Supply :
-        {maxSupply}
+        {tier == Legendary ? maxLegendarySupply : tier == Leader? maxLeaderSupply : tier == Epic ? maxEpicSupply : tier == Rare? maxRareSupply :tier == Uncommon? maxUncommonSupply : maxCommonSupply}
           </p>
       </div>
       <div class="flex space-x-1 items-center" >
