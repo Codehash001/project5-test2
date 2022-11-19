@@ -15,10 +15,6 @@ function Nfts () {
     return (
         <div id="nfts"className='overflow-hidden flex flex-col'>
     <div className='flex flex-col my-10 mx-16 justify-between items-center'>
-       <img
-       data-aos="fade-up"
-       src='/DexBattle PNG/DexBattle-Characters.jpg'
-       className='object-cover'/>
        <div className='mt-10'>
         <h1 data-aos="flip-right" className='text-3xl text-blue-400  font-Kanit text-center uppercase font-semibold tracking-wide'>The Problem</h1>
         <p data-aos="flip-right" className='text-center font-Kanit text-[20px] text-gray-400 mt-4 mb-5'>
@@ -38,6 +34,13 @@ experience.
             </p>
             
        </div>
+
+       {/* Slideshow here*/}
+       <div className="my-4 w-full h-auto rounded-md border border-white">
+            <img src='/Banner 03.jpg'
+            className="object-cover"/>
+       </div>
+
 
 <div className='mt-10'>
         <h1 data-aos="flip-right" className='text-3xl text-blue-400 font-Kanit text-center uppercase font-semibold tracking-wide'>NFT Characters</h1>
