@@ -21,6 +21,30 @@ const [maxUncommonSupply, setMaxUncommonSupply] = useState(0)
 const [maxCommonSupply, setMaxCommonSupply] = useState(0)
 const [maxSupply, setMaxSupply] = useState(0)
 const [paused, setPaused] =useState(false)
+const [onboard, setOnboard] = useState(null)
+const [walletAddress, setWalletAddress] = useState('')
+
+useEffect( () => {
+  const onboardData = initOnboard( {
+    address: (address) => setWalletAddress(address ? address : ''),
+    wallet: (wallet) => {
+      if (wallet.provider) {
+        window.localStorage.setItem('selectedWallet', wallet.name)
+      } else {
+        window.localStorage.removeItem('selectedWallet') }}
+  }
+  )
+setOnboard(onboardData)
+}, [])
+
+const previouslySelectedWallet = typeof window !== 'undefined' &&
+window.localStorage.getItem('selectedWallet')
+
+useEffect(() => {
+if (previouslySelectedWallet !== null && onboard) {
+  onboard.walletSelect(previouslySelectedWallet)
+}
+}, [onboard, previouslySelectedWallet])
 
 
 
@@ -81,9 +105,13 @@ useEffect(() => {
       <div class="flex space-x-1 items-center">
         <p>Available:{totalMinted - maxSupply}</p>
       </div>
-       <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
-      onClick={() => handleClick(item)}>
-      Mint now</button>
+      {walletAddress?
+      (<button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
+    onClick={() => handleClick(item)}>
+    Mint now</button>) : (
+    <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
+    onClick={() => alert("TO BE ABLE TO MINT YOU NEED TO CONNECT WALLET")}>
+    Mint now</button>)  }
     </div>
   </div>
   );
