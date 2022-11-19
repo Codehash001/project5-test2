@@ -21,7 +21,7 @@ const [maxSupply, setMaxSupply] = useState(0)
 const [paused, setPaused] =useState(false)
 const [onboard, setOnboard] = useState(null)
 const [walletAddress, setWalletAddress] = useState('')
-const [cost, setCost] = useSatet(0)
+const [cost, setCost] = useState(0)
 
 
 
