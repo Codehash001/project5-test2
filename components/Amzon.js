@@ -161,7 +161,7 @@ useEffect(() => {
 
         <li>
         <div className=' py-2 px-4 backdrop-blur-md flex flex-row font-Kanit text-white rounded-md border border-white hover:bg-blue-200 hover:text-black  hover:font-semibold'>
-            { walletAddress ?  (<h1 className='mx-4 uppercase tracking-wide'>Connected: {walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)}</h1>) : (<a href='/mint' onClick={connectWalletHandler}><h1 className='mx-4 uppercase tracking-wide'>Connect Wallet</h1> </a>
+            { walletAddress ?  (<h1 className='mx-4 uppercase tracking-wide'>Connected: {walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)}</h1>) : (<h1 className='mx-4 uppercase tracking-wide' onClick={connectWalletHandler}>Connect Wallet</h1>
             ) }
 
           </div>
