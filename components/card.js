@@ -75,7 +75,7 @@ useEffect(() => {
     const init = async (id) => {
       
       setMaxSupply(id >= 128 ? config.LegendarySupply : id>=99 ? config.EpicSupply : id>=64 ? config.RareSupply : id>=37 ? config.UncommonSupply : id>=10 ? config.CommonSupply : config.LeaderSupply)
-      setCost(id>=128 ? config.legendary_items_cost : id>=99 ? config.Epic_items_cost : id>=64 ? config.rare_items_cost : id>=37 ? config.uncommon_items_cost : id>=10 ? config.common_items_cost : config.leader_items_cost)
+      setCost(id>=128 ? config.legendary_items_cost : id>=99 ? config.epic_items_cost : id>=64 ? config.rare_items_cost : id>=37 ? config.uncommon_items_cost : id>=10 ? config.common_items_cost : config.leader_items_cost)
  }
 
     init(id)
@@ -88,7 +88,7 @@ useEffect(() => {
     <div class="relative">
       <img class="w-full rounded-xl" src={image} alt="Character" />
       <p class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">{tier}</p>
-      <p class="absolute top-0 right-0 bg-yellow-500 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">{cost}</p>
+      <p class="absolute top-0 right-0 bg-white text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">{cost} $Dex</p>
     </div>
     <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">{title}</h1>
     <div class="my-4">
