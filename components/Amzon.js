@@ -3,34 +3,18 @@ import Chalist from "./CharacterData.json";
 import Weaplist from './WeaponData.json'
 import Cards from "./card";
 import { initOnboard } from "../ulits/onboard"
-import { config } from '../dapp.config'
+import { config } from '../info.config'
 
 import {Link} from 'react-scroll/modules';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 import {
-  getTotalMinted,
-  getMaxLeaderSupply,
-  getMaxLegendarySupply,
-  getMaxEpicSupply,
-  getMaxRareSupply,
-  getMaxUncommonSupply,
-  getMaxCommonSupply,
   isPausedState,
   doMint,
   doApprove          } from '../ulits/interact'
 
 const Amazon = () => {
     const [searchTerm, setSearchTerm] = useState("")
-
-  const [maxLeaderSupply, setMaxLeaderSupply] = useState(0)
-  const [maxLegendarySupply, setMaxLegendarySupply] = useState(0)
-  const [maxEpicSupply, setMaxEpicSupply] = useState(0)
-  const [maxRareSupply, setMaxRareSupply] = useState(0)
-  const [maxUncommonSupply, setMaxUncommonSupply] = useState(0)
-  const [maxCommonSupply, setMaxCommonSupply] = useState(0)
-
-  const [MintedAmount, setMintedAmount ] = useState(0)
   
   
   const [paused, setPaused] = useState(false)
@@ -38,6 +22,7 @@ const Amazon = () => {
   const [isMinting, setIsMinting] = useState(false)
   const [onboard, setOnboard] = useState(null)
   const [walletAddress, setWalletAddress] = useState('')
+  const [cost, setCost] = useSatet(0)
 
 
 useEffect(() => {
@@ -102,11 +87,11 @@ useEffect(() => {
 
    /* global Bigint */
   const handleClick = async (item) => {
-
+    setCost(id>=128 ? config.legendary_items_cost : id>=99 ? config.Epic_items_cost : id>=64 ? config.rare_items_cost : id>=37 ? config.uncommon_items_cost : id>=10 ? config.common_items_cost : config.leader_items_cost)
     setIsMinting(true)
     const id= item.id
-    const Amount = BigInt(1000*10**18)
-    const { success, status } = await doApprove(Amount) && doMint(id) 
+    const price = BigInt(cost*10**18)
+    const { success, status } = await doApprove(price) && doMint(id) 
     
         setStatus({
           success,
@@ -205,4 +190,4 @@ useEffect(() => {
   );
 };
 
-export default Amazon;
+export default Amazon ;
