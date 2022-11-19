@@ -6,4 +6,4 @@ const config = {
     UncommonSupply:1000,
     CommonSupply: 2500
   }
-  
+  export {config}

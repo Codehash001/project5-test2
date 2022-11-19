@@ -10,7 +10,7 @@ import {
     getMaxUncommonSupply,
     getMaxCommonSupply,
     isPausedState          } from '../ulits/interact'
-import {config} from '../info.config'
+    import { config } from '../info.config'
 
 
 
