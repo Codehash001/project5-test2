@@ -131,7 +131,7 @@ useEffect(() => {
   return (
     <div className="min-h-screen bg-gradient-to-tr from-[#141414] to-[#330042] justify-center items-center py-10 flex flex-col overflow-hidden">
 
-<div className='fixed z-[100] w-screen md:mx-10 lg:mx-10 bg-black/30 backdrop-blur-sm overflow-hidden border-b-white rounded-md my-4'>
+<div className='w-screen md:mx-10 lg:mx-10 bg-black/30 backdrop-blur-sm overflow-hidden border-b-white rounded-md my-4'>
       <ul className='flex flex-row items-center justify-between '>
         <li>
           <img className = 'w-auto h-[55px]' 
