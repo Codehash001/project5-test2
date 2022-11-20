@@ -9,7 +9,7 @@ const config = {
     legendary_items_cost: 200,
     epic_items_cost: 150,
     rare_items_cost: 100,
-    common_items_cost: 75,
-    uncommon_items_cost: 50
+    uncommon_items_cost: 75,
+    common_items_cost: 50
 }
   export {config}
