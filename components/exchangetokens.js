@@ -193,30 +193,39 @@ return(
                     <h1 class="block text-gray-700 text-sm font-bold mb-2">
                       Balance: {Number.parseFloat(tokenBalance / 10**18).toFixed(4)}
                     </h1>
-                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="dexBalance" type="number" value={exchangeAmount} onChange={handler}/>
-                  </div>
-                  <div class="my-4">
-                    <h1 class="block text-gray-700 text-sm font-bold mb-2" >
-                      Balance : {Number.parseFloat(bnbBalance / 10**18).toFixed(4)}
-                    </h1>
-                    
-                    
-                    <div className='shadow appearance-none border bg- rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline'> {payAmount}</div>
-
                     <div className='my-6 w-full h-[40px]'>
-                        {/* test input feild here*/ }
+                        {/* input feild here*/ }
                       <div className='flex flex-row '>
                         <div className='w-[40px] h-[40px]'>
                           < img src='/coin.png' className='object-cover'/>
 
                         </div>
                         <div>
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="dexBalance2" type="number" value={exchangeAmount} onChange={handler}/>
+                        <input className="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-full" id="dexBalance" type="number" value={exchangeAmount} onChange={handler}/>
                         </div>
 
                       </div>
                     </div>
+                  </div>
+                  <div class="my-4">
+                    <h1 class="block text-gray-700 text-sm font-bold mb-2" >
+                      Balance : {Number.parseFloat(bnbBalance / 10**18).toFixed(4)}
+                    </h1>
+                    
+                     <div className='my-6 w-full h-[40px]'>
+                        {/*autofill feild here*/ }
+                      <div className='flex flex-row '>
+                        <div className='w-[40px] h-[40px]'>
+                          < img src='/bnb.png' className='object-cover'/>
 
+                        </div>
+                        <div>
+                    <div className='shadow appearance-none border bg-  w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline rounded-full'> {payAmount}</div>
+                    </div>
+
+                    </div>
+                    </div>   
+                    
                   </div>
                   <div class="flex items-center justify-between">
                    {walletAddress ? ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline" type="button"
