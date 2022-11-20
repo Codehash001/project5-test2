@@ -195,7 +195,7 @@ return(
                     </h1>
                     <div class="relative">
   <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-    <svg aria-hidden="true" class="w-5 h-5 " viewBox="0 0 20 20" src='/coin.svg'></svg>
+    <img class="w-5 h-5 " viewBox="0 0 20 20" src='/coin.svg'/>
   </div>
   <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="dexBalance" type="number" value={exchangeAmount} onChange={handler}/>
 </div>
