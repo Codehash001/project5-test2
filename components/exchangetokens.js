@@ -237,10 +237,10 @@ return(
                 <form class="mx-6">
                   <div class="my-4">
                  
-                    <h1 class="block text-gray-700 text-sm font-bold">
+                    <h1 class="block text-gray-700 text-[18px] font-bold">
                       Balance: {Number.parseFloat(tokenBalance / 10**18).toFixed(4)} $Dex
                     </h1>
-                    <div className='my-6 w-full h-[40px]'>
+                    <div className='mb-6 w-full h-[40px]'>
                         {/* input feild here*/ }
                       <div className='flex flex-row '>
                         <div className='w-[40px] h-[40px]'>
@@ -254,12 +254,12 @@ return(
                       </div>
                     </div>
                   </div>
-                  <div class="my-4">
-                    <h1 class="block text-gray-700 text-sm font-bold" >
+                  <div class="mt-4">
+                    <h1 class="block text-gray-700 text-[18px] font-bold" >
                       Balance : {Number.parseFloat(bnbBalance / 10**18).toFixed(4)} BNB
                     </h1>
                     
-                     <div className='my-6 w-full h-[40px]'>
+                     <div className='mb-6 w-full h-[40px]'>
                         {/*autofill feild here*/ }
                       <div className='flex flex-row '>
                         <div className='w-[40px] h-[40px]'>
@@ -274,9 +274,9 @@ return(
                     </div>   
                     
                   </div>
-                  <div class="flex items-center justify-between">
+                  <div class="flex flex-col items-center justify-between">
                    
-                   <h1 className='my-4 w-full font-Kanit text-white text-[24px]'>
+                   <h1 className='my-4 w-full font-Kanit text-white text-[20px]'>
                         Current Rate : {exchangeRate} $Dex per 1 BNB
                    </h1>
                    {walletAddress ? ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline" type="button"
