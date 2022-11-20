@@ -22,7 +22,6 @@ const Amazon = () => {
   const [isMinting, setIsMinting] = useState(false)
   const [onboard, setOnboard] = useState(null)
   const [walletAddress, setWalletAddress] = useState('')
-  const [cost, setCost] = useState(0)
 
 
 useEffect(() => {
@@ -85,11 +84,12 @@ useEffect(() => {
     setIsMinting(true)
     const id= item.id
     console.log(id)
-    if (item.tier == "leader") {
-      setCost(config.leader_items_cost)
+    const cost = 0
+    if (item.tier === "leader") {
+      cost = config.leader_items_cost
     }
     else {
-      setCost(config.epic_items_cost)
+      cost = config.epic_items_cost
     }
     console.log(cost)
     const price = BigInt(cost*10**18)
