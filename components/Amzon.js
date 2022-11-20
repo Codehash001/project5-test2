@@ -85,8 +85,11 @@ useEffect(() => {
     setIsMinting(true)
     const id= item.id
     console.log(id)
-    if (id <= 10) {
+    if (item.tier == leader) {
       setCost(config.leader_items_cost)
+    }
+    else {
+      setCost(config.epic_items_cost)
     }
     console.log(cost)
     const price = BigInt(cost*10**18)
