@@ -85,7 +85,7 @@ useEffect(() => {
     const id= item.id
     console.log(id)
     let cost = 0
-    if (item.tier === "leader") {
+    if (item.tier == "leader" ) {
       cost = config.leader_items_cost
     }
     else {
