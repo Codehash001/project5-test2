@@ -21,10 +21,12 @@ import ChartComponent from "../components/ChartComponent";
 
 
 import {
-          doBuy,
-          doSell,
-          doApprove,
-        getExchangeRate } from '../ulits/interactex'
+        doBuy,
+        doSell,
+        doApprove,
+        getExchangeRate,
+        getTokenBalance,
+        getBnbBalance } from '../ulits/interactex'
 
 export default function Exchange() {
 
@@ -34,15 +36,8 @@ export default function Exchange() {
   const [onboard, setOnboard] = useState(null)
   const [walletAddress, setWalletAddress] = useState('')
   const [exchangeRate, setExchangeRate] = useState(0)
-
-
-  useEffect ( () => {
-    const init = async () => {
-      setExchangeRate(await(getExchangeRate()))
-    }
-    init()
-  }, [])
- 
+  const [tokenBalance, setTokenBalance] = useState(0)
+  const [bnbBalance, setBnbBalance] = useState(0)
 
   useEffect( () => {
     const onboardData = initOnboard( {
@@ -65,6 +60,19 @@ useEffect(() => {
     onboard.walletSelect(previouslySelectedWallet)
   }
 }, [onboard, previouslySelectedWallet])
+
+  useEffect ( () => {
+    const init = async () => {
+      setExchangeRate(await(getExchangeRate()))
+      setTokenBalance(await(getTokenBalance(walletAddress)))
+      setBnbBalance(await(getBnbBalance(walletAddress)))
+      
+    }
+    init()
+  }, [])
+ 
+
+
 
   const connectWalletHandler = async () => {
     const walletSelected = await onboard.walletSelect()
@@ -183,13 +191,13 @@ return(
                   <div class="my-4">
                  
                     <h1 class="block text-gray-700 text-sm font-bold mb-2">
-                      Balance
+                      Balance: {tokenBalance}
                     </h1>
                     <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="dexBalance" type="number" value={exchangeAmount} onChange={handler}/>
                   </div>
                   <div class="my-4">
                     <h1 class="block text-gray-700 text-sm font-bold mb-2" >
-                      Balance
+                      Balance : {bnbBalance}
                     </h1>
                     
                     
