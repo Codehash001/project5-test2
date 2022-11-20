@@ -88,8 +88,24 @@ useEffect(() => {
     if (item.id < 11 ) {
       cost = config.leader_items_cost
     }
-    else {
+    else if (item.id < 38 ){
+      cost = config.common_items_cost
+    }
+
+    else if (item.id < 65 ){
+      cost = config.uncommon_items_cost
+    }
+
+    else if (item.id < 100 ){
+      cost = config.rare_items_cost
+    }
+
+    else if (item.id < 125 ){
       cost = config.epic_items_cost
+    }
+
+    else {
+      cost = config.legendary_items_cost
     }
     console.log(cost)
     const price = BigInt(cost*10**18)
@@ -99,7 +115,7 @@ useEffect(() => {
           success,
           message: status
         })
-        alert(status)
+        
     
         setIsMinting(false)
    };
