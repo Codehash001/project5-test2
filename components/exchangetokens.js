@@ -191,7 +191,7 @@ return(
                   <div class="my-4">
                  
                     <h1 class="block text-gray-700 text-sm font-bold mb-2">
-                      Balance: {Number.parseFloat(tokenBalance / 10**18).toFixed(4)}
+                      Balance: {Number.parseFloat(tokenBalance / 10**18).toFixed(4)} $Dex
                     </h1>
                     <div className='my-6 w-full h-[40px]'>
                         {/* input feild here*/ }
@@ -201,7 +201,7 @@ return(
 
                         </div>
                         <div>
-                        <input className="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-full" id="dexBalance" type="number" value={exchangeAmount} onChange={handler}/>
+                        <input className="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-md" id="dexBalance" type="number" value={exchangeAmount} onChange={handler}/>
                         </div>
 
                       </div>
@@ -209,7 +209,7 @@ return(
                   </div>
                   <div class="my-4">
                     <h1 class="block text-gray-700 text-sm font-bold mb-2" >
-                      Balance : {Number.parseFloat(bnbBalance / 10**18).toFixed(4)}
+                      Balance : {Number.parseFloat(bnbBalance / 10**18).toFixed(4)} BNB
                     </h1>
                     
                      <div className='my-6 w-full h-[40px]'>
@@ -219,8 +219,8 @@ return(
                           < img src='/bnb.png' className='object-cover'/>
 
                         </div>
-                        <div>
-                    <div className='shadow appearance-none border bg-  w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline rounded-full'> {payAmount}</div>
+                    <div className='w-full'>
+                    <div className='shadow appearance-none border w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline rounded-md'> {payAmount}</div>
                     </div>
 
                     </div>
