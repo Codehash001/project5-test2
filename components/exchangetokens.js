@@ -207,7 +207,7 @@ return(
                         {/* test input feild here*/ }
                       <div className='flex flex-row '>
                         <div className='w-[40px] h-[40px]'>
-                          <img src='/coing.png' className='object-cover'/>
+                          < img src='/coin.png' className='object-cover'/>
 
                         </div>
                         <div>
