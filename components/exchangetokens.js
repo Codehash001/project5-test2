@@ -157,7 +157,7 @@ return(
       {/*navbar*/}
       <div className='sticky top-0 w-screen mx-10 md:mx-10 lg:mx-10 bg-black/30 backdrop-blur-sm overflow-hidden border-b-white rounded-md my-4'>
       <ul className='flex flex-row items-center justify-between '>
-        <li className='ml-6'>
+        <li className='md:ml-10 lg:ml-10 ml-2'>
           <img className = 'w-auto h-[55px]' 
             src = '/Dex.png'
           />
@@ -165,7 +165,7 @@ return(
  
           <div className='hidden bg-gray-700/30 py-2 px-4 backdrop-blur-md md:flex flex-row font-Kanit text-white rounded-full text-[20px]'>
             <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='home' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Home</h1></Link>
-            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='nfts' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> Mint Dex Nfts</h1></Link>
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='nfts' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> Mint NFTs</h1></Link>
           </div>
 
         <li>
@@ -237,7 +237,7 @@ return(
                 <form class="mx-6">
                   <div class="my-4">
                  
-                    <h1 class="block text-gray-700 text-sm font-bold mb-2">
+                    <h1 class="block text-gray-700 text-sm font-bold">
                       Balance: {Number.parseFloat(tokenBalance / 10**18).toFixed(4)} $Dex
                     </h1>
                     <div className='my-6 w-full h-[40px]'>
@@ -255,7 +255,7 @@ return(
                     </div>
                   </div>
                   <div class="my-4">
-                    <h1 class="block text-gray-700 text-sm font-bold mb-2" >
+                    <h1 class="block text-gray-700 text-sm font-bold" >
                       Balance : {Number.parseFloat(bnbBalance / 10**18).toFixed(4)} BNB
                     </h1>
                     
@@ -275,6 +275,10 @@ return(
                     
                   </div>
                   <div class="flex items-center justify-between">
+                   
+                   <h1 className='my-4 w-full font-Kanit text-white text-[24px]'>
+                        Current Rate : {exchangeRate} $Dex per 1 BNB
+                   </h1>
                    {walletAddress ? ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline" type="button"
                    onClick={toggleState === 1 ? doBuyHandler : doSellHandler }>
                       { toggleState === 1 ? "Buy DEX coins" : "Sell Dex Coins"}
@@ -306,7 +310,8 @@ return(
 
 
         </div>
+        <div className='w-screen mt-10'>
         <Footer/>
-
+        </div>
         </div>
     )}
