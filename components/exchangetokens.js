@@ -2,8 +2,10 @@ import React from 'react';
 import { useState,useEffect } from "react"
 import { initOnboard } from "../ulits/onboard"
 import { config } from '../dapp.config'
-import Link from 'next/link'
 import ChartComponent from "../components/ChartComponent";
+import Footer from "../components/Footer"
+import {Link} from 'react-scroll/modules';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
   const data = [
 	{ value: 30 },
@@ -304,6 +306,7 @@ return(
 
 
         </div>
+        <Footer/>
 
         </div>
     )}
