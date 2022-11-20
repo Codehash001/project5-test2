@@ -85,7 +85,7 @@ useEffect(() => {
     setIsMinting(true)
     const id= item.id
     console.log(id)
-    if (item.tier == leader) {
+    if (item.tier == "leader") {
       setCost(config.leader_items_cost)
     }
     else {
