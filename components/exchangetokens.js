@@ -144,10 +144,55 @@ useEffect(() => {
     setToggleState (index);
    }
 
+   const [nav, setNav] = useState(false);
+
+   const handleNav = () => {
+     setNav(!nav);
+   };
+
 return(
         <div className='w-full min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-[#141414] to-[#330042]'>
+      {/*navbar*/}
+      <div className='sticky top-0 w-screen mx-10 md:mx-10 lg:mx-10 bg-black/30 backdrop-blur-sm overflow-hidden border-b-white rounded-md my-4'>
+      <ul className='flex flex-row items-center justify-between '>
+        <li className='ml-6'>
+          <img className = 'w-auto h-[55px]' 
+            src = '/Dex.png'
+          />
+        </li>
+ 
+          <div className='hidden bg-gray-700/30 py-2 px-4 backdrop-blur-md md:flex flex-row font-Kanit text-white rounded-full text-[20px]'>
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='home' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Home</h1></Link>
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='nfts' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> Mint Dex Nfts</h1></Link>
+          </div>
 
-<h1 className="tracking-wide font-Righteous uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-4  p-3 ">
+        <li>
+        
+            { walletAddress ?  (
+            <div className=' py-2 px-4 backdrop-blur-md flex flex-row font-Kanit text-white rounded-md border border-white bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'>
+            <h1 className='mx-4 uppercase tracking-wide'>Connected: {walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)}</h1> </div>
+            ) : (
+            <div className=' py-2 px-4 backdrop-blur-md flex flex-row font-Kanit text-white rounded-md border border-white hover:bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 hover:text-black cursor-pointer' onClick={connectWalletHandler}>
+            <h1 className='mx-4 uppercase tracking-wide'>Connect Wallet</h1></div>
+            )
+            }
+
+          
+          
+        </li>
+        <li>
+        <div onClick={handleNav}
+          className=' md:hidden rounded-md p-2 bg-white mr-2 cursor-pointer' >
+            <AiOutlineMenu size={18} />
+          </div>
+        </li>
+
+      </ul>
+      
+      </div>
+
+      {/*Title*/}
+        <h1 className="tracking-wide font-Righteous uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-4  p-3 ">
             Instant Dex coin Exchange</h1>
 
         <div className=' flex flex-row items-center justify-between border'>
@@ -157,12 +202,12 @@ return(
             <div className='flex flex-col items-center mx-8 my-4'>
 
             <div className=' w-[300px] h-[300px] my-4'>
-		<ChartComponent data={data} />
+		        <ChartComponent data={data} />
             
             </div>
 
             
-            <Link href='/mint'><button className="w-full bg-yellow-300 hover:bg-blue-600 text-black font-bold py-2 px-6 rounded-full my-4">
+            <Link href='/mint2'><button className="w-full bg-yellow-300 hover:bg-blue-600 text-black font-bold py-2 px-6 rounded-full my-4">
                  Mint NFTs with Dex coin
           </button>
           </Link>
