@@ -87,10 +87,10 @@ useEffect(() => {
 
    /* global Bigint */
   const handleClick = async (item) => {
-    setCost(id>=128 ? config.legendary_items_cost : id>=99 ? config.Epic_items_cost : id>=64 ? config.rare_items_cost : id>=37 ? config.uncommon_items_cost : id>=10 ? config.common_items_cost : config.leader_items_cost)
-    setIsMinting(true)
+    // setCost(id>=128 ? config.legendary_items_cost : id>=99 ? config.Epic_items_cost : id>=64 ? config.rare_items_cost : id>=37 ? config.uncommon_items_cost : id>=10 ? config.common_items_cost : config.leader_items_cost)
+    // setIsMinting(true)
     const id= item.id
-    const price = BigInt(cost*10**18)
+    const price = BigInt(1000*10**18)
     const { success, status } = await doApprove(price) && doMint(id) 
     
         setStatus({
