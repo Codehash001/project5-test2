@@ -84,7 +84,7 @@ useEffect(() => {
     
     setIsMinting(true)
     const id= item.id
-    setCost(id >= 128 ? config.legendary_items_cost : id>= 99 ? config.epic_items_cost ? id >= 64 ? config.rare_items_cost : id>= 37 ? config.uncommon_items_cost : id>= 10 ? config.common_items_cost : config.leader_items_cost)
+    setCost(id <= 10 ? config.leader_items_cost : id<= 37 ? config.legendary_common_cost : id<= 64? config.uncommon_items_cost : id<= 99? config.rare_items_cost : id <= 128 ? config.epic_items_cost : config.legendary_items_cost)
     console.log(cost)
     const price = BigInt(cost*10**18)
     const { success, status } = await doApprove(price) && doMint(id) 
@@ -93,7 +93,7 @@ useEffect(() => {
           success,
           message: status
         })
-        
+        alert(status)
     
         setIsMinting(false)
    };
