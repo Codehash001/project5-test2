@@ -103,13 +103,9 @@ useEffect(() => {
       <div class="flex space-x-1 items-center">
         <p>Available:{maxSupply - totalMinted}</p>
       </div>
-      {walletAddress ?
-      (<button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
+      <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
     onClick={() => handleClick(item)}>
-    Mint now</button>) : (
-    <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg hover:bg-purple-700"
-    onClick={() => alert("To be able to mint you nedd to connect your wallet")}>
-    Mint now</button>)  }
+    Mint now</button>
     </div>
   </div>
   );
