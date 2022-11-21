@@ -185,9 +185,9 @@ return(
       </div>
 
       {/*Title*/}
-        <h1 className="tracking-wide font-Righteous uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-4  p-3 ">
+        <h1 className="tracking-wide font-Righteous uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-4  pt-3 ">
             Instant Dex coin Exchange</h1>
-            <h1 className="tracking-wide font-Righteous uppercase font-bold text-2xl md:text-3xl text-brand-02 bg-clip-text mt-2">
+            <h1 className="tracking-wide font-Righteous uppercase font-bold text-2xl md:text-3xl text-brand-02 bg-clip-text mt-1">
             Swap $Dex with BNB</h1>
 
         <div className=' flex flex-row items-center justify-between border'>
