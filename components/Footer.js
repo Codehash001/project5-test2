@@ -5,7 +5,7 @@ import { social } from '../info.config';
 
 function Footer () {
     return(
-      <div class=" bg-gray-900">
+      <div class=" bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-indigo-900 via-violet-900 to-fuchsia-900">
     <div class="max-w-2xl mx-auto text-white py-10">
         <div class="text-center">
             <h3 class="text-3xl mb-3 font-Kanit"> Download DexBattle </h3>
