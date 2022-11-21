@@ -146,7 +146,7 @@ useEffect(() => {
 return(
         <div className='w-full min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-[#141414] to-[#330042]'>
       {/*navbar*/}
-      <div className='sticky top-0 w-[960px] mx-10 md:mx-10 lg:mx-10 bg-black/30 backdrop-blur-sm overflow-hidden border-b-white rounded-full my-4'>
+      <div className='sticky top-0 w-[800px] mx-10 md:mx-10 lg:mx-10 bg-black/30 backdrop-blur-sm overflow-hidden border-b-white rounded-md my-4'>
       <ul className='flex flex-row items-center justify-between my-2'>
         <li className='md:ml-10 lg:ml-10 ml-2'>
           <img className = 'w-auto h-[55px]' 
@@ -154,7 +154,7 @@ return(
           />
         </li>
  
-          <div className='hidden bg-gray-700/30 py-2 px-4 backdrop-blur-md md:flex flex-row font-Kanit text-white rounded-full text-[20px]'>
+          <div className='hidden bg-gray-700/30 py-2 px-4 backdrop-blur-md md:flex flex-row font-Kanit text-white rounded-md text-[20px]'>
             <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='home' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Home</h1></Link>
             <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='nfts' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> Mint NFTs</h1></Link>
           </div>
@@ -187,6 +187,8 @@ return(
       {/*Title*/}
         <h1 className="tracking-wide font-Righteous uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-4  p-3 ">
             Instant Dex coin Exchange</h1>
+            <h1 className="tracking-wide font-Righteous uppercase font-bold text-2xl md:text-3xl text-brand-02 bg-clip-text mt-2 p-3 ">
+            Swap $Dex with BNB</h1>
 
         <div className=' flex flex-row items-center justify-between border'>
           {/* <img src='/bg2.jpg'
@@ -210,17 +212,17 @@ return(
 
             <div className='flex flex-col items-center mx-8 my-4 backdrop-blur-md bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150 bg-gray-200/10 filter"] rounded-md py-4'>
             <div className='flex flex-col items-center mx-6 '>
-                <h1 className=' mb-4 font-Kanit text-[22px] text-gray-700 '>{walletAddress
+                <h1 className=' mb-4 font-Kanit text-[22px] text-gray-100 '>{walletAddress
                 ? walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)
                 : 'CONNECT YOUR WALLET'}</h1>
 
                 <div className='w-full max-w-xs bg-[#D9CCCC] rounded-md border pb-4'>
                 <div className='w-full h-full flex justify-between border border-gray-400'>
-                        <button className={toggleState === 1? ' bg-[#D9CCCC] text-black text-[14px] font-Kanit py-2 w-full  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        <button className={toggleState === 1? ' bg-[#D9CCCC] text-black text-[18px] font-Kanit py-2 w-full  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(1)}>
                         BUY </button>
 
-                        <button className={toggleState === 2 ? 'bg-[#D9CCCC] text-black text-[14px] font-Kanit py-2 px-auto w-full border-b-4 border-black' : "bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        <button className={toggleState === 2 ? 'bg-[#D9CCCC] text-black text-[18px] font-Kanit py-2 px-auto w-full border-b-4 border-black' : "bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(2)}>
                         SELL </button>
                     </div> 
@@ -228,7 +230,7 @@ return(
                 <form class="mx-6">
                   <div class="my-4">
                  
-                    <h1 class="block text-gray-700 text-[18px] font-bold">
+                    <h1 class="block text-gray-700 text-[16px] font-bold">
                       Balance: {Number.parseFloat(tokenBalance / 10**18).toFixed(4)} $Dex
                     </h1>
                     <div className='mb-6 w-full h-[40px]'>
@@ -246,7 +248,7 @@ return(
                     </div>
                   </div>
                   <div class="mt-4">
-                    <h1 class="block text-gray-700 text-[18px] font-bold" >
+                    <h1 class="block text-gray-700 text-[16px] font-bold" >
                       Balance : {Number.parseFloat(bnbBalance / 10**18).toFixed(4)} BNB
                     </h1>
                     
@@ -267,7 +269,7 @@ return(
                   </div>
                   <div class="flex flex-col items-center justify-between">
                     
-                   <h1 className='my-4 w-full font-Kanit text-gray-400 text-[16px]'>
+                   <h1 className='my-4 w-full font-Kanit text-gray-900 text-[17px]'>
                         Current Rate : {exchangeRate} $Dex per 1 BNB
                    </h1>
                    {walletAddress ? ( <button className="w-full bg-blue-400 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline" type="button"
