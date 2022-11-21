@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React, { useEffect } from 'react';
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import {social} from "../info.config";
 
 export default function Main() {
 
@@ -34,20 +35,20 @@ useEffect(() => {
         <span class="sm:block">in DexBattle </span>
       </h1>
       <div class="mt-8 flex flex-wrap justify-center gap-4">
-      <div class="flex items-center border rounded-lg px-4 py-2 w-52 mx-2">
+      <a href={social.googlePlayStore}><div class="flex items-center border rounded-lg px-4 py-2 w-52 mx-2">
                     <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" class="w-7 md:w-8"/>
                     <div class="text-left ml-3">
                         <p class='text-xs text-gray-200'>Download on </p>
                         <p class="text-sm md:text-base text-gray-200"> Google Play Store </p>
                     </div>
-                </div>
-                <div class="flex items-center border rounded-lg px-4 py-2 w-52 mx-2">
+                </div></a>
+      <a href={social.appleAppStore}><div class="flex items-center border rounded-lg px-4 py-2 w-52 mx-2">
                     <img src="https://cdn-icons-png.flaticon.com/512/888/888841.png" class="w-7 md:w-8"/>
                     <div class="text-left ml-3">
                         <p class='text-xs text-gray-200'>Download on </p>
                         <p class="text-sm md:text-base text-gray-200"> Apple App Store </p>
                     </div>
-                </div>
+                </div></a>
       </div>
     </div>
   </div>

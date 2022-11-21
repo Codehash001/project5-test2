@@ -12,4 +12,13 @@ const config = {
     uncommon_items_cost: 75,
     common_items_cost: 50
 }
-  export {config}
+
+const social ={
+  googlePlayStore:'https://play.google.com/store/',
+  appleAppStore:'https://www.apple.com/app-store/',
+  twitter:'https://twitter.com/',
+  discord:'https://discord.gg/',
+  telegram:'https://telegram.app/',
+  facebook:'https://facebook.com/'
+}
+  export {config , social}
