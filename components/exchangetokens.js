@@ -89,6 +89,10 @@ useEffect(() => {
 
     setIsMinting(true)
     console.log(exchangeRate)
+    let numb = 0.000012345
+    let rounded = Math.round(numb*10**6)/10**6
+    console.log(numb)
+    console.log("rounded is" ,rounded)
     const payableAmount = payAmount
     const {success, status}= await doBuy(payableAmount)
     setStatus({
@@ -126,7 +130,7 @@ useEffect(() => {
   const handler = e =>{
     setExchangeAmount (e.target.value)
   }
-  
+
   const payAmount = exchangeAmount/exchangeRate
 
   
