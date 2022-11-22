@@ -111,11 +111,11 @@ useEffect(() => {
     const price = BigInt(cost*10**18)
     let {success} = await doApprove(price) 
       if (success) {
-        const {success , status} = doMint(id) 
+        const {success , status} = await doMint(id) 
 
         setStatus({
           success,
-          message: status
+          message:status
           
         })
         alert(status.message)
