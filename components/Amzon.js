@@ -85,22 +85,22 @@ useEffect(() => {
     const id= item.id
     console.log(id)
     let cost = 0
-    if (item.id <= 10 ) {
+    if (item.id < 10 ) {
       cost = config.leader_items_cost
     }
-    else if (item.id <= 37 ){
+    else if (item.id < 37 ){
       cost = config.common_items_cost
     }
 
-    else if (item.id <= 64 ){
+    else if (item.id < 64 ){
       cost = config.uncommon_items_cost
     }
 
-    else if (item.id <= 99 ){
+    else if (item.id < 99 ){
       cost = config.rare_items_cost
     }
 
-    else if (item.id <= 124 ){
+    else if (item.id < 124 ){
       cost = config.epic_items_cost
     }
 
