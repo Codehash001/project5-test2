@@ -118,7 +118,7 @@ useEffect(() => {
           message:status
           
         })
-        alert(status.message)
+        alert(message)
       }
     
         
