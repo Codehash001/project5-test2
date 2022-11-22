@@ -3,10 +3,10 @@ const Web3 = require("web3");
 
 const web3 = new Web3(new Web3.providers.HttpProvider(process.env.NEXT_PUBLIC_URL));
 
-const TokenContract = require('../artifacts/contracts/Token.sol/Token.json')
+const TokenContract = require('../artifacts/contracts/DexCoin.sol/DexCoin.json')
 const tokenContract = new web3.eth.Contract(TokenContract.abi , config.tokenContract)
 
-const ExchangeContract = require('../artifacts/contracts/ExchangeTokens.sol/ExchangeTokens.json')
+const ExchangeContract = require('../artifacts/contracts/DexExchange.sol/DexExchange.json')
 const exchangeContract = new web3.eth.Contract(ExchangeContract.abi , config.exchangeContract)
 
 export const getTokenBalance = async () => {
