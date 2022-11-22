@@ -38,7 +38,7 @@ export const getTokenBalance = async () => {
       to: config.exchangeContract,
       from: window.ethereum.selectedAddress,
       value: parseInt(
-        web3.utils.toWei(String(payableAmount), 'ether')
+        web3.utils.toWei(String(payableAmount), 'BNB')
       ).toString(16), // hex
       data: exchangeContract.methods.buyTokens().encodeABI()
     }

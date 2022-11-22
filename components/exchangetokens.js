@@ -103,7 +103,7 @@ useEffect(() => {
 
   const doSellHandler = async () => {
     setIsMinting(true)
-    const tokenAmountToSell = tokenAmountWei
+    const tokenAmountToSell = BigInt(exchangeAmount*10**18)
     const {success} = await doApprove(tokenAmountToSell)
     if (success) {
     const {success, status}=await doSell(tokenAmountToSell)
@@ -126,8 +126,8 @@ useEffect(() => {
   const handler = e =>{
     setExchangeAmount (e.target.value)
   }
-  const tokenAmountWei = BigInt(exchangeAmount*10**18)
-  const payAmount = tokenAmountWei/exchangeRate
+  
+  const payAmount = exchangeAmount/exchangeRate
 
   
   
