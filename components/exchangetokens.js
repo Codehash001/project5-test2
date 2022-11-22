@@ -29,6 +29,7 @@ import {
         getExchangeRate,
         getTokenBalance,
         getBnbBalance } from '../ulits/interactex'
+import { loadGetInitialProps } from 'next/dist/shared/lib/utils';
 
 export default function Exchange() {
 
@@ -103,7 +104,7 @@ useEffect(() => {
   const doSellHandler = async () => {
     setIsMinting(true)
     const tokenAmountToSell = BigInt(exchangeAmount*10**18)
-    const {success} = await doApprove(tokenAmountToSell)
+    let {success} = await doApprove(tokenAmountToSell)
     if (success) {
     const {success, status}=await doSell(tokenAmountToSell)
     setStatus({
@@ -154,8 +155,8 @@ return(
         </li>
  
           <div className='hidden bg-gray-700/30 py-2 px-4 backdrop-blur-md md:flex flex-row font-Kanit text-white rounded-md text-[20px]'>
-            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='home' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Home</h1></Link>
-            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='nfts' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> Mint NFTs</h1></Link>
+          <a className="cursor-pointer hover:text-blue-400" href='/'> <h1> Home</h1></a>
+            <a className="cursor-pointer hover:text-blue-400" href='/mint2'> <h1> Mint NFTs</h1></a>
           </div>
 
         <li>
@@ -216,11 +217,11 @@ return(
 
                 <div className='w-full max-w-xs bg-[#D9CCCC] rounded-md border pb-4'>
                 <div className='w-full h-full flex justify-between border border-gray-400'>
-                        <button className={toggleState === 1? ' bg-[#D9CCCC] text-black text-[18px] font-Kanit py-2 w-full  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        <button className={toggleState === 1? ' bg-[#D9CCCC] text-black text-[18px] font-Kanit py-2 w-full  border-b-4  border-black' : " bg-[#D9CCCC] border text-gray-700 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(1)}>
                         BUY </button>
 
-                        <button className={toggleState === 2 ? 'bg-[#D9CCCC] text-black text-[18px] font-Kanit py-2 px-auto w-full border-b-4 border-black' : "bg-[#D9CCCC] border text-gray-400 py-2 text-[18px] font-Kanit px-10 "}
+                        <button className={toggleState === 2 ? 'bg-[#D9CCCC] text-black text-[18px] font-Kanit py-2 px-auto w-full border-b-4 border-black' : "bg-[#D9CCCC] border text-gray-700 py-2 text-[18px] font-Kanit px-10 "}
                         onClick={() => toggleTab(2)}>
                         SELL </button>
                     </div> 
@@ -282,7 +283,7 @@ return(
                   {status && (
               <div
                 className={`border ${
-                  status.success ? 'border-green-500 text-white' : 'border-red-600 text-gray-400'
+                  status.success ? 'border-green-500 text-gray-700' : 'border-red-600 text-gray-700'
                 } rounded-md text-start h-full px-4 py-4 w-full mx-auto mt-8 md:mt-4"`}
               >
                 <p className="flex flex-col space-y-2 text-sm md:text-base break-words ...">

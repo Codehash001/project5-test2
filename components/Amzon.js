@@ -85,22 +85,22 @@ useEffect(() => {
     const id= item.id
     console.log(id)
     let cost = 0
-    if (item.id < 11 ) {
+    if (item.id <= 10 ) {
       cost = config.leader_items_cost
     }
-    else if (item.id < 38 ){
+    else if (item.id <= 37 ){
       cost = config.common_items_cost
     }
 
-    else if (item.id < 65 ){
+    else if (item.id <= 64 ){
       cost = config.uncommon_items_cost
     }
 
-    else if (item.id < 100 ){
+    else if (item.id <= 99 ){
       cost = config.rare_items_cost
     }
 
-    else if (item.id < 125 ){
+    else if (item.id <= 124 ){
       cost = config.epic_items_cost
     }
 
@@ -109,12 +109,19 @@ useEffect(() => {
     }
     console.log(cost)
     const price = BigInt(cost*10**18)
-    const { success, status } = await doApprove(price) && doMint(id) 
-    
+    let {success} = await doApprove(price) 
+      if (success) {
+        const {success , status} = doMint(id) 
+
         setStatus({
           success,
           message: status
+          
         })
+        alert(status.message)
+      }
+    
+        
         
     
         setIsMinting(false)
@@ -146,10 +153,10 @@ useEffect(() => {
         </form>
         </li>
           <div className='hidden bg-gray-700/30 py-2 px-4 backdrop-blur-md md:flex flex-row font-Kanit text-white rounded-full text-[20px]'>
-            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='home' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Home</h1></Link>
-            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='nfts' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> Characters</h1></Link>
-            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='dexcoin' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Weapons</h1></Link>
-            <a className="cursor-pointer hover:text-blue-400" href='/DexBattleWhitepaper.pdf' download='DexBattleWhitepaper.pdf'><h1 className='mx-4'>Whitepaper</h1></a>
+            <a className="cursor-pointer hover:text-blue-400" hfer='/'><h1 className='mx-4'>Home</h1></a>
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='characters' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> Characters </h1></Link>
+            <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='weapons' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Weapons</h1></Link>
+            <a className="cursor-pointer hover:text-blue-400" hfer='/exchange'><h1 className='mx-4 py-2 px-4 border boder-white hover:border-blue-400'>Buy $Dex</h1></a>
           </div>
 
         <li>
