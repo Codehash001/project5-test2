@@ -89,7 +89,7 @@ useEffect(() => {
 
     setIsMinting(true)
     console.log(exchangeRate)
-    let numb = 0.000012345
+    let numb = 0.000012845
     let rounded = Math.round(numb*10**6)/10**6
     console.log(numb)
     console.log("rounded is" ,rounded)
