@@ -93,7 +93,7 @@ useEffect(() => {
     let rounded = Math.round(numb*10**6)/10**6
     console.log(numb)
     console.log("rounded is" ,rounded)
-    const payableAmount = payAmount
+    const payableAmount = Math.round(payAmount*10**6 )/10**6
     const {success, status}= await doBuy(payableAmount)
     setStatus({
       success,
