@@ -207,7 +207,6 @@ return(
           </button>
           </Link>
            
-
             </div>
 
             <div className='flex flex-col items-center mx-8 my-4 backdrop-blur-md bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150 bg-gray-200/10 filter"] rounded-md py-4'>
