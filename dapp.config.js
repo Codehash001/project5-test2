@@ -2,23 +2,16 @@ const RPC_URL = process.env.NEXT_PUBLIC_URL
 /* global BigInt*/
 
 const config = {
-  title: 'test dapp',
+  title: 'dex test dapp',
   description: 'test minting Dapp',
-  tokenContract: '0xe2CC69a3b75D39dFFf1f38ed8d453010dAa11106',
-  nftContract: '0x1d60C27218c32E5754686Aa41897e76fE8Abb6c8',
-  exchangeContract: '0x6a7277181C6305ee8b4F0614738cb484f7cADD94',
-  maxMintAmount: 3,
-  WlMaxMintAmount: 2,
-  maxPublicForWhitelisted : 5,
-  wlcost: 10,
-  rate: 10*10**18,
-  exchangeRate: 100,
-  publicSalePrice:10
+  tokenContract: '0x7703A1B5D6FD3980FE2354e566109081a29C334B',
+  nftContract: '0xDc18eE795cf892dD30D7A482E9856DE1d9BDc91b',
+  exchangeContract: '0xDeA764B8bf5b0D3B1096d715a69B864f35A1A138'
 }
 
 const onboardOptions = {
   dappId: process.env.NEXT_PUBLIC_DAPP_ID,
-  networkId: 97, // bsc testnet
+  networkId: 56, // bnb mainnet
   darkMode: true,
   walletSelect: {
     description:'Plaese select a wallet',
@@ -29,7 +22,7 @@ const onboardOptions = {
         walletName: 'walletLink',
         preferred: true,
         rpcUrl: RPC_URL,
-        appName: 'weRjapaneseTest01 Dapp'
+        appName: 'dexTest01 Dapp'
       },
       
       { walletName: 'trust', preferred: true, rpcUrl: RPC_URL },
@@ -43,7 +36,7 @@ const onboardOptions = {
       {
         walletName: 'lattice',
         rpcUrl: RPC_URL,
-        appName: 'weRjapaneseTest01 Dapp'
+        appName: 'dex Dapp'
       },
       {
         walletName: 'keepkey',
