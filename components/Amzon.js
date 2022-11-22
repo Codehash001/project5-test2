@@ -156,7 +156,7 @@ useEffect(() => {
             <a className="cursor-pointer hover:text-blue-400" hfer='/'><h1 className='mx-4'>Home</h1></a>
             <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='characters' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'> Characters </h1></Link>
             <Link className="cursor-pointer hover:text-blue-400" acticeClass ="active" to='weapons' spy={true} smooth={true} offset={-70} duration={500}><h1 className='mx-4'>Weapons</h1></Link>
-            <a className="cursor-pointer hover:text-blue-400" hfer='/exchange'><h1 className='mx-4 py-2 px-4 border boder-white hover:border-blue-400'>Buy $Dex</h1></a>
+            <a className="cursor-pointer hover:text-blue-400" hfer='/exchange'><h1 className='mx-4 '>Buy $Dex</h1></a>
           </div>
 
         <li>
