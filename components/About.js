@@ -6,7 +6,7 @@ function About () {
                 <h1 data-aos="fade" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[22px] font-semibold'>
                     About Us
                 </h1>
-                <p data-aos="fade" className='text-[20px] font-Kanit text-gray-400 text-justify '>
+                <p data-aos="fade" className='text-[20px] font-Kanit bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent text-justify '>
                 We are a premier independent game development studio focused on developing unique and original games across various
 platforms. While working on NFT & gaming projects, we got inspired to create a grand battle royale NFT Play-to-Earn game
 called Dex battle.
@@ -15,7 +15,7 @@ called Dex battle.
                 <h1 data-aos="fade" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[22px] font-semibold'>
                     Vision
                 </h1>
-                <p data-aos="fade" className='text-[20px] font-Kanit text-gray-400 text-justify '>
+                <p data-aos="fade" className='text-[20px] font-Kanit bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent text-justify '>
                 To become the world&apos;s top P2E game by leveraging amazing game development experience, exceptional blockchain
 technology skills, and enthusiasm via our highly-motivated talents and technological specialists.
                 </p>
@@ -23,7 +23,7 @@ technology skills, and enthusiasm via our highly-motivated talents and technolog
                 <h1 data-aos="fade" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[22px] font-semibold'>
                     Mission
                 </h1>
-                <p data-aos="fade" className='text-[20px] font-Kanit text-gray-400 text-justify '>
+                <p data-aos="fade" className='text-[20px] font-Kanit bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent text-justify '>
                 Our objective is to build an infrastructure capable of powering online games that are both entertaining and engaging for our players.
 Simultaneously, we aim to construct this game so players can earn NFTs while playing the game. Beyond that extent, Dex battle aims to not
 only create a P2E game but also a game platform that is able to connect your community (friends, crypto owners, gamers, or even
