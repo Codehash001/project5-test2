@@ -17,7 +17,7 @@ function Nfts () {
     <div className='flex flex-col my-10 mx-16 justify-between items-center'>
        <div className='mt-10'>
         <h1 data-aos="flip-right" className='text-3xl text-blue-400  font-Kanit text-center uppercase font-semibold tracking-wide'>The Problem</h1>
-        <p data-aos="flip-right" className='text-center font-Kanit text-[20px] bg-gradient-to-tr from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent mt-4 mb-5'>
+        <p data-aos="flip-right" className='text-center font-Kanit text-[20px] bg-gradient-to-br from-cyan-50 via-indigo-200 to-fuchsia-200 bg-clip-text text-transparent mt-4 mb-5'>
         Dex battle game was created because there are far too many blockchain games that lack good visuals, and the PC
 gaming area is mostly disregarded by P2E producers. Furthermore, traditional games do not provide their players with
 a play-to-earn structure. Over 1 billion players have been playing games for years without making any money from
