@@ -2,7 +2,7 @@ import React from 'react'
 
 function About () {
     return (
-    <div className='flex flex-col items-center mx-16'>
+    <div id='about' className='flex flex-col items-center mx-16'>
                 <h1 data-aos="fade" className='text-[40px] font-Kanit text-blue-400 tracking-wide uppercase my-[22px] font-semibold'>
                     About Us
                 </h1>
@@ -36,7 +36,7 @@ explaining how to manage everything like minting, presale, whitelisting
                 </p>
 
 
-        <div id='about' className= "grid md:grid-flow-row w-full bg-black mx-10  items-start ">
+        <div className= "grid md:grid-flow-row w-full mx-10  items-start ">
         <div className= "mt-4 mb-4 pt-2"> 
         <span className=" font-Kanit tracking-wide uppercase text-blue-400 text-3xl">Team</span>
         </div>
@@ -91,7 +91,7 @@ explaining how to manage everything like minting, presale, whitelisting
       </div>
        </div>
 
-       <div id='about' className= "grid md:grid-flow-row w-full bg-black mx-10 items-start ">
+       <div className= "grid md:grid-flow-row w-full  mx-10 items-start ">
         <div className= "mt-4 mb-4 pt-2"> 
         <span className=" font-Kanit tracking-wide uppercase text-blue-400 text-3xl">Partners</span>
         </div>

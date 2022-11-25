@@ -21,8 +21,7 @@
   --clr-blue: #07b9f5;
   --clr-green: #00f5d4;
   --clr-selection-text: rgb(0, 0, 0);
-  --clr-selection-bg: rgb(255, 255, 255);
-  --clr-background:#000000;
+  --clr-selection-bg: rgb(255, 255, 255)
 
 }
 html{
