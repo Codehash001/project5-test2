@@ -13,7 +13,7 @@ import Faqs from '../components/FAQs';
 
 export default function Home() {
   return (
-    <div className='bg-gradient-to-r from-[#01000e] via-[#130318] to-[#1b010e]'>
+    <div className='bg-gradient-to-r from-[#01000e] via-[#130318] to-[#130318]'>
       <Head>
         <title>DexBattle</title>
         <meta name="Description" content="Dex Battle Game!" />
